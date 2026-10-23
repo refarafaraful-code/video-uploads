@@ -9,12 +9,12 @@
  },
  "clips": [
   {
-   "name": "01_seal_impression_guess_v2",
+   "name": "01_seal_impression_guess_v3",
    "title": "JOHN CENA'S GUESS WAS NOT A SEAL",
    "segments": [
     [
      113.9,
-     138.6
+     139.1
     ]
    ],
    "emphasis": [
@@ -39,11 +39,12 @@
    "window": {
     "fg_y": 330,
     "fg_h": 960,
-    "cap_y": 1400
+    "cap_y": 1400,
+    "emoji_y": 1120
    }
   },
   {
-   "name": "02_salt_licorice_warning",
+   "name": "02_salt_licorice_warning_v2",
    "title": "SHE WARNED JOHN CENA NOT TO EAT IT",
    "segments": [
     [
@@ -68,7 +69,7 @@
     ],
     [
      250.6,
-     255.0
+     255.5
     ]
    ],
    "emphasis": [
@@ -98,11 +99,12 @@
    "window": {
     "fg_y": 330,
     "fg_h": 960,
-    "cap_y": 1400
+    "cap_y": 1400,
+    "emoji_y": 1120
    }
   },
   {
-   "name": "03_cup_flip_strategy",
+   "name": "03_cup_flip_strategy_v2",
    "title": "JOHN CENA HAD A \"STRATEGY\"",
    "segments": [
     [
@@ -119,7 +121,7 @@
     ],
     [
      295.6,
-     309.2
+     309.4
     ]
    ],
    "emphasis": [
@@ -143,11 +145,12 @@
    "window": {
     "fg_y": 330,
     "fg_h": 960,
-    "cap_y": 1400
+    "cap_y": 1400,
+    "emoji_y": 1120
    }
   },
   {
-   "name": "04_chopstick_hoops",
+   "name": "04_chopstick_hoops_v2",
    "title": "NO HANDS. ONE CHOPSTICK. TOTAL CHAOS",
    "segments": [
     [
@@ -168,7 +171,7 @@
     ],
     [
      575.9,
-     591.5
+     591.85
     ]
    ],
    "emphasis": [
@@ -193,7 +196,8 @@
    "window": {
     "fg_y": 330,
     "fg_h": 960,
-    "cap_y": 1400
+    "cap_y": 1400,
+    "emoji_y": 1120
    }
   }
  ],

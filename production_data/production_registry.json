@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T22:57:49Z",
+  "updated_at": "2026-10-23T23:16:06Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -447,7 +447,10 @@
         "2026-10-23T22:44:51Z corrected source filename (register-source had stored the local name 'source.mp4'); added --filename option",
         "2026-10-23T22:53:08Z full transcript + 1 frame/5 s review of all 11:01 + 1 fps sheets of candidate sections; 10 candidates scored, 4 selected",
         "2026-10-23T22:57:49Z make_clip: added optional per-clip 'frame: group' (two-shot framing), 'window', and spec 'scene_threshold' (defaults unchanged)",
-        "2026-10-23T22:57:49Z draft render 01_seal_impression_guess.mp4 rejected in visual review: opening frame showed stray caption 'GAME.'; cuts undetected (scene scores 0.15-0.24 < 0.32) -> slow pans after cuts. Re-rendered as _v2 with start 113.9 and scene_threshold 0.12. Draft file kept (no deletions) and not delivered."
+        "2026-10-23T22:57:49Z draft render 01_seal_impression_guess.mp4 rejected in visual review: opening frame showed stray caption 'GAME.'; cuts undetected (scene scores 0.15-0.24 < 0.32) -> slow pans after cuts. Re-rendered as _v2 with start 113.9 and scene_threshold 0.12. Draft file kept (no deletions) and not delivered.",
+        "2026-10-23T23:16:06Z technical QC: all 5 renders pass",
+        "2026-10-23T23:16:06Z editorial review round 1: 4 renders rejected (cut endings x3, emojis covering a face x4, unreadable 0.2 s caption). Technical QC had passed all of them.",
+        "2026-10-23T23:16:06Z make_clip: optional window.emoji_y; caption groups shown < 0.4 s merged into the next group (max 4 words). Re-rendering as v3/v2 with extended segment ends."
       ],
       "rejected_drafts": [
         {
@@ -455,6 +458,34 @@
           "sha256": "0bb28d0ea644eaa0159ff34b3dc7eac8aa134ddf2cdba92f528d693991750a1e",
           "reason": "stray opening caption; undetected cuts caused slow pans",
           "superseded_by": "01_seal_impression_guess_v2"
+        },
+        {
+          "path": "output/test-run-1-snack-wars/clips/01_seal_impression_guess_v2.mp4",
+          "sha256": "efd5365cd995c7c1693377556a7001766de6c093d2dd4a967c915ab2562d4c19",
+          "qc_technical": "pass",
+          "reason": "last word possibly clipped; emoji briefly over Jessica's face",
+          "superseded_by": "01_seal_impression_guess_v3"
+        },
+        {
+          "path": "output/test-run-1-snack-wars/clips/02_salt_licorice_warning.mp4",
+          "sha256": "f1ad936f668e6e19941e93f66580e151d1bc69fd3e398972587c72da1a775ba4",
+          "qc_technical": "pass",
+          "reason": "ending cut 'pass' (ends 'THAT IS A HARD'); emojis over Jessica's face",
+          "superseded_by": "02_salt_licorice_warning_v2"
+        },
+        {
+          "path": "output/test-run-1-snack-wars/clips/03_cup_flip_strategy.mp4",
+          "sha256": "fecc6abfea07535dbe7d59095e718acddddfcc1edd52dd261defa14b0e7c4fd9",
+          "qc_technical": "pass",
+          "reason": "ending cut ('BUT THAT'S'); brain emoji over Jessica; 'I GOT A' shown only 0.2 s",
+          "superseded_by": "03_cup_flip_strategy_v2"
+        },
+        {
+          "path": "output/test-run-1-snack-wars/clips/04_chopstick_hoops.mp4",
+          "sha256": "9e020453343fb6edaeac4b1594e50556d07f43339d6bc5afae5ea727cfb614e5",
+          "qc_technical": "pass",
+          "reason": "ending cut ('THAT IS THE WAY IT'); emoji over Jessica's face",
+          "superseded_by": "04_chopstick_hoops_v2"
         }
       ]
     }

@@ -19,7 +19,7 @@ SPEC.json:
     "mood": "tense",                      # music bed: tense | fun | hype | none
     "cta": "FOLLOW FOR PART 2",           # end card text (default FOLLOW FOR MORE, "" to disable)
     "frame": "group",                     # optional: keep all significant faces in frame (two-shots); default follows the largest face
-    "window": {"fg_y": 300, "fg_h": 1080, "cap_y": 1460}   # optional: video window / caption position (defaults below)
+    "window": {"fg_y": 300, "fg_h": 1080, "cap_y": 1460, "emoji_y": 1230}   # optional: video window / caption / emoji position
   }]
 }
 """
@@ -34,7 +34,7 @@ YUNET = os.path.join(HERE, "models", "yunet.onnx")
 EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 FONTS = os.path.expanduser("~/.fonts")
 W, H, FPS = 1080, 1920, 30
-DEFAULT_WINDOW = {"fg_y": 250, "fg_h": 1500, "cap_y": 1330}   # foreground video window; blurred copy fills the rest
+DEFAULT_WINDOW = {"fg_y": 250, "fg_h": 1500, "cap_y": 1330, "emoji_y": None}  # emoji_y None -> fg_y + 330   # foreground video window; blurred copy fills the rest
 FG_Y, FG_H, CAP_Y = DEFAULT_WINDOW["fg_y"], DEFAULT_WINDOW["fg_h"], DEFAULT_WINDOW["cap_y"]
 TITLE_Y, CTA_Y = 128, 1832
 
@@ -243,7 +243,15 @@ def phrases(words, emph):
             groups.append(cur); cur = []
     if cur:
         groups.append(cur)
-    return groups
+    # a group shown for under 0.4 s cannot be read: fold it into the next one (same segment, max 4 words)
+    merged = []
+    for i, g in enumerate(groups):
+        if merged and merged[-1] is not None and merged[-1][-1]["seg"] == g[0]["seg"] and len(merged[-1]) + len(g) <= 4 \
+                and g[0]["s"] - merged[-1][0]["s"] < 0.4:
+            merged[-1] = merged[-1] + g
+        else:
+            merged.append(g)
+    return merged
 
 
 def wrap_title(t, n=20):
@@ -338,6 +346,7 @@ def render(spec, clip, outdir):
     global FG_Y, FG_H, CAP_Y
     win = {**DEFAULT_WINDOW, **clip.get("window", {})}
     FG_Y, FG_H, CAP_Y = win["fg_y"], win["fg_h"], win["cap_y"]
+    emoji_y = win["emoji_y"] if win["emoji_y"] is not None else FG_Y + 330
     out = os.path.join(outdir, clip["name"] + ".mp4")
     if os.path.exists(out):
         raise SystemExit(f"{out} already exists - finished clips are never overwritten; give the new version a new name")
@@ -436,7 +445,7 @@ def render(spec, clip, outdir):
     cur = "base"
     for k, (ii, t, canvas, kk) in enumerate(emojis):
         x = int(W * (0.78 if k % 2 == 0 else 0.22))
-        y = FG_Y + 330
+        y = emoji_y
         g.append(f"[{ii}:v]format=rgba,setpts=PTS-STARTPTS+{t:.3f}/TB[em{k}]")
         g.append(f"[{cur}][em{k}]overlay=x={x - canvas // 2}:y={y - canvas // 2}:eof_action=pass[ov{k}]")
         cur = f"ov{k}"
