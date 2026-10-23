@@ -2,6 +2,17 @@
 
 Newest first. One entry per production run or system change. The machine-readable record is `production_registry.json`.
 
+## 2026-10-24 — run-test-1-snack-wars: controlled test (src-snack-wars, release v3) — nothing published
+- Eligibility: digest pre-screen `new`; downloaded file sha256 = GitHub digest; `registry.py check` `new` (no hash,
+  fingerprint or metadata match). Registered; filename bug in `register-source` found and fixed (`--filename`).
+- Analysis: full transcript + 1 frame/5 s over all 11:01 + 1 fps sheets of candidate sections. 10 candidates scored:
+  4 selected (88, 85, 78, 78), 6 rejected (69 and below).
+- Renders: 4 final clips in `output/test-run-1-snack-wars/clips/`; 5 drafts rejected in editorial review although
+  technical QC passed them (cut endings, emojis over a face, stray caption, undetected cuts); 1 render truncated by a
+  container restart (caught by QC). Drafts kept on disk, git-ignored, recorded in the registry.
+- Code: make_clip optional group framing, `window` (incl. `emoji_y`), `scene_threshold`; short caption groups merged.
+- Not verified: audio by ear, caption accuracy beyond the ASR transcript, rights/campaign terms for the source.
+
 ## 2026-10-24 — audit of the production system (no clips produced, nothing published)
 - Found and fixed: trimmed/re-encoded copies of a processed source were classified `new` (hash/duration only).
   Added chromaprint audio fingerprints (windowed alignment) + own-clip hash check; stored fingerprints for both

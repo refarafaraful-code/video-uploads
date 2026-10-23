@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T23:16:06Z",
+  "updated_at": "2026-10-23T23:38:51Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -200,7 +200,7 @@
       "runs": [
         "run-test-1-snack-wars"
       ],
-      "status": "in_progress",
+      "status": "processed",
       "candidates": [],
       "notes": "duplicate check at registration: new",
       "local_path": "projects/snack-wars/source.mp4"
@@ -245,8 +245,13 @@
       "source_ids": [
         "src-snack-wars"
       ],
-      "status": "in_progress",
-      "clip_ids": [],
+      "status": "completed",
+      "clip_ids": [
+        "snack-wars-01_seal_impression_guess_v3",
+        "snack-wars-02_salt_licorice_warning_v2",
+        "snack-wars-03_cup_flip_strategy_v2",
+        "snack-wars-04_chopstick_hoops_v3"
+      ],
       "candidates": [
         {
           "id": "cand-seal",
@@ -450,7 +455,9 @@
         "2026-10-23T22:57:49Z draft render 01_seal_impression_guess.mp4 rejected in visual review: opening frame showed stray caption 'GAME.'; cuts undetected (scene scores 0.15-0.24 < 0.32) -> slow pans after cuts. Re-rendered as _v2 with start 113.9 and scene_threshold 0.12. Draft file kept (no deletions) and not delivered.",
         "2026-10-23T23:16:06Z technical QC: all 5 renders pass",
         "2026-10-23T23:16:06Z editorial review round 1: 4 renders rejected (cut endings x3, emojis covering a face x4, unreadable 0.2 s caption). Technical QC had passed all of them.",
-        "2026-10-23T23:16:06Z make_clip: optional window.emoji_y; caption groups shown < 0.4 s merged into the next group (max 4 words). Re-rendering as v3/v2 with extended segment ends."
+        "2026-10-23T23:16:06Z make_clip: optional window.emoji_y; caption groups shown < 0.4 s merged into the next group (max 4 words). Re-rendering as v3/v2 with extended segment ends.",
+        "2026-10-23T23:31:15Z container restart interrupted renders; 01_v3/02_v2/03_v2 verified complete (QC pass, durations = spec); 04_v2 truncated -> failed, re-render as v3",
+        "2026-10-23T23:38:51Z editorial review round 2: 4 final versions pass with notes; metadata written; run completed (nothing published)"
       ],
       "rejected_drafts": [
         {
@@ -487,7 +494,23 @@
           "reason": "ending cut ('THAT IS THE WAY IT'); emoji over Jessica's face",
           "superseded_by": "04_chopstick_hoops_v2"
         }
-      ]
+      ],
+      "failed_renders": [
+        {
+          "path": "output/test-run-1-snack-wars/clips/04_chopstick_hoops_v2.mp4",
+          "sha256": "41afa496e5cc0297a7753bc18b8b7afcbbefe5cae2aa1e6ad3d2f49176da76b7",
+          "reason": "truncated: container restarted during render (moov atom not found); kept, not delivered",
+          "superseded_by": "04_chopstick_hoops_v3"
+        }
+      ],
+      "result": {
+        "candidates_evaluated": 10,
+        "selected": 4,
+        "rejected_candidates": 6,
+        "clips_completed": 4,
+        "draft_renders_rejected_in_review": 5,
+        "failed_renders": 1
+      }
     }
   ],
   "clips": [
@@ -1105,6 +1128,330 @@
         "status": "PENDING",
         "status_checked_at": "2026-10-24",
         "verified_published": false
+      }
+    },
+    {
+      "id": "snack-wars-01_seal_impression_guess_v3",
+      "source_id": "src-snack-wars",
+      "run_id": "run-test-1-snack-wars",
+      "name": "01_seal_impression_guess_v3",
+      "candidate_id": "cand-seal",
+      "score": 88,
+      "segments_src": [
+        [
+          113.9,
+          139.1
+        ]
+      ],
+      "payoff_src": 117.0,
+      "duration_s": 25.22,
+      "pipeline": "make_clip v2 + group framing, 1080x960 window, captions below video, emoji_y",
+      "files": {
+        "master": {
+          "path": "output/test-run-1-snack-wars/clips/01_seal_impression_guess_v3.mp4",
+          "sha256": "866089ef54de205443b00ef84f70c4be3547c741e66aeb83098c038634f1142f",
+          "size_bytes": 21000006,
+          "in_repo": true,
+          "note": "final deliverable (crf 18), committed to the repo"
+        }
+      },
+      "titles": {
+        "recommended": "Jessica Biel Did a Seal Noise. John Cena Guessed Something Else 😂",
+        "alternatives": [
+          "John Cena's Guess Was NOT a Seal 💀",
+          "\"That Is Legit the Funniest Thing\" - John Cena Can't Stop Laughing"
+        ]
+      },
+      "description": "Jessica Biel's seal impression gets the worst possible guess from John Cena - and neither of them recovers. From LADbible's Snack Wars Showdown.",
+      "hashtags": [
+        "#johncena",
+        "#jessicabiel",
+        "#snackwars",
+        "#funny",
+        "#shorts"
+      ],
+      "tags": [
+        "john cena",
+        "jessica biel",
+        "snack wars",
+        "ladbible",
+        "seal impression",
+        "funny interview"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.0,
+          "duration_s": 25.22
+        },
+        "editorial": "pass_with_notes: hook at 0 s, speaker of key line verified visually (John), both faces in two-shots, full ending; mild innuendo; one caption line ASR-unverified",
+        "review_doc": "output/test-run-1-snack-wars/metadata/editorial_review.md",
+        "checked_at": "2026-10-23",
+        "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_published",
+        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+      }
+    },
+    {
+      "id": "snack-wars-02_salt_licorice_warning_v2",
+      "source_id": "src-snack-wars",
+      "run_id": "run-test-1-snack-wars",
+      "name": "02_salt_licorice_warning_v2",
+      "candidate_id": "cand-salt-licorice",
+      "score": 85,
+      "segments_src": [
+        [
+          215.8,
+          217.7
+        ],
+        [
+          176.9,
+          185.9
+        ],
+        [
+          189.3,
+          202.9
+        ],
+        [
+          212.2,
+          214.8
+        ],
+        [
+          215.8,
+          228.7
+        ],
+        [
+          250.6,
+          255.5
+        ]
+      ],
+      "payoff_src": 215.9,
+      "duration_s": 44.91,
+      "pipeline": "make_clip v2 + group framing, 1080x960 window, captions below video, emoji_y",
+      "files": {
+        "master": {
+          "path": "output/test-run-1-snack-wars/clips/02_salt_licorice_warning_v2.mp4",
+          "sha256": "52072093a5cf6c6bf36d4c185b7e86c9a2ddee5038c960a8e21ef9e463752687",
+          "size_bytes": 53129251,
+          "in_repo": true,
+          "note": "final deliverable (crf 18), committed to the repo"
+        }
+      },
+      "titles": {
+        "recommended": "She Warned John Cena Not To Eat It 🧂",
+        "alternatives": [
+          "John Cena Tries Salt Licorice After Jessica Biel Said 'Hard No'",
+          "\"An Abomination of a Candy\" 💀"
+        ]
+      },
+      "description": "Jessica Biel tastes salt licorice, begs John Cena not to try it - he does anyway. \"It's like an Epsom salt bath in your mouth.\"",
+      "hashtags": [
+        "#johncena",
+        "#jessicabiel",
+        "#saltlicorice",
+        "#tastetest",
+        "#shorts"
+      ],
+      "tags": [
+        "john cena",
+        "jessica biel",
+        "salt licorice",
+        "taste test",
+        "snack wars",
+        "ladbible"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.2,
+          "duration_s": 44.91
+        },
+        "editorial": "pass_with_notes: clear setup/warning/payoff, profanity bleeped, full ending; inferred caption fixes JOHN/SALT LICK unverified by ear",
+        "review_doc": "output/test-run-1-snack-wars/metadata/editorial_review.md",
+        "checked_at": "2026-10-23",
+        "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_published",
+        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+      }
+    },
+    {
+      "id": "snack-wars-03_cup_flip_strategy_v2",
+      "source_id": "src-snack-wars",
+      "run_id": "run-test-1-snack-wars",
+      "name": "03_cup_flip_strategy_v2",
+      "candidate_id": "cand-cup-flip",
+      "score": 78,
+      "segments_src": [
+        [
+          256.9,
+          263.2
+        ],
+        [
+          267.0,
+          280.7
+        ],
+        [
+          285.4,
+          293.0
+        ],
+        [
+          295.6,
+          309.4
+        ]
+      ],
+      "payoff_src": 299.5,
+      "duration_s": 41.41,
+      "pipeline": "make_clip v2 + group framing, 1080x960 window, captions below video, emoji_y",
+      "files": {
+        "master": {
+          "path": "output/test-run-1-snack-wars/clips/03_cup_flip_strategy_v2.mp4",
+          "sha256": "aa2511d058ef44e39259bdc9047c46c653b1820e9613eb9898f07a104ac9d29d",
+          "size_bytes": 37790822,
+          "in_repo": true,
+          "note": "final deliverable (crf 18), committed to the repo"
+        }
+      },
+      "titles": {
+        "recommended": "John Cena Had a \"Strategy\"... 😂",
+        "alternatives": [
+          "Jessica Biel Beat John Cena 25 to 1",
+          "\"I Miscalculated My Efficiencies\" - John Cena"
+        ]
+      },
+      "description": "Cup-flip showdown: John Cena announces he has a strategy. The final score: 25 to 1.",
+      "hashtags": [
+        "#johncena",
+        "#jessicabiel",
+        "#cupflip",
+        "#snackwars",
+        "#shorts"
+      ],
+      "tags": [
+        "john cena",
+        "jessica biel",
+        "cup flip",
+        "game",
+        "snack wars",
+        "ladbible"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.7,
+          "duration_s": 41.41
+        },
+        "editorial": "pass_with_notes: setup/payoff clear, full ending; left score graphic and WINNER graphic cut by crop; 'WIN!' ASR-uncertain",
+        "review_doc": "output/test-run-1-snack-wars/metadata/editorial_review.md",
+        "checked_at": "2026-10-23",
+        "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_published",
+        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+      }
+    },
+    {
+      "id": "snack-wars-04_chopstick_hoops_v3",
+      "source_id": "src-snack-wars",
+      "run_id": "run-test-1-snack-wars",
+      "name": "04_chopstick_hoops_v3",
+      "candidate_id": "cand-chopstick-hoops",
+      "score": 78,
+      "segments_src": [
+        [
+          516.6,
+          522.0
+        ],
+        [
+          531.6,
+          547.0
+        ],
+        [
+          551.8,
+          554.4
+        ],
+        [
+          562.3,
+          573.2
+        ],
+        [
+          575.9,
+          591.85
+        ]
+      ],
+      "payoff_src": 572.6,
+      "duration_s": 50.26,
+      "pipeline": "make_clip v2 + group framing, 1080x960 window, captions below video, emoji_y",
+      "files": {
+        "master": {
+          "path": "output/test-run-1-snack-wars/clips/04_chopstick_hoops_v3.mp4",
+          "sha256": "f1c0fff1d6da051eaccbbb3b1a41b56a2cf2d63f7b73891ce6898e2b372ee3c9",
+          "size_bytes": 42959697,
+          "in_repo": true,
+          "note": "final deliverable (crf 18), committed to the repo"
+        }
+      },
+      "titles": {
+        "recommended": "No Hands, One Chopstick: John Cena vs Jessica Biel 🥢",
+        "alternatives": [
+          "Jessica Biel Got Five. John Cena Got... 😵",
+          "\"What the Fudge and Mustard?\" - John Cena"
+        ]
+      },
+      "description": "Hook as many hoops as you can with a chopstick in your mouth - no hands. Jessica Biel gets five; John Cena compares it to a claw machine.",
+      "hashtags": [
+        "#johncena",
+        "#jessicabiel",
+        "#challenge",
+        "#snackwars",
+        "#shorts"
+      ],
+      "tags": [
+        "john cena",
+        "jessica biel",
+        "chopstick challenge",
+        "game",
+        "snack wars",
+        "ladbible"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.4,
+          "duration_s": 50.26
+        },
+        "editorial": "pass_with_notes: rules then payoff, full ending; emoji briefly over score counter; WINNER graphic cut by crop",
+        "review_doc": "output/test-run-1-snack-wars/metadata/editorial_review.md",
+        "checked_at": "2026-10-23",
+        "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_published",
+        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
       }
     }
   ],

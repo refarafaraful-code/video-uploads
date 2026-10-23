@@ -3,3 +3,10 @@ clipper/models/parakeet/
 projects/*/source.mp4
 projects/*/clips/
 __pycache__/
+# test run 1: rendered drafts rejected in review / failed render - kept on disk, recorded in the registry, not deliverables
+output/test-run-1-snack-wars/clips/01_seal_impression_guess.mp4
+output/test-run-1-snack-wars/clips/01_seal_impression_guess_v2.mp4
+output/test-run-1-snack-wars/clips/02_salt_licorice_warning.mp4
+output/test-run-1-snack-wars/clips/03_cup_flip_strategy.mp4
+output/test-run-1-snack-wars/clips/04_chopstick_hoops.mp4
+output/test-run-1-snack-wars/clips/04_chopstick_hoops_v2.mp4
