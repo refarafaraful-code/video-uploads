@@ -1,0 +1,818 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-23T22:00:36Z",
+  "channel": {
+    "name": "ClippingMaster",
+    "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
+    "metricool_blog_id": "7616437"
+  },
+  "publishing": {
+    "automation_authorized": true,
+    "authorization_note": "Owner asked (2026-10-24, chat) for clips to be uploaded via Metricool whenever they are finished and to schedule them for US hours. Revocable by the owner at any time.",
+    "default_schedule": "one Short per day, 15:00 America/New_York, after the last scheduled day"
+  },
+  "quality": {
+    "candidate_score_threshold": 75,
+    "threshold_history": [
+      {
+        "date": "2026-10-24",
+        "value": 75,
+        "reason": "initial value from CLIPPINGMASTER instructions"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-mini-lambo",
+      "title": "SURPRISING MINI JAKE PAUL WITH A MINI LAMBORGHINI!!",
+      "creator": "Jake Paul",
+      "campaign": null,
+      "youtube_url": "https://youtu.be/FDFvxb_JFig",
+      "filename": "SURPRISING.MINI.JAKE.PAUL.WITH.A.MINI.LAMBORGHINI._1080p60.mp4",
+      "release": {
+        "tag": "jake",
+        "asset_id": 669258503,
+        "draft": true
+      },
+      "sha256": "251798d6da5fd70a76ed5506cda47031cedef703721265c5c82f23e9b290f094",
+      "size_bytes": 231720010,
+      "duration_s": 812.606,
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.94,
+      "project_dir": "projects/mini-lambo",
+      "first_processed": "2026-10-23",
+      "runs": [
+        "run-2026-10-23-a"
+      ],
+      "status": "processed",
+      "candidates_considered_not_used": [
+        {
+          "approx_src": [
+            359,
+            375
+          ],
+          "summary": "Jake: 'I'm going to eat a pizza while boxing him'",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            297,
+            333
+          ],
+          "summary": "Apollo has Instagram followers / Athena might be pregnant",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            256,
+            270
+          ],
+          "summary": "drift cart / 'insta karma' moment",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            522,
+            556
+          ],
+          "summary": "Rainbow car broken after jump",
+          "scored": false
+        }
+      ],
+      "notes": "Downloaded from the owner's release asset after YouTube blocked cloud downloads. sha256 matches the GitHub asset digest."
+    },
+    {
+      "id": "src-kidnapped-wife",
+      "title": "MY BROTHER KIDNAPPED MY WIFE (standoff)",
+      "creator": "Jake Paul",
+      "campaign": null,
+      "youtube_url": null,
+      "filename": "MY.BROTHER.KIDNAPPED.MY.WIFE.standoff._720p60.mp4",
+      "release": {
+        "tag": "v2",
+        "asset_id": 670234559,
+        "draft": true
+      },
+      "sha256": "576f072a216e9de0a62b7f09729471b51f5d81707fbec27786769ff40ec15073",
+      "size_bytes": 285931918,
+      "duration_s": 1714.794,
+      "width": 1280,
+      "height": 720,
+      "fps": 59.94,
+      "project_dir": "projects/kidnapped-wife",
+      "first_processed": "2026-10-23",
+      "runs": [
+        "run-2026-10-23-b"
+      ],
+      "status": "processed",
+      "candidates_considered_not_used": [
+        {
+          "approx_src": [
+            47,
+            160
+          ],
+          "summary": "merch-gun wake-up pranks on the house",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            1285,
+            1318
+          ],
+          "summary": "proposal with a Jake Paul fidget spinner",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            806,
+            870
+          ],
+          "summary": "Logan arrives / brother-in-law banter",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            457,
+            530
+          ],
+          "summary": "Uncle Cade's photoshop plan for the fake-deletion prank",
+          "scored": false
+        },
+        {
+          "approx_src": [
+            1100,
+            1160
+          ],
+          "summary": "signing Ayla to Team 10 as 'revenge'",
+          "scored": false
+        }
+      ],
+      "notes": "720p source: vertical crops are upscaled ~2x and slightly soft. sha256 matches the GitHub asset digest. Transcript contains ASR errors fixed via spec 'replace' (Erica/Logan/Cade)."
+    }
+  ],
+  "runs": [
+    {
+      "id": "run-2026-10-23-a",
+      "date": "2026-10-23",
+      "source_ids": [
+        "src-mini-lambo"
+      ],
+      "status": "completed",
+      "clip_ids": [
+        "mini-lambo-01_mini_lambo_reveal",
+        "mini-lambo-02_chad_soccer_mom",
+        "mini-lambo-03_rip_nathan_fortnite",
+        "mini-lambo-04_santa_lambo_wish"
+      ],
+      "notes": "Historical run before the registry existed. Candidates were chosen editorially from the transcript; no numeric scores were recorded."
+    },
+    {
+      "id": "run-2026-10-23-b",
+      "date": "2026-10-23",
+      "source_ids": [
+        "src-kidnapped-wife"
+      ],
+      "status": "completed",
+      "clip_ids": [
+        "kidnapped-wife-01_logan_kidnapped_erica",
+        "kidnapped-wife-02_shopping_cart_stairs",
+        "kidnapped-wife-03_hostage_exchange",
+        "kidnapped-wife-04_fake_channel_deleted",
+        "kidnapped-wife-05_jealous_nick"
+      ],
+      "notes": "Historical run before the registry existed. Candidates were chosen editorially from the transcript; no numeric scores were recorded."
+    }
+  ],
+  "clips": [
+    {
+      "id": "mini-lambo-01_mini_lambo_reveal",
+      "source_id": "src-mini-lambo",
+      "run_id": "run-2026-10-23-a",
+      "name": "01_mini_lambo_reveal",
+      "segments_src": [
+        [
+          716.3,
+          721.0
+        ],
+        [
+          659.4,
+          676.4
+        ],
+        [
+          680.9,
+          699.0
+        ],
+        [
+          700.5,
+          723.3
+        ]
+      ],
+      "payoff_src": 684.4,
+      "duration_s": 62.613,
+      "pipeline": "make_clip v1 (fit layout, neon reveal captions)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/01_mini_lambo_reveal.mp4",
+          "sha256": "e761155707be97c61ce6802fb79608eaf8111f417c01ca04bfe84c372e935206",
+          "size_bytes": 76581244,
+          "in_repo": false,
+          "note": "ephemeral session copy; delivered to the owner in chat on 2026-10-23"
+        }
+      },
+      "titles": {
+        "recommended": "Jake Paul Surprised a 3 Year Old With a Lamborghini 😱 #shorts",
+        "alternatives": [
+          "He Promised a 3 Year Old a Lamborghini... Then Delivered",
+          "\"I Think It's Dead\" - Mini Lambo Surprise Almost Fails"
+        ]
+      },
+      "status": "delivered",
+      "qc": {
+        "status": "pass_with_notes",
+        "automated": {
+          "errors": [],
+          "warnings": [
+            "duration 62.6s > 60s (allowed, but long for a Short)"
+          ],
+          "loudness_lufs": -9.3,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "manual by owner",
+        "status": "owner reports uploaded",
+        "verified": false
+      }
+    },
+    {
+      "id": "mini-lambo-02_chad_soccer_mom",
+      "source_id": "src-mini-lambo",
+      "run_id": "run-2026-10-23-a",
+      "name": "02_chad_soccer_mom",
+      "segments_src": [
+        [
+          213.9,
+          233.3
+        ],
+        [
+          246.0,
+          254.0
+        ]
+      ],
+      "payoff_src": 223.9,
+      "duration_s": 27.413,
+      "pipeline": "make_clip v1 (fit layout, neon reveal captions)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/02_chad_soccer_mom.mp4",
+          "sha256": "df4080439d897071431d106fb66eab32934a695384da554447226d6428d9d139",
+          "size_bytes": 33160800,
+          "in_repo": false,
+          "note": "ephemeral session copy; delivered to the owner in chat on 2026-10-23"
+        }
+      },
+      "titles": {
+        "recommended": "He Rejected Jake Paul's Gift Car 💀 #shorts",
+        "alternatives": [
+          "Jake Paul Bought Him a Car... He Bought a 'Mom Car' Instead",
+          "\"You Look Like a Soccer Mom\""
+        ]
+      },
+      "status": "delivered",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -9.2,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "manual by owner",
+        "status": "owner reports uploaded",
+        "verified": false
+      }
+    },
+    {
+      "id": "mini-lambo-03_rip_nathan_fortnite",
+      "source_id": "src-mini-lambo",
+      "run_id": "run-2026-10-23-a",
+      "name": "03_rip_nathan_fortnite",
+      "segments_src": [
+        [
+          392.2,
+          412.7
+        ],
+        [
+          415.0,
+          417.9
+        ]
+      ],
+      "payoff_src": 410.6,
+      "duration_s": 23.402,
+      "pipeline": "make_clip v1 (fit layout, neon reveal captions)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/03_rip_nathan_fortnite.mp4",
+          "sha256": "ca38f97554d44bf9607d7c5d7c0aa51c9a14a5a92c9089591d977f4825dcdbf8",
+          "size_bytes": 18090183,
+          "in_repo": false,
+          "note": "ephemeral session copy; delivered to the owner in chat on 2026-10-23"
+        }
+      },
+      "titles": {
+        "recommended": "Jake Paul's Message To Every Gamer 😂 #shorts",
+        "alternatives": [
+          "He Used To Film Vlogs. Now Fortnite Only.",
+          "Rest In Peace, Nathan 😭"
+        ]
+      },
+      "status": "delivered",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -9.0,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "manual by owner",
+        "status": "owner reports uploaded",
+        "verified": false
+      }
+    },
+    {
+      "id": "mini-lambo-04_santa_lambo_wish",
+      "source_id": "src-mini-lambo",
+      "run_id": "run-2026-10-23-a",
+      "name": "04_santa_lambo_wish",
+      "segments_src": [
+        [
+          58.4,
+          69.4
+        ],
+        [
+          70.5,
+          77.6
+        ],
+        [
+          85.8,
+          101.9
+        ],
+        [
+          107.3,
+          108.4
+        ],
+        [
+          114.6,
+          125.4
+        ]
+      ],
+      "payoff_src": 107.5,
+      "duration_s": 46.101,
+      "pipeline": "make_clip v1 (fit layout, neon reveal captions)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/04_santa_lambo_wish.mp4",
+          "sha256": "2c6778c5d4738572d6a490caaa4500e55a9ba9fbe13c8a1ec9ae380c0f7299fa",
+          "size_bytes": 41215065,
+          "in_repo": false,
+          "note": "ephemeral session copy; delivered to the owner in chat on 2026-10-23"
+        }
+      },
+      "titles": {
+        "recommended": "This Kid Asked Santa For a Lamborghini 🎅 #shorts",
+        "alternatives": [
+          "He Asked Santa For a Lambo... and Got One",
+          "\"That Day Is... TODAY!\""
+        ]
+      },
+      "status": "delivered",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -8.9,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "manual by owner",
+        "status": "owner reports uploaded",
+        "verified": false
+      }
+    },
+    {
+      "id": "kidnapped-wife-01_logan_kidnapped_erica",
+      "source_id": "src-kidnapped-wife",
+      "run_id": "run-2026-10-23-b",
+      "name": "01_logan_kidnapped_erica",
+      "segments_src": [
+        [
+          971.0,
+          972.9
+        ],
+        [
+          959.4,
+          976.4
+        ],
+        [
+          991.2,
+          1007.2
+        ]
+      ],
+      "payoff_src": 971.1,
+      "duration_s": 34.901,
+      "pipeline": "make_clip v2 (face-tracked 4:5.6 window, highlight captions, emojis, RGB glitch, mood bed)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/v2/01_logan_kidnapped_erica.mp4",
+          "sha256": "19421f78be2bc1462e5f0faaeb67694e07b30bdf95d2cbd5480435c27f59fc3e",
+          "size_bytes": 62277724,
+          "in_repo": false,
+          "note": "ephemeral session copy (crf 18); delivered to the owner in chat on 2026-10-23"
+        },
+        "publish": {
+          "path": "shorts-v2/01_logan_kidnapped_erica.mp4",
+          "sha256": "1b96b111a5b7fc84e7d5c2c070de2029d25700900bab503d6df7fc1c263f81ca",
+          "size_bytes": 35815171,
+          "in_repo": true,
+          "note": "crf 21 re-encode for GitHub/Metricool"
+        }
+      },
+      "titles": {
+        "recommended": "Logan Paul Kidnapped Jake Paul's Wife 😱 #shorts",
+        "alternatives": [
+          "They Put Jake Paul's Wife In The Trunk",
+          "\"Erica's In The Trunk!\""
+        ]
+      },
+      "status": "scheduled",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -9.8,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "6600568134462555637",
+        "scheduled_for": "2026-10-24T15:00:00 America/New_York",
+        "status": "PENDING",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
+      }
+    },
+    {
+      "id": "kidnapped-wife-02_shopping_cart_stairs",
+      "source_id": "src-kidnapped-wife",
+      "run_id": "run-2026-10-23-b",
+      "name": "02_shopping_cart_stairs",
+      "segments_src": [
+        [
+          284.0,
+          312.0
+        ],
+        [
+          324.9,
+          328.3
+        ]
+      ],
+      "payoff_src": 295.0,
+      "duration_s": 31.402,
+      "pipeline": "make_clip v2 (face-tracked 4:5.6 window, highlight captions, emojis, RGB glitch, mood bed)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/v2/02_shopping_cart_stairs.mp4",
+          "sha256": "fbb5481938920bccdb685276494ce263ff58d74a64d4ccd7e1ce3b0317350de6",
+          "size_bytes": 53460515,
+          "in_repo": false,
+          "note": "ephemeral session copy (crf 18); delivered to the owner in chat on 2026-10-23"
+        },
+        "publish": {
+          "path": "shorts-v2/02_shopping_cart_stairs.mp4",
+          "sha256": "494f3fbe008d42e0ca8145bd87659896d0bfa4c6a24a7b5844edf8e3bd11cfec",
+          "size_bytes": 29784343,
+          "in_repo": true,
+          "note": "crf 21 re-encode for GitHub/Metricool"
+        }
+      },
+      "titles": {
+        "recommended": "He Rode a Shopping Cart Down The Stairs 💀 #shorts",
+        "alternatives": [
+          "It Was At This Moment... He Knew",
+          "Shopping Cart vs Staircase"
+        ]
+      },
+      "status": "scheduled",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -10.4,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "2205981751520021054",
+        "scheduled_for": "2026-10-25T15:00:00 America/New_York",
+        "status": "PENDING",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
+      }
+    },
+    {
+      "id": "kidnapped-wife-03_hostage_exchange",
+      "source_id": "src-kidnapped-wife",
+      "run_id": "run-2026-10-23-b",
+      "name": "03_hostage_exchange",
+      "segments_src": [
+        [
+          1359.0,
+          1372.0
+        ],
+        [
+          1373.6,
+          1389.2
+        ],
+        [
+          1406.3,
+          1421.0
+        ]
+      ],
+      "payoff_src": 1373.7,
+      "duration_s": 43.306,
+      "pipeline": "make_clip v2 (face-tracked 4:5.6 window, highlight captions, emojis, RGB glitch, mood bed)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/v2/03_hostage_exchange.mp4",
+          "sha256": "c656a1266594a1bea315187357bd18057c3b21571443ab2a8b0ce9e480eb7469",
+          "size_bytes": 69457574,
+          "in_repo": false,
+          "note": "ephemeral session copy (crf 18); delivered to the owner in chat on 2026-10-23"
+        },
+        "publish": {
+          "path": "shorts-v2/03_hostage_exchange.mp4",
+          "sha256": "dbb3e0ded61215d6737b992ac6d6d60941ee86da427f16c63ea7ebd97dca8ab5",
+          "size_bytes": 39326200,
+          "in_repo": true,
+          "note": "crf 21 re-encode for GitHub/Metricool"
+        }
+      },
+      "titles": {
+        "recommended": "Hostage Exchange Gone Wrong 🤬 #shorts",
+        "alternatives": [
+          "\"Put My Wife Down!\"",
+          "Jake vs Logan: The Parking Garage Standoff"
+        ]
+      },
+      "status": "scheduled",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -10.0,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-4975307741114777342",
+        "scheduled_for": "2026-10-26T15:00:00 America/New_York",
+        "status": "PENDING",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
+      }
+    },
+    {
+      "id": "kidnapped-wife-04_fake_channel_deleted",
+      "source_id": "src-kidnapped-wife",
+      "run_id": "run-2026-10-23-b",
+      "name": "04_fake_channel_deleted",
+      "segments_src": [
+        [
+          550.6,
+          556.3
+        ],
+        [
+          566.0,
+          574.4
+        ],
+        [
+          590.0,
+          596.0
+        ],
+        [
+          608.5,
+          610.6
+        ],
+        [
+          632.1,
+          638.1
+        ],
+        [
+          638.6,
+          650.6
+        ]
+      ],
+      "payoff_src": 648.6,
+      "duration_s": 40.213,
+      "pipeline": "make_clip v2 (face-tracked 4:5.6 window, highlight captions, emojis, RGB glitch, mood bed)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/v2/04_fake_channel_deleted.mp4",
+          "sha256": "48005b851f7049b33cb88a6828a7b4e600c2a0bf0e9cfa708c8f6c7563b51f14",
+          "size_bytes": 62945913,
+          "in_repo": false,
+          "note": "ephemeral session copy (crf 18); delivered to the owner in chat on 2026-10-23"
+        },
+        "publish": {
+          "path": "shorts-v2/04_fake_channel_deleted.mp4",
+          "sha256": "bbf1aeea41cabdda7f7385fbd0c77b977b43a1f7e85d816393dd01fff4c40d8d",
+          "size_bytes": 32759588,
+          "in_repo": true,
+          "note": "crf 21 re-encode for GitHub/Metricool"
+        }
+      },
+      "titles": {
+        "recommended": "We Told Her Her Channel Got Deleted 😨 #shorts",
+        "alternatives": [
+          "Fake 'Channel Deleted' Prank On Erica",
+          "Her Channel Got Deleted... Or Did It?"
+        ]
+      },
+      "status": "scheduled",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -10.4,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-2228738609093914757",
+        "scheduled_for": "2026-10-27T15:00:00 America/New_York",
+        "status": "PENDING",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
+      }
+    },
+    {
+      "id": "kidnapped-wife-05_jealous_nick",
+      "source_id": "src-kidnapped-wife",
+      "run_id": "run-2026-10-23-b",
+      "name": "05_jealous_nick",
+      "segments_src": [
+        [
+          367.1,
+          386.2
+        ],
+        [
+          407.8,
+          419.4
+        ]
+      ],
+      "payoff_src": 418.2,
+      "duration_s": 30.72,
+      "pipeline": "make_clip v2 (face-tracked 4:5.6 window, highlight captions, emojis, RGB glitch, mood bed)",
+      "score": null,
+      "files": {
+        "master": {
+          "path": "/home/user/clips/v2/05_jealous_nick.mp4",
+          "sha256": "296c4f60dafab308dc09cea70617606973b70934a006304bc87e7e51d17bcc14",
+          "size_bytes": 52013595,
+          "in_repo": false,
+          "note": "ephemeral session copy (crf 18); delivered to the owner in chat on 2026-10-23"
+        },
+        "publish": {
+          "path": "shorts-v2/05_jealous_nick.mp4",
+          "sha256": "cb3109e4883d395baa77f1dcc9358e7f5ba97a22758b4764ca545cbeaa3bc44b",
+          "size_bytes": 28164592,
+          "in_repo": true,
+          "note": "crf 21 re-encode for GitHub/Metricool"
+        }
+      },
+      "titles": {
+        "recommended": "He Thinks She's Using Jake Paul For Fame 🤨 #shorts",
+        "alternatives": [
+          "\"A Jealous Little British Elvis Presley\"",
+          "Nick Thinks Erica Is Using Jake"
+        ]
+      },
+      "status": "scheduled",
+      "qc": {
+        "status": "pass",
+        "automated": {
+          "errors": [],
+          "warnings": [],
+          "loudness_lufs": -10.6,
+          "black_segments": 0,
+          "freeze_segments": 0,
+          "silent_segments": 0
+        },
+        "visual_review": "contact-sheet frame review at render time (2026-10-23)",
+        "checked_at": "2026-10-24"
+      },
+      "publish": {
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-8815994213356057287",
+        "scheduled_for": "2026-10-28T15:00:00 America/New_York",
+        "status": "PENDING",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
+      }
+    }
+  ],
+  "non_production": [
+    {
+      "what": "style reference",
+      "filename": "The_Rookie_Season_5_2022__It_s_a_girl.__Harper_s_home_birth_gets_interrupted_720p.mp4",
+      "note": "Owner-supplied example of the desired editing style (captions/SFX/grade). Not a source; never clip it."
+    },
+    {
+      "what": "pipeline test render",
+      "name": "demo_turn_it_down",
+      "note": "22 s test cut from the style reference on 2026-10-23, sent to the owner as a style demo, local file since deleted. Not for publishing."
+    }
+  ],
+  "performance": []
+}
