@@ -1,15 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T22:00:36Z",
+  "updated_at": "2026-10-23T22:26:15Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
     "metricool_blog_id": "7616437"
   },
   "publishing": {
-    "automation_authorized": true,
-    "authorization_note": "Owner asked (2026-10-24, chat) for clips to be uploaded via Metricool whenever they are finished and to schedule them for US hours. Revocable by the owner at any time.",
-    "default_schedule": "one Short per day, 15:00 America/New_York, after the last scheduled day"
+    "mode": "confirm_each_batch",
+    "standing_authorization": false,
+    "default_behavior": "Produce and QC clips, send them with metadata, then ask the owner whether to schedule this batch. Schedule only after an explicit yes for that batch.",
+    "default_schedule_when_approved": "one Short per day, 15:00 America/New_York, after the last scheduled day",
+    "history": [
+      {
+        "date": "2026-10-24",
+        "event": "Owner said Claude may upload clips via Metricool whenever they are finished (pre-dates CLIPPINGMASTER policy). The 5 kidnapped-wife clips were scheduled on the owner's explicit request."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "CLIPPINGMASTER §14 requires explicit authorization; during the audit the default was set to per-batch confirmation. A standing authorization must be stated explicitly by the owner and recorded here."
+      }
+    ]
   },
   "quality": {
     "candidate_score_threshold": 75,
@@ -80,7 +91,13 @@
           "scored": false
         }
       ],
-      "notes": "Downloaded from the owner's release asset after YouTube blocked cloud downloads. sha256 matches the GitHub asset digest."
+      "notes": "Downloaded from the owner's release asset after YouTube blocked cloud downloads. sha256 matches the GitHub asset digest.",
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-mini-lambo.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 6542,
+        "item_s": 0.1242
+      }
     },
     {
       "id": "src-kidnapped-wife",
@@ -148,7 +165,13 @@
           "scored": false
         }
       ],
-      "notes": "720p source: vertical crops are upscaled ~2x and slightly soft. sha256 matches the GitHub asset digest. Transcript contains ASR errors fixed via spec 'replace' (Erica/Logan/Cade)."
+      "notes": "720p source: vertical crops are upscaled ~2x and slightly soft. sha256 matches the GitHub asset digest. Transcript contains ASR errors fixed via spec 'replace' (Erica/Logan/Cade).",
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-kidnapped-wife.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 13829,
+        "item_s": 0.1242
+      }
     }
   ],
   "runs": [

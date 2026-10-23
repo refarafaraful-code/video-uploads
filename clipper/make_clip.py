@@ -324,6 +324,9 @@ def windows(times, d):
 # ---------------------------------------------------------------- render
 
 def render(spec, clip, outdir):
+    out = os.path.join(outdir, clip["name"] + ".mp4")
+    if os.path.exists(out):
+        raise SystemExit(f"{out} already exists - finished clips are never overwritten; give the new version a new name")
     src, segs = spec["source"], clip["segments"]
     words = load_words(spec)
     wout, junctions, total = build_timeline(segs, words)

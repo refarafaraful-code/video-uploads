@@ -2,6 +2,19 @@
 
 Newest first. One entry per production run or system change. The machine-readable record is `production_registry.json`.
 
+## 2026-10-24 — audit of the production system (no clips produced, nothing published)
+- Found and fixed: trimmed/re-encoded copies of a processed source were classified `new` (hash/duration only).
+  Added chromaprint audio fingerprints (windowed alignment) + own-clip hash check; stored fingerprints for both
+  sources (`production_data/fingerprints/`, additive registry change). Duplicate suite: 11/11 pass.
+- Added `registry.py register-source` (refuses duplicates), session-only file notes in `verify`.
+- `qc.py`: black/frozen/silent stretches and duplicate outputs now give `needs_review` (were warnings); 9 synthetic
+  defect cases behave as expected; all 14 real files pass.
+- `make_clip.py`: refuses to overwrite an existing output (tested).
+- Publishing: default changed to per-batch confirmation (CLIPPINGMASTER §14); `.claude/settings.json` adds an
+  approval prompt for Metricool scheduling tools. Existing 5 scheduled posts untouched.
+- `CLAUDE.md` now imports `CLIPPINGMASTER.md` with `@` (verified against Claude Code docs; not yet observed in a
+  fresh session).
+
 ## 2026-10-24 — system setup (no clips produced)
 - Saved the owner's standing instructions to `production_data/CLIPPINGMASTER.md` and linked them from `CLAUDE.md`.
 - Created `production_registry.json` (atomic writes via `clipper/registry.py`), `clipper/qc.py` (automated technical QC).

@@ -2,17 +2,23 @@
 
 usage: python3 clipper/qc.py CLIP.mp4 [CLIP2.mp4 ...]   -> JSON per clip; exit 1 if any clip fails
 
-status: pass | pass_with_notes (warnings) | fail (hard errors)
+status: pass | pass_with_notes (minor notes) | needs_review (black/frozen/silent stretches, duplicate of a
+registered clip) | fail (unreadable, wrong format, no audio, bad duration). Only pass / pass_with_notes may be delivered.
+
+This is TECHNICAL QC only. It does not judge caption accuracy, crop/framing, whether the hook and payoff land, or
+edit meaning - those need the frame review described in CLAUDE.md.
 """
-import json, re, subprocess, sys
+import json, os, re, subprocess, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import registry
 
 
 def run(args):
     return subprocess.run(args, capture_output=True, text=True)
 
 
-def qc(path):
-    errors, warnings, info = [], [], {}
+def qc(path, reg=None):
+    errors, review, warnings, info = [], [], [], {}
     p = run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels",
              "-of", "json", path])
     if p.returncode:
@@ -53,20 +59,31 @@ def qc(path):
     lufs = re.findall(r"I:\s+(-?[\d.]+) LUFS", log)
     info.update(black_segments=len(blacks), freeze_segments=len(freezes), silent_segments=len(silences))
     if blacks:
-        warnings.append("black frames at " + ", ".join(f"{float(s):.1f}-{float(e):.1f}s" for s, e in blacks[:5]))
+        review.append("black frames at " + ", ".join(f"{float(s):.1f}-{float(e):.1f}s" for s, e in blacks[:5]))
     if freezes:
-        warnings.append("frozen video at " + ", ".join(f"{float(s):.1f}s" for s in freezes[:5]))
+        review.append("frozen video at " + ", ".join(f"{float(s):.1f}s" for s in freezes[:5]))
     if silences:
-        warnings.append("silence >1.5s at " + ", ".join(f"{float(s):.1f}s" for s in silences[:5]))
+        review.append("silence >1.5s at " + ", ".join(f"{float(s):.1f}s" for s in silences[:5]))
+    if reg is not None:
+        digest = registry.sha256(path)
+        info["sha256"] = digest
+        for c in reg["clips"]:
+            for kind, f in c.get("files", {}).items():
+                if f.get("sha256") == digest and os.path.abspath(path) != os.path.abspath(os.path.join(registry.ROOT, f["path"])):
+                    review.append(f"identical to registered clip {c['id']} ({kind}) - duplicate output")
     if lufs:
         info["loudness_lufs"] = float(lufs[-1])
         if not -14 <= float(lufs[-1]) <= -6:
             warnings.append(f"loudness {lufs[-1]} LUFS (target about -9)")
-    status = "fail" if errors else ("pass_with_notes" if warnings else "pass")
-    return {"file": path, "status": status, "errors": errors, "warnings": warnings, **info}
+    status = "fail" if errors else "needs_review" if review else "pass_with_notes" if warnings else "pass"
+    return {"file": path, "status": status, "errors": errors, "needs_review": review, "warnings": warnings, **info}
 
 
 if __name__ == "__main__":
-    results = [qc(f) for f in sys.argv[1:]]
+    try:
+        reg = registry.load()
+    except FileNotFoundError:
+        reg = None
+    results = [qc(f, reg) for f in sys.argv[1:]]
     print(json.dumps(results, indent=1))
-    sys.exit(1 if any(r["status"] == "fail" for r in results) else 0)
+    sys.exit(1 if any(r["status"] in ("fail", "needs_review") for r in results) else 0)

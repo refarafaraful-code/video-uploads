@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "ask": [
+      "mcp__Metricool_Social_Media_Management__createScheduledPost",
+      "mcp__Metricool_Social_Media_Management__updateScheduledPost",
+      "mcp__Metricool_Social_Media_Management__createScheduledPostForReview",
+      "mcp__Metricool_Social_Media_Management__sendScheduledPostForReview"
+    ]
+  }
+}
