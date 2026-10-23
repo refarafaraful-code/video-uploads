@@ -1,0 +1,5 @@
+clipper/sfx/
+clipper/models/parakeet/
+projects/*/source.mp4
+projects/*/clips/
+__pycache__/

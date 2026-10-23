@@ -1,0 +1,28 @@
+{
+  "source": "source.mp4",
+  "words": "words.json",
+  "layout": "fit",
+  "watermark": "",
+  "clips": [
+    {"name": "01_mini_lambo_reveal",
+     "title": "JAKE PAUL GAVE A 3 YEAR OLD A LAMBORGHINI",
+     "segments": [[716.3, 721.0], [659.4, 676.4], [680.9, 699.0], [700.5, 723.3]],
+     "emphasis": ["LAMBO", "DEAD", "GOING", "WEE", "THREE"],
+     "payoff": 684.4},
+    {"name": "02_chad_soccer_mom",
+     "title": "HE REJECTED JAKE PAUL'S GIFT CAR",
+     "segments": [[213.9, 233.3], [246.0, 254.0]],
+     "emphasis": ["STOP", "SUCKS", "MOM"],
+     "payoff": 223.9},
+    {"name": "03_rip_nathan_fortnite",
+     "title": "JAKE PAUL'S MESSAGE TO EVERY GAMER",
+     "segments": [[392.2, 412.7], [415.0, 417.9]],
+     "emphasis": ["GAMER", "FORTNITE", "DREAMS"],
+     "payoff": 410.6},
+    {"name": "04_santa_lambo_wish",
+     "title": "HE ASKED SANTA FOR A LAMBORGHINI",
+     "segments": [[58.4, 69.4], [70.5, 77.6], [85.8, 101.9], [107.3, 108.4], [114.6, 125.4]],
+     "emphasis": ["LAMBORGHINI", "TODAY", "REPLICA"],
+     "payoff": 107.5}
+  ]
+}
