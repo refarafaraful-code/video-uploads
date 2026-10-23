@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T22:26:15Z",
+  "updated_at": "2026-10-23T22:57:49Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -172,6 +172,38 @@
         "items": 13829,
         "item_s": 0.1242
       }
+    },
+    {
+      "id": "src-snack-wars",
+      "title": "John Cena & Jessica Biel Go Head to Head in the Ultimate Snack Wars Showdown",
+      "creator": "unknown (features John Cena, Jessica Biel)",
+      "campaign": null,
+      "filename": "John.Cena.Jessica.Biel.Go.Head.to.Head.in.the.Ultimate.Snack.Wars_.Showdown_1080p.mp4",
+      "release": {
+        "tag": "v3",
+        "asset_id": 670617654
+      },
+      "sha256": "8e434ace51a9c74ed4e922a12760735d9a24ad6b4c84c6f3da68ef370709c8a2",
+      "size_bytes": 135429570,
+      "duration_s": 660.979,
+      "width": 1920,
+      "height": 1080,
+      "fps": 25.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-snack-wars.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 5317,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/snack-wars",
+      "first_processed": "2026-10-23",
+      "runs": [
+        "run-test-1-snack-wars"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new",
+      "local_path": "projects/snack-wars/source.mp4"
     }
   ],
   "runs": [
@@ -205,6 +237,226 @@
         "kidnapped-wife-05_jealous_nick"
       ],
       "notes": "Historical run before the registry existed. Candidates were chosen editorially from the transcript; no numeric scores were recorded."
+    },
+    {
+      "id": "run-test-1-snack-wars",
+      "date": "2026-10-23",
+      "type": "controlled_test",
+      "source_ids": [
+        "src-snack-wars"
+      ],
+      "status": "in_progress",
+      "clip_ids": [],
+      "candidates": [
+        {
+          "id": "cand-seal",
+          "approx_src": [
+            113.4,
+            138.6
+          ],
+          "summary": "Jessica's seal noise; John guesses 'That is me having sex'; both break down laughing; walrus debate; 'I'm going to remember this moment'",
+          "score": {
+            "hook": 23,
+            "curiosity": 16,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 88
+          },
+          "decision": "selected",
+          "reason": "Strong immediate hook (odd noise + card visible to viewer), unexpected guess, genuine laughter as payoff; self-contained in 25 s. Mild sexual innuendo noted."
+        },
+        {
+          "id": "cand-salt-licorice",
+          "approx_src": [
+            176.6,
+            255.0
+          ],
+          "summary": "Jessica tastes salt licorice ('hard no'), warns John not to; he tries anyway: 'Epsom salt bath in your mouth', 'abomination of a candy'",
+          "score": {
+            "hook": 20,
+            "curiosity": 18,
+            "payoff": 17,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 85
+          },
+          "decision": "selected",
+          "reason": "Clear setup -> warning -> he does it anyway -> vivid reactions; strong quotable lines."
+        },
+        {
+          "id": "cand-cup-flip",
+          "approx_src": [
+            256.9,
+            309.2
+          ],
+          "summary": "Cup-flip game: John announces 'I got a strategy', loses 1 vs 25, 'I miscalculated my efficiencies'",
+          "score": {
+            "hook": 17,
+            "curiosity": 15,
+            "payoff": 16,
+            "clarity": 13,
+            "pacing": 9,
+            "distinctiveness": 8,
+            "total": 78
+          },
+          "decision": "selected",
+          "reason": "Setup/payoff (confident strategy -> 1-25 loss) is easy to follow and visual; score graphic shows the result."
+        },
+        {
+          "id": "cand-chopstick-hoops",
+          "approx_src": [
+            516.6,
+            591.5
+          ],
+          "summary": "Mouth-chopstick hoop game: chaos, 'What the fudge and mustard', John ends on 0 vs Jessica 5, claw-machine comparison",
+          "score": {
+            "hook": 18,
+            "curiosity": 15,
+            "payoff": 15,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 78
+          },
+          "decision": "selected",
+          "reason": "Visually unusual physical comedy; distinct from the cup game (different action, John's own commentary)."
+        },
+        {
+          "id": "cand-movie-quiz",
+          "approx_src": [
+            355.0,
+            441.0
+          ],
+          "summary": "Movie-quote quiz (Taxi Driver, Terminator, Braveheart, Star Wars...)",
+          "score": {
+            "hook": 17,
+            "curiosity": 13,
+            "payoff": 12,
+            "clarity": 12,
+            "pacing": 7,
+            "distinctiveness": 8,
+            "total": 69
+          },
+          "decision": "rejected",
+          "reason": "Score 69: long and list-like, no single payoff; quotes are shown as source graphics, little to add editorially."
+        },
+        {
+          "id": "cand-wwe-theme-card",
+          "approx_src": [
+            36.0,
+            60.0
+          ],
+          "summary": "Card 'The time is now (John's WWE theme)' during the noise game",
+          "score": {
+            "hook": 17,
+            "curiosity": 12,
+            "payoff": 11,
+            "clarity": 11,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 68
+          },
+          "decision": "rejected",
+          "reason": "Score 68: payoff unclear and key line is uncertain in the ASR ('wrestling wife/life?') - risk of misquoting."
+        },
+        {
+          "id": "cand-snoring",
+          "approx_src": [
+            96.4,
+            108.4
+          ],
+          "summary": "Snoring noise; 'that's my poor wife'",
+          "score": {
+            "hook": 14,
+            "curiosity": 10,
+            "payoff": 12,
+            "clarity": 12,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 64
+          },
+          "decision": "rejected",
+          "reason": "Score 64: too slight on its own; overlaps the seal clip's game."
+        },
+        {
+          "id": "cand-celery-percy-pigs",
+          "approx_src": [
+            310.0,
+            512.0
+          ],
+          "summary": "Snack tastings: celery/peanut butter, pickles, Percy Pigs",
+          "score": {
+            "hook": 10,
+            "curiosity": 9,
+            "payoff": 9,
+            "clarity": 13,
+            "pacing": 6,
+            "distinctiveness": 6,
+            "total": 53
+          },
+          "decision": "rejected",
+          "reason": "Score 53: pleasant but no conflict or payoff."
+        },
+        {
+          "id": "cand-ending-banter",
+          "approx_src": [
+            614.0,
+            660.0
+          ],
+          "summary": "Wrap-up and 'I'm gonna beat you... physical violence' banter",
+          "score": {
+            "hook": 12,
+            "curiosity": 9,
+            "payoff": 9,
+            "clarity": 10,
+            "pacing": 7,
+            "distinctiveness": 7,
+            "total": 54
+          },
+          "decision": "rejected",
+          "reason": "Score 54: relies on context, weak ending; contains end-screen."
+        },
+        {
+          "id": "cand-intro",
+          "approx_src": [
+            0.0,
+            13.0
+          ],
+          "summary": "Show intro/trailer",
+          "score": {
+            "hook": 10,
+            "curiosity": 9,
+            "payoff": 6,
+            "clarity": 10,
+            "pacing": 8,
+            "distinctiveness": 4,
+            "total": 47
+          },
+          "decision": "rejected",
+          "reason": "Score 47: produced trailer graphics, no moment of its own."
+        }
+      ],
+      "output_dir": "output/test-run-1-snack-wars",
+      "constraints": "owner test conditions: no upload/schedule/publish, no overwrite/delete, persistent outputs, both QC layers",
+      "notes": "Rights/campaign terms for this footage not provided (CLIPPINGMASTER §9) - flagged; nothing is published in this test.",
+      "log": [
+        "2026-10-23T22:44:36Z eligibility: digest pre-screen new; downloaded sha256 = GitHub digest; registry check new (hash, fingerprint, metadata)",
+        "2026-10-23T22:44:51Z corrected source filename (register-source had stored the local name 'source.mp4'); added --filename option",
+        "2026-10-23T22:53:08Z full transcript + 1 frame/5 s review of all 11:01 + 1 fps sheets of candidate sections; 10 candidates scored, 4 selected",
+        "2026-10-23T22:57:49Z make_clip: added optional per-clip 'frame: group' (two-shot framing), 'window', and spec 'scene_threshold' (defaults unchanged)",
+        "2026-10-23T22:57:49Z draft render 01_seal_impression_guess.mp4 rejected in visual review: opening frame showed stray caption 'GAME.'; cuts undetected (scene scores 0.15-0.24 < 0.32) -> slow pans after cuts. Re-rendered as _v2 with start 113.9 and scene_threshold 0.12. Draft file kept (no deletions) and not delivered."
+      ],
+      "rejected_drafts": [
+        {
+          "path": "output/test-run-1-snack-wars/clips/01_seal_impression_guess.mp4",
+          "sha256": "0bb28d0ea644eaa0159ff34b3dc7eac8aa134ddf2cdba92f528d693991750a1e",
+          "reason": "stray opening caption; undetected cuts caused slow pans",
+          "superseded_by": "01_seal_impression_guess_v2"
+        }
+      ]
     }
   ],
   "clips": [

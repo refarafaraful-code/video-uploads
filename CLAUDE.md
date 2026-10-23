@@ -27,7 +27,7 @@ Only start a production run when the owner explicitly asks for one ("העלית�
      `processed` → skip and report; `possible_duplicate` → compare frames/audio yourself and ask the owner if still
      unsure. Never process a `possible_duplicate` silently.
    - If nothing is eligible, stop and tell the owner.
-3. Register: `python3 clipper/registry.py register-source projects/<slug>/source.mp4 --id src-<slug> --title "…" --creator "…" --tag <tag> --asset-id <ID> --project projects/<slug>`
+3. Register: `python3 clipper/registry.py register-source projects/<slug>/source.mp4 --id src-<slug> --title "…" --creator "…" --filename "<release asset name>" --tag <tag> --asset-id <ID> --project projects/<slug>`
    (refuses duplicates; stores hash, probe and fingerprint; status `in_progress`). Then add a run entry
    (`status: in_progress`) with `registry.load()/save()` (atomic writes) and keep it updated as the run progresses.
 4. Probe the source (`registry.py hash`) for resolution/fps/audio before planning crops.

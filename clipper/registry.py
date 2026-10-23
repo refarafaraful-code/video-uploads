@@ -3,7 +3,7 @@
 usage:
   python3 clipper/registry.py releases            # classify every release asset: processed / possible duplicate / new
   python3 clipper/registry.py check FILE          # is this local video already a registered source? (hash, audio fingerprint, metadata)
-  python3 clipper/registry.py register-source FILE --id ID --title T --creator C [--tag TAG --asset-id N --project DIR]
+  python3 clipper/registry.py register-source FILE --id ID --title T --creator C [--filename ORIGINAL --tag TAG --asset-id N --project DIR]
   python3 clipper/registry.py hash FILE           # sha256 + basic probe
   python3 clipper/registry.py verify              # registry vs files on disk (missing, changed, unregistered)
   python3 clipper/registry.py status              # short summary
@@ -176,11 +176,13 @@ def cmd_register_source(reg, a):
     if any(s["id"] == a.id for s in reg["sources"]):
         sys.exit(f"source id {a.id} already exists")
     p, digest, fp = probe(a.file), sha256(a.file), fingerprint(a.file)
-    st, sid, why = classify(reg, digest=digest, duration=p["duration_s"], height=p["height"], name=os.path.basename(a.file), fp=fp)
+    st, sid, why = classify(reg, digest=digest, duration=p["duration_s"], height=p["height"],
+                            name=a.filename or os.path.basename(a.file), fp=fp)
     if st != "new" and not a.allow_reprocess:
         sys.exit(f"refusing to register: {st} ({sid}: {why}). Use --allow-reprocess only with the owner's explicit approval.")
     reg["sources"].append({"id": a.id, "title": a.title, "creator": a.creator, "campaign": a.campaign,
-                           "filename": os.path.basename(a.file), "release": {"tag": a.tag, "asset_id": a.asset_id},
+                           "filename": a.filename or os.path.basename(a.file), "local_path": os.path.relpath(a.file, ROOT),
+                           "release": {"tag": a.tag, "asset_id": a.asset_id},
                            "sha256": digest, "size_bytes": os.path.getsize(a.file), "duration_s": p["duration_s"],
                            "width": p["width"], "height": p["height"], "fps": p["fps"],
                            "audio_fingerprint": save_fp(a.id, fp) if len(fp) else None,
@@ -243,6 +245,7 @@ if __name__ == "__main__":
         ap.add_argument("file"); ap.add_argument("--id", required=True); ap.add_argument("--title", required=True)
         ap.add_argument("--creator", required=True); ap.add_argument("--campaign"); ap.add_argument("--tag")
         ap.add_argument("--asset-id", type=int); ap.add_argument("--project"); ap.add_argument("--allow-reprocess", action="store_true")
+        ap.add_argument("--filename", help="original filename (release asset name); defaults to the local file name")
         cmd_register_source(reg, ap.parse_args(sys.argv[2:]))
     elif cmd == "releases":
         cmd_releases(reg)

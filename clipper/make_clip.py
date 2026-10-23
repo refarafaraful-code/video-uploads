@@ -8,6 +8,7 @@ SPEC.json:
   "words": "words.json",                  # from transcribe.py
   "watermark": "@yourchannel",
   "replace": {"AMERICA": "ERICA"},        # fix transcription mistakes (whole words)
+  "scene_threshold": 0.32,                # optional: lower for sources whose cuts are low-contrast (same set/background)
   "clips": [{
     "name": "kidnapped",
     "title": "LOGAN KIDNAPPED JAKE'S WIFE",
@@ -16,7 +17,9 @@ SPEC.json:
     "payoff": 971.1,                      # source time of the punchline: riser, boom, flash, RGB glitch
     "emojis": [[971.9, "😱"], [1001.3, "🚗"]],   # source time + emoji to pop on screen
     "mood": "tense",                      # music bed: tense | fun | hype | none
-    "cta": "FOLLOW FOR PART 2"            # end card text (default FOLLOW FOR MORE, "" to disable)
+    "cta": "FOLLOW FOR PART 2",           # end card text (default FOLLOW FOR MORE, "" to disable)
+    "frame": "group",                     # optional: keep all significant faces in frame (two-shots); default follows the largest face
+    "window": {"fg_y": 300, "fg_h": 1080, "cap_y": 1460}   # optional: video window / caption position (defaults below)
   }]
 }
 """
@@ -31,8 +34,9 @@ YUNET = os.path.join(HERE, "models", "yunet.onnx")
 EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 FONTS = os.path.expanduser("~/.fonts")
 W, H, FPS = 1080, 1920, 30
-FG_Y, FG_H = 250, 1500          # foreground video window; blurred copy fills the rest
-TITLE_Y, CAP_Y, CTA_Y = 128, 1330, 1832
+DEFAULT_WINDOW = {"fg_y": 250, "fg_h": 1500, "cap_y": 1330}   # foreground video window; blurred copy fills the rest
+FG_Y, FG_H, CAP_Y = DEFAULT_WINDOW["fg_y"], DEFAULT_WINDOW["fg_h"], DEFAULT_WINDOW["cap_y"]
+TITLE_Y, CTA_Y = 128, 1832
 
 # ASS colours are &HBBGGRR
 PALETTE = ["00E6FF", "3CFF6E", "FFE600", "C83EFF", "00A5FF"]  # yellow green cyan pink orange
@@ -101,11 +105,11 @@ def to_out(t, segments):
 
 # ---------------------------------------------------------------- analysis
 
-def scene_cuts(src, segments):
+def scene_cuts(src, segments, threshold=0.32):
     cuts = []
     for s, e in segments:
         r = subprocess.run(["ffmpeg", "-ss", str(s), "-t", str(e - s), "-i", src, "-an", "-vf",
-                            "scale=320:-2,select='gt(scene,0.32)',showinfo", "-f", "null", "-"],
+                            f"scale=320:-2,select='gt(scene,{threshold})',showinfo", "-f", "null", "-"],
                            capture_output=True, text=True)
         cuts += [s + float(x) for x in re.findall(r"pts_time:([0-9.]+)", r.stderr)]
     return cuts
@@ -127,7 +131,7 @@ def rdp(pts, eps):
     return [pts[0], pts[-1]]
 
 
-def track_faces(src, segments, cuts_src, crop_frac):
+def track_faces(src, segments, cuts_src, crop_frac, mode="largest"):
     """horizontal subject centre (0..1 of source width) over output time, as keyframes"""
     cap = cv2.VideoCapture(src)
     sw, sh = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -156,6 +160,13 @@ def track_faces(src, segments, cuts_src, crop_frac):
                 if faces is not None and len(faces):
                     f = max(faces, key=lambda f: f[2] * f[3] * f[14])
                     cx = (f[0] + f[2] / 2) / dw
+                    if mode == "group":
+                        # every face at least a quarter the size of the biggest one; centre on the group if it fits
+                        big = [g for g in faces if g[2] * g[3] >= 0.25 * f[2] * f[3]]
+                        lo = min(g[0] for g in big) / dw
+                        hi = max(g[0] + g[2] for g in big) / dw
+                        if hi - lo <= crop_frac * 0.95:
+                            cx = (lo + hi) / 2
                 samples.append((t, cx))
             n += 1
         # smooth within shots, snap across cuts; dead-zone so the camera doesn't wander
@@ -324,6 +335,9 @@ def windows(times, d):
 # ---------------------------------------------------------------- render
 
 def render(spec, clip, outdir):
+    global FG_Y, FG_H, CAP_Y
+    win = {**DEFAULT_WINDOW, **clip.get("window", {})}
+    FG_Y, FG_H, CAP_Y = win["fg_y"], win["fg_h"], win["cap_y"]
     out = os.path.join(outdir, clip["name"] + ".mp4")
     if os.path.exists(out):
         raise SystemExit(f"{out} already exists - finished clips are never overwritten; give the new version a new name")
@@ -338,7 +352,7 @@ def render(spec, clip, outdir):
             slams.append(w["s"]); last = w["s"]
     bleeps = [(w["s"], w["e"]) for w in wout if clean(w["w"]) in BLEEP]
 
-    cuts_src = scene_cuts(src, segs)
+    cuts_src = scene_cuts(src, segs, spec.get("scene_threshold", 0.32))
     cuts = [c for c in (to_out(x, segs) for x in cuts_src) if c and c > 0.3]
     flashes = [j for j, _ in junctions]
     payoff = to_out(clip["payoff"], segs) if clip.get("payoff") is not None else None
@@ -350,7 +364,7 @@ def render(spec, clip, outdir):
                                       "stream=width,height", "-of", "csv=p=0", src],
                                      capture_output=True, text=True).stdout.strip().split(",")[:2])
     crop_frac = min(1.0, sh * W / FG_H / sw)
-    keys = track_faces(src, segs, cuts_src, crop_frac)
+    keys = track_faces(src, segs, cuts_src, crop_frac, clip.get("frame", "largest"))
 
     td = tempfile.mkdtemp()
     ass = os.path.join(td, "caps.ass")

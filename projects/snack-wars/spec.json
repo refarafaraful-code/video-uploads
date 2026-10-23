@@ -1,0 +1,201 @@
+{
+ "source": "source.mp4",
+ "words": "words.json",
+ "watermark": "",
+ "replace": {
+  "BIBEL": "BIBLE",
+  "JOE": "JOHN",
+  "LAKE": "LICK"
+ },
+ "clips": [
+  {
+   "name": "01_seal_impression_guess_v2",
+   "title": "JOHN CENA'S GUESS WAS NOT A SEAL",
+   "segments": [
+    [
+     113.9,
+     138.6
+    ]
+   ],
+   "emphasis": [
+    "SEAL",
+    "WALRUS",
+    "SEX",
+    "FUNNIEST"
+   ],
+   "payoff": 117.0,
+   "emojis": [
+    [
+     118.0,
+     "😳"
+    ],
+    [
+     129.0,
+     "🦭"
+    ]
+   ],
+   "mood": "fun",
+   "frame": "group",
+   "window": {
+    "fg_y": 330,
+    "fg_h": 960,
+    "cap_y": 1400
+   }
+  },
+  {
+   "name": "02_salt_licorice_warning",
+   "title": "SHE WARNED JOHN CENA NOT TO EAT IT",
+   "segments": [
+    [
+     215.8,
+     217.7
+    ],
+    [
+     176.9,
+     185.9
+    ],
+    [
+     189.3,
+     202.9
+    ],
+    [
+     212.2,
+     214.8
+    ],
+    [
+     215.8,
+     228.7
+    ],
+    [
+     250.6,
+     255.0
+    ]
+   ],
+   "emphasis": [
+    "NO",
+    "HORRIFIC",
+    "SALT",
+    "ABOMINATION",
+    "PASS"
+   ],
+   "payoff": 215.9,
+   "emojis": [
+    [
+     185.2,
+     "🤢"
+    ],
+    [
+     216.8,
+     "🧂"
+    ],
+    [
+     227.8,
+     "💀"
+    ]
+   ],
+   "mood": "fun",
+   "frame": "group",
+   "window": {
+    "fg_y": 330,
+    "fg_h": 960,
+    "cap_y": 1400
+   }
+  },
+  {
+   "name": "03_cup_flip_strategy",
+   "title": "JOHN CENA HAD A \"STRATEGY\"",
+   "segments": [
+    [
+     256.9,
+     263.2
+    ],
+    [
+     267.0,
+     280.7
+    ],
+    [
+     285.4,
+     293.0
+    ],
+    [
+     295.6,
+     309.2
+    ]
+   ],
+   "emphasis": [
+    "STRATEGY",
+    "ONE",
+    "MISCALCULATED"
+   ],
+   "payoff": 299.5,
+   "emojis": [
+    [
+     274.1,
+     "🧠"
+    ],
+    [
+     300.4,
+     "😂"
+    ]
+   ],
+   "mood": "hype",
+   "frame": "group",
+   "window": {
+    "fg_y": 330,
+    "fg_h": 960,
+    "cap_y": 1400
+   }
+  },
+  {
+   "name": "04_chopstick_hoops",
+   "title": "NO HANDS. ONE CHOPSTICK. TOTAL CHAOS",
+   "segments": [
+    [
+     516.6,
+     522.0
+    ],
+    [
+     531.6,
+     547.0
+    ],
+    [
+     551.8,
+     554.4
+    ],
+    [
+     562.3,
+     573.2
+    ],
+    [
+     575.9,
+     591.5
+    ]
+   ],
+   "emphasis": [
+    "HORROR",
+    "FUDGE",
+    "MUSTARD",
+    "FIVE"
+   ],
+   "payoff": 572.6,
+   "emojis": [
+    [
+     538.9,
+     "😵"
+    ],
+    [
+     577.2,
+     "🏆"
+    ]
+   ],
+   "mood": "hype",
+   "frame": "group",
+   "window": {
+    "fg_y": 330,
+    "fg_h": 960,
+    "cap_y": 1400
+   }
+  }
+ ],
+ "scene_threshold": 0.12
+}
