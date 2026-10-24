@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T20:19:57Z",
+  "updated_at": "2026-10-24T20:34:17Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1408,14 +1408,240 @@
       ],
       "status": "in_progress",
       "clip_ids": [],
-      "candidates": [],
-      "output_dir": "output/ps99-clip1",
+      "candidates": [
+        {
+          "id": "ps99-gargantuan-1x1x1x1",
+          "source": "src-ps99-clip1",
+          "timestamps": "58-92.5 (name card 87.5)",
+          "score": {
+            "hook": 23,
+            "curiosity": 18,
+            "payoff": 19,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 90
+          },
+          "decision": "accepted",
+          "reason": "Gargantuan 1x1x1x1 reveal - best-known pet name of the set; full build-up -> cosmic animation -> reveal"
+        },
+        {
+          "id": "ps99-gargantuan-anime-agony",
+          "source": "src-ps99-clip02",
+          "timestamps": "43.5-78 (name 72.5)",
+          "score": {
+            "hook": 22,
+            "curiosity": 17,
+            "payoff": 19,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 7,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "Gargantuan reveal, strong visual (pet flies in), clear name card"
+        },
+        {
+          "id": "ps99-gargantuan-aura-cat",
+          "source": "src-ps99-clip04",
+          "timestamps": "43-79 (name 72.6)",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 6,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "Gargantuan reveal; same animation as other gargantuans but a different pet/payoff"
+        },
+        {
+          "id": "ps99-gargantuan-black-balloon-cat",
+          "source": "src-ps99-clip05",
+          "timestamps": "50-86.5 (name 81.5)",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 6,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "Gargantuan reveal from the ship egg; different pet/payoff"
+        },
+        {
+          "id": "ps99-gargantuan-capybara",
+          "source": "src-ps99-clip07",
+          "timestamps": "44-80.5 (name 76.5)",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 6,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "Gargantuan reveal; different pet/payoff"
+        },
+        {
+          "id": "ps99-4-rare-hatches",
+          "source": "src-ps99-clip13+09+08+06",
+          "timestamps": "13:19-26.2, 09:9.4-16, 08:35-42, 06:41.8-48.7",
+          "score": {
+            "hook": 20,
+            "curiosity": 17,
+            "payoff": 17,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "Each titanic/huge hatch alone is ~6 s of payoff in a short file; combined into one 4-reveal compilation"
+        },
+        {
+          "id": "titanic-ancient-dragon-solo",
+          "source": "src-ps99-clip06",
+          "timestamps": "42-48.7",
+          "score": {
+            "hook": 18,
+            "curiosity": 14,
+            "payoff": 17,
+            "clarity": 13,
+            "pacing": 6,
+            "distinctiveness": 5,
+            "total": 73
+          },
+          "decision": "merged",
+          "reason": "reveal at the very end of a 49 s file, too little build-up alone -> used in the compilation"
+        },
+        {
+          "id": "titanic-arcane-cat-solo",
+          "source": "src-ps99-clip09",
+          "timestamps": "6-16",
+          "score": {
+            "hook": 18,
+            "curiosity": 14,
+            "payoff": 16,
+            "clarity": 13,
+            "pacing": 6,
+            "distinctiveness": 5,
+            "total": 72
+          },
+          "decision": "merged",
+          "reason": "-> compilation"
+        },
+        {
+          "id": "titanic-arcane-halo-cat-solo",
+          "source": "src-ps99-clip08",
+          "timestamps": "33-42",
+          "score": {
+            "hook": 18,
+            "curiosity": 14,
+            "payoff": 16,
+            "clarity": 13,
+            "pacing": 6,
+            "distinctiveness": 5,
+            "total": 72
+          },
+          "decision": "merged",
+          "reason": "-> compilation"
+        },
+        {
+          "id": "huge-abyssal-axolotl-solo",
+          "source": "src-ps99-clip13",
+          "timestamps": "16-26",
+          "score": {
+            "hook": 17,
+            "curiosity": 13,
+            "payoff": 15,
+            "clarity": 13,
+            "pacing": 6,
+            "distinctiveness": 5,
+            "total": 69
+          },
+          "decision": "merged",
+          "reason": "-> compilation"
+        },
+        {
+          "id": "huge-pets-montage",
+          "source": "src-ps99-clip03",
+          "timestamps": "0-22.8",
+          "score": {
+            "hook": 14,
+            "curiosity": 10,
+            "payoff": 8,
+            "clarity": 10,
+            "pacing": 7,
+            "distinctiveness": 5,
+            "total": 54
+          },
+          "decision": "rejected",
+          "reason": "riding montage with no reveal/payoff"
+        },
+        {
+          "id": "pink-unicorn-hatch",
+          "source": "src-ps99-clip14",
+          "timestamps": "0-30",
+          "score": {
+            "hook": 13,
+            "curiosity": 10,
+            "payoff": 10,
+            "clarity": 8,
+            "pacing": 5,
+            "distinctiveness": 4,
+            "total": 50
+          },
+          "decision": "rejected",
+          "reason": "no visible pet name/rarity, rest of file is walking around"
+        },
+        {
+          "id": "sun-angelus-hatch",
+          "source": "src-ps99-clip11/12",
+          "timestamps": "clip11 18-22, clip12 18-24",
+          "score": {
+            "hook": 14,
+            "curiosity": 10,
+            "payoff": 11,
+            "clarity": 11,
+            "pacing": 6,
+            "distinctiveness": 4,
+            "total": 56
+          },
+          "decision": "rejected",
+          "reason": "'Insane' rarity but small pet and quick card; weak payoff vs the gargantuans"
+        },
+        {
+          "id": "low-tier-hatches",
+          "source": "src-ps99-clip10/15/16/17",
+          "timestamps": "whole files",
+          "score": {
+            "hook": 10,
+            "curiosity": 8,
+            "payoff": 6,
+            "clarity": 10,
+            "pacing": 5,
+            "distinctiveness": 3,
+            "total": 42
+          },
+          "decision": "rejected",
+          "reason": "Pastel Goat / Imp / Zombie Bull / Zombie Squirrel - common pets, no payoff"
+        }
+      ],
+      "output_dir": "output/ps99",
       "campaign_rules": "BloxClips PS99: say/show 'Pet Sim 99'; strong hook; own edits; CTA to play PS99 on Roblox; no AI thumbnail; no invented features/rewards/codes; no other creators' clips; Format B = clip middle, black bars, text hook on top",
       "log": [
         "2026-10-24T20:08:05Z downloaded from campaign Drive folder (size matches); registry check new",
         "2026-10-24T20:19:57Z downloaded the other 16 files from the campaign Drive folder (embeddedfolderview listing)",
         "2026-10-24T20:19:57Z 9 flagged possible_duplicate (shared game music / similar ~25 s durations); visual strips show 17 different hatches -> registered with --verified-distinct",
-        "2026-10-24T20:19:57Z registry.py: 'processed' by fingerprint now requires bit error <= 0.12 (shared music measured 0.16-0.24 and was misread as a copy for clip05); duplicate suite 11/11"
+        "2026-10-24T20:19:57Z registry.py: 'processed' by fingerprint now requires bit error <= 0.12 (shared music measured 0.16-0.24 and was misread as a copy for clip05); duplicate suite 11/11",
+        "2026-10-24T20:34:17Z reviewed all 17 files (2 s contact sheets + 2-4 fps around reveals): 14 candidates, 6 selected (5 gargantuan reveals + 1 titanic/huge compilation); footage has no speech -> new clipper/make_gameplay_clip.py (format B, written on-screen text)"
       ],
       "id_note": "run covers all 17 PS99 campaign footage files"
     }

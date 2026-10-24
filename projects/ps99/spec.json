@@ -1,0 +1,489 @@
+{
+ "watermark": "",
+ "clips": [
+  {
+   "name": "ps99-gargantuan-1x1x1x1",
+   "source": "../ps99-clip1/source.mp4",
+   "crop": [
+    354,
+    0,
+    1212,
+    1080
+   ],
+   "segments": [
+    [
+     87.8,
+     89.4
+    ],
+    [
+     58.0,
+     64.5
+    ],
+    [
+     64.5,
+     80.0,
+     2.0
+    ],
+    [
+     80.0,
+     92.5
+    ]
+   ],
+   "title": "WATCH THIS PET SIM 99 HATCH",
+   "texts": [
+    [
+     87.85,
+     1.5,
+     "HOW DID THIS HAPPEN?"
+    ],
+    [
+     58.3,
+     3.0,
+     "IT KEEPS GETTING BIGGER..."
+    ],
+    [
+     63.3,
+     1.5,
+     "*BOOM*"
+    ],
+    [
+     65.5,
+     6.0,
+     "WAIT FOR IT..."
+    ],
+    [
+     80.4,
+     3.0,
+     "HERE IT COMES!"
+    ],
+    [
+     87.5,
+     6.0,
+     "GARGANTUAN *1X1X1X1*!"
+    ]
+   ],
+   "payoff": 87.5,
+   "emojis": [
+    [
+     87.65,
+     "😱"
+    ]
+   ],
+   "mood": "none",
+   "cta": "PLAY PET SIM 99 ON ROBLOX"
+  },
+  {
+   "name": "ps99-gargantuan-anime-agony",
+   "source": "clip02.mp4",
+   "crop": [
+    354,
+    0,
+    1212,
+    1080
+   ],
+   "segments": [
+    [
+     72.8,
+     74.4
+    ],
+    [
+     43.5,
+     48.6
+    ],
+    [
+     48.6,
+     64.0,
+     2.0
+    ],
+    [
+     64.0,
+     78.0
+    ]
+   ],
+   "title": "PET SIM 99: WAIT FOR THE END",
+   "texts": [
+    [
+     72.85,
+     1.5,
+     "HOW DID THIS HAPPEN?"
+    ],
+    [
+     43.8,
+     3.0,
+     "IT KEEPS GETTING BIGGER..."
+    ],
+    [
+     47.4,
+     1.5,
+     "*BOOM*"
+    ],
+    [
+     49.6,
+     6.0,
+     "WAIT FOR IT..."
+    ],
+    [
+     64.4,
+     3.0,
+     "HERE IT COMES!"
+    ],
+    [
+     72.5,
+     6.0,
+     "GARGANTUAN *ANIME AGONY*!"
+    ]
+   ],
+   "payoff": 72.5,
+   "emojis": [
+    [
+     72.65,
+     "😱"
+    ]
+   ],
+   "mood": "none",
+   "cta": "PLAY PET SIM 99 ON ROBLOX"
+  },
+  {
+   "name": "ps99-gargantuan-aura-cat",
+   "source": "clip04.mp4",
+   "crop": [
+    354,
+    0,
+    1212,
+    1080
+   ],
+   "segments": [
+    [
+     72.9,
+     74.5
+    ],
+    [
+     43.0,
+     49.0
+    ],
+    [
+     49.0,
+     65.0,
+     2.0
+    ],
+    [
+     65.0,
+     79.0
+    ]
+   ],
+   "title": "THIS PET SIM 99 HATCH GOT HUGE",
+   "texts": [
+    [
+     72.95,
+     1.5,
+     "HOW DID THIS HAPPEN?"
+    ],
+    [
+     43.3,
+     3.0,
+     "IT KEEPS GETTING BIGGER..."
+    ],
+    [
+     47.8,
+     1.5,
+     "*BOOM*"
+    ],
+    [
+     50.0,
+     6.0,
+     "WAIT FOR IT..."
+    ],
+    [
+     65.4,
+     3.0,
+     "HERE IT COMES!"
+    ],
+    [
+     72.6,
+     6.0,
+     "GARGANTUAN *AURA CAT*!"
+    ]
+   ],
+   "payoff": 72.6,
+   "emojis": [
+    [
+     72.75,
+     "😱"
+    ]
+   ],
+   "mood": "none",
+   "cta": "PLAY PET SIM 99 ON ROBLOX"
+  },
+  {
+   "name": "ps99-gargantuan-black-balloon-cat",
+   "source": "clip05.mp4",
+   "crop": [
+    354,
+    0,
+    1212,
+    1080
+   ],
+   "segments": [
+    [
+     81.8,
+     83.4
+    ],
+    [
+     50.0,
+     57.0
+    ],
+    [
+     57.0,
+     73.3,
+     2.0
+    ],
+    [
+     73.3,
+     86.5
+    ]
+   ],
+   "title": "PET SIM 99 BLACK BALLOON CAT HATCH",
+   "texts": [
+    [
+     81.85,
+     1.5,
+     "HOW DID THIS HAPPEN?"
+    ],
+    [
+     50.3,
+     3.0,
+     "IT KEEPS GETTING BIGGER..."
+    ],
+    [
+     55.8,
+     1.5,
+     "*BOOM*"
+    ],
+    [
+     58.0,
+     6.0,
+     "WAIT FOR IT..."
+    ],
+    [
+     73.7,
+     3.0,
+     "HERE IT COMES!"
+    ],
+    [
+     81.5,
+     6.0,
+     "GARGANTUAN *BLACK BALLOON CAT*!"
+    ]
+   ],
+   "payoff": 81.5,
+   "emojis": [
+    [
+     81.65,
+     "😱"
+    ]
+   ],
+   "mood": "none",
+   "cta": "PLAY PET SIM 99 ON ROBLOX"
+  },
+  {
+   "name": "ps99-gargantuan-capybara",
+   "source": "clip07.mp4",
+   "crop": [
+    354,
+    0,
+    1212,
+    1080
+   ],
+   "segments": [
+    [
+     76.8,
+     78.4
+    ],
+    [
+     44.0,
+     52.5
+    ],
+    [
+     52.5,
+     68.3,
+     2.0
+    ],
+    [
+     68.3,
+     80.5
+    ]
+   ],
+   "title": "A GARGANTUAN CAPYBARA IN PET SIM 99",
+   "texts": [
+    [
+     76.85,
+     1.5,
+     "HOW DID THIS HAPPEN?"
+    ],
+    [
+     44.3,
+     3.0,
+     "IT KEEPS GETTING BIGGER..."
+    ],
+    [
+     51.3,
+     1.5,
+     "*BOOM*"
+    ],
+    [
+     53.5,
+     6.0,
+     "WAIT FOR IT..."
+    ],
+    [
+     68.7,
+     3.0,
+     "HERE IT COMES!"
+    ],
+    [
+     76.5,
+     6.0,
+     "GARGANTUAN *CAPYBARA*!"
+    ]
+   ],
+   "payoff": 76.5,
+   "emojis": [
+    [
+     76.65,
+     "😱"
+    ]
+   ],
+   "mood": "none",
+   "cta": "PLAY PET SIM 99 ON ROBLOX"
+  },
+  {
+   "name": "ps99-4-rare-hatches",
+   "source": "clip06.mp4",
+   "crop": [
+    354,
+    0,
+    1212,
+    1080
+   ],
+   "segments": [
+    [
+     46.7,
+     47.9,
+     1.0,
+     "clip06.mp4"
+    ],
+    [
+     19.0,
+     23.6,
+     1.2,
+     "clip13.mp4"
+    ],
+    [
+     23.6,
+     26.2,
+     1.0,
+     "clip13.mp4"
+    ],
+    [
+     9.4,
+     13.3,
+     1.2,
+     "clip09.mp4"
+    ],
+    [
+     13.3,
+     16.0,
+     1.0,
+     "clip09.mp4"
+    ],
+    [
+     35.0,
+     39.1,
+     1.2,
+     "clip08.mp4"
+    ],
+    [
+     39.1,
+     42.0,
+     1.0,
+     "clip08.mp4"
+    ],
+    [
+     41.8,
+     46.6,
+     1.2,
+     "clip06.mp4"
+    ],
+    [
+     46.6,
+     48.7,
+     1.0,
+     "clip06.mp4"
+    ]
+   ],
+   "times": "output",
+   "title": "HUGE OR TITANIC? PET SIM 99",
+   "texts": [
+    [
+     0.05,
+     1.15,
+     "4 RARE HATCHES..."
+    ],
+    [
+     1.3,
+     3.6333333333333346,
+     "HATCH 1/4..."
+    ],
+    [
+     5.683,
+     1.9499999999999993,
+     "HUGE *ABYSSAL AXOLOTL*"
+    ],
+    [
+     7.7333333333333325,
+     3.0500000000000003,
+     "HATCH 2/4..."
+    ],
+    [
+     11.833,
+     1.75,
+     "TITANIC *ARCANE CAT*"
+    ],
+    [
+     13.683333333333332,
+     3.2166666666666677,
+     "HATCH 3/4..."
+    ],
+    [
+     18.15,
+     1.75,
+     "TITANIC *ARCANE HALO CAT*"
+    ],
+    [
+     20.0,
+     3.8000000000000034,
+     "HATCH 4/4..."
+    ],
+    [
+     24.05,
+     1.9500000000000028,
+     "TITANIC *ANCIENT DRAGON*"
+    ]
+   ],
+   "payoff": [
+    5.683,
+    11.833,
+    18.15,
+    24.05
+   ],
+   "emojis": [
+    [
+     24.35,
+     "🐉"
+    ]
+   ],
+   "mood": "none",
+   "cta": "PLAY PET SIM 99 ON ROBLOX"
+  }
+ ]
+}
