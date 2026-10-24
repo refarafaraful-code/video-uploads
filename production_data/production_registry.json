@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T19:25:45Z",
+  "updated_at": "2026-10-24T19:30:08Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1514,7 +1514,7 @@
         "seal impression",
         "funny interview"
       ],
-      "status": "scheduled",
+      "status": "published",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -1541,11 +1541,14 @@
         "metricool_id": 405213696,
         "scheduled_for": "2026-10-24T15:27:00 America/New_York",
         "youtube_title": "Jessica Biel Did a Seal Noise. John Cena Guessed Something Else 😂 #johncena #shorts",
-        "status": "PENDING",
+        "status": "PUBLISHED",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/01_seal_impression_guess_v3.mp4",
-        "status_checked_at": "2026-10-24T19:25:45Z",
-        "verified_published": false,
-        "note": "owner decided to publish despite unconfirmed rights (LADbible content)"
+        "status_checked_at": "2026-10-24T19:30:08Z",
+        "verified_published": true,
+        "note": "owner decided to publish despite unconfirmed rights (LADbible content)",
+        "youtube_id": "kFa-MCLyZSc",
+        "public_url": "https://www.youtube.com/shorts/kFa-MCLyZSc",
+        "published_at": "2026-10-24T15:27:00 America/New_York"
       }
     },
     {
