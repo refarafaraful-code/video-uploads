@@ -52,3 +52,11 @@ Newest first. One entry per production run or system change. The machine-readabl
 
 ## 2026-10-23 — run-2026-10-23-a: "SURPRISING MINI JAKE PAUL WITH A MINI LAMBORGHINI" (src-mini-lambo)
 - 4 clips (pipeline v1), delivered in chat; owner uploaded them to YouTube manually.
+
+## 2026-10-24 - Pet Simulator 99 campaign (BloxClips) - run-2026-10-24-ps99-clip1
+- Sources: the 17 campaign footage files (Drive folder), all new. Footage is 1212x1080 gameplay with no speech, and the game audio is near-silent.
+- 14 candidates were scored. 6 clips were delivered: 5 Gargantuan reveals (1x1x1x1, Anime Agony, Aura Cat, Black Balloon Cat, Capybara) and a Huge/Titanic 4-hatch compilation. The rest were rejected (common pets, no payoff).
+- New renderer `clipper/make_gameplay_clip.py`: format B, teaser hook, written texts, campaign reaction voice with captions, hype bed and a payoff label.
+- v1 was rejected (silent audio) and so was v2 (no pet name at the payoff). v3 was delivered.
+- QC: technical pass / pass_with_notes. The black and frozen flags are the game's own animation (see output/ps99/editorial_review.md).
+- Scheduled on Metricool: Oct 24 17:30 NY, then Oct 25-29 at 11:00 NY.
