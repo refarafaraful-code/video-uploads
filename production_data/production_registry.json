@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T12:13:31Z",
+  "updated_at": "2026-10-24T12:18:55Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1832,7 +1832,7 @@
         "anti fund",
         "energy independence"
       ],
-      "status": "scheduled",
+      "status": "published",
       "qc": {
         "status": "pass",
         "technical": {
@@ -1858,11 +1858,15 @@
         "metricool_uuid": "-5938770526102469908",
         "metricool_id": 404955128,
         "scheduled_for": "2026-10-24T08:16:00 America/New_York",
-        "status": "PENDING",
+        "status": "PUBLISHED",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
-        "status_checked_at": "2026-10-24",
-        "verified_published": false,
-        "youtube_title": "America Used to Control 90% of This. Now It's Less Than 1% ☢️ #jakepaul #nuclear #shorts"
+        "status_checked_at": "2026-10-24T12:18:55Z",
+        "verified_published": true,
+        "youtube_title": "America Used to Control 90% of This. Now It's Less Than 1% ☢️ #jakepaul #nuclear #shorts",
+        "youtube_id": "W3U37rS0JEc",
+        "public_url": "https://www.youtube.com/shorts/W3U37rS0JEc",
+        "published_at": "2026-10-24T08:16:00 America/New_York",
+        "verified_via": "Metricool getScheduledPosts provider status PUBLISHED"
       }
     },
     {
