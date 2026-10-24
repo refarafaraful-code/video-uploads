@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T10:09:10Z",
+  "updated_at": "2026-10-24T10:11:52Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -35,6 +35,10 @@
       {
         "date": "2026-10-24",
         "event": "Owner: 'You have my approval for everything - stop asking for approval like a small child; do whatever is needed so you don't ask.' Standing authorization recorded; Metricool 'ask' rules removed from .claude/settings.json."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Scheduled the 4 general-matter clips (owner request: 2 today + 2 tomorrow, US hours) under standing authorization."
       }
     ]
   },
@@ -249,7 +253,7 @@
       "runs": [
         "run-2026-10-24-general-matter"
       ],
-      "status": "in_progress",
+      "status": "processed",
       "candidates": [],
       "notes": "duplicate check at registration: new"
     }
@@ -567,7 +571,7 @@
       "source_ids": [
         "src-general-matter"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "clip_ids": [
         "general-matter-01_90_percent_to_1_percent_v2",
         "general-matter-02_we_no_longer_control_it_v2",
@@ -773,7 +777,8 @@
         "2026-10-24T08:52:05Z transcript + frames every 3 s over all 6:46; speakers verified via lower thirds (Chris Wright, Andy Beshear); 10 candidates: 4 selected, 1 merged, 5 rejected",
         "2026-10-24T08:57:35Z make_clip: optional window.title_y and clip zoom strength; full-frame 16:9 layout for this graphics-heavy source. Draft 01 rejected (slow hook) -> v2 with teaser",
         "2026-10-24T10:00:42Z technical QC: all 5 renders pass. Editorial review: 01_v2 and 04 pass; 02 and 03 rejected (missing final word; caption overflow). make_clip: caption merge limited to 20 characters. Re-rendering 02/03 as v2.",
-        "2026-10-24T10:09:10Z final versions 01_v2/02_v2/03_v2/04 pass technical QC and editorial review; metadata written"
+        "2026-10-24T10:09:10Z final versions 01_v2/02_v2/03_v2/04 pass technical QC and editorial review; metadata written",
+        "2026-10-24T10:11:52Z scheduled under standing authorization: 2 today (15:00/19:00 NY) + 2 tomorrow; media = reviewed masters (public copies verified by hash)"
       ],
       "rejected_drafts": [
         {
@@ -1818,7 +1823,7 @@
         "anti fund",
         "energy independence"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass",
         "technical": {
@@ -1835,7 +1840,19 @@
         "not_verified": "audio not listened to; captions checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_yet_scheduled"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-5938770526102469908",
+        "metricool_id": 404895278,
+        "scheduled_for": "2026-10-24T15:00:00 America/New_York",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
       }
     },
     {
@@ -1894,7 +1911,7 @@
         "anti fund",
         "paducah kentucky"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -1911,7 +1928,19 @@
         "not_verified": "audio not listened to; captions checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_yet_scheduled"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-3363906552853412666",
+        "metricool_id": 404895528,
+        "scheduled_for": "2026-10-25T15:00:00 America/New_York",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/02_we_no_longer_control_it_v2.mp4",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
       }
     },
     {
@@ -1966,7 +1995,7 @@
         "general matter",
         "nuclear energy"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass",
         "technical": {
@@ -1983,7 +2012,19 @@
         "not_verified": "audio not listened to; captions checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_yet_scheduled"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "7843241969097198789",
+        "metricool_id": 404895485,
+        "scheduled_for": "2026-10-24T19:00:00 America/New_York",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/03_governor_jake_paul_welcome_v2.mp4",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
       }
     },
     {
@@ -2034,7 +2075,7 @@
         "electricity",
         "general matter"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -2051,7 +2092,19 @@
         "not_verified": "audio not listened to; captions checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_yet_scheduled"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "8224692345275828252",
+        "metricool_id": 404895549,
+        "scheduled_for": "2026-10-25T19:00:00 America/New_York",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/04_is_nuclear_dangerous.mp4",
+        "status_checked_at": "2026-10-24",
+        "verified_published": false
       }
     }
   ],

@@ -2,6 +2,16 @@
 
 Newest first. One entry per production run or system change. The machine-readable record is `production_registry.json`.
 
+## 2026-10-24 — run-2026-10-24-general-matter (src-general-matter, release factory) — scheduled
+- Eligibility: digest pre-screen `new`; 1 GB download resumed after a dropped connection, sha256 = GitHub digest;
+  `registry.py check` `new`. 4K 6:46 documentary (Jake Paul / Anti Fund at General Matter, Paducah KY).
+- 10 candidates: 4 selected (87, 84, 80, 78), 1 merged into another clip, 5 rejected.
+- Full-frame 16:9 layout (kinetic text/charts span the frame width). 3 drafts rejected in editorial review (slow
+  hook, missing final word, caption wider than frame) although technical QC passed them.
+- Scheduled: 2 on Oct 24 (15:00 / 19:00 New York), 2 on Oct 25 (15:00 / 19:00 New York), Metricool, public Shorts.
+- Earlier the same day: the owner had all 5 kidnapped-wife posts cancelled (now private drafts); standing
+  authorization recorded and the Metricool approval rule removed at the owner's request.
+
 ## 2026-10-24 — run-test-1-snack-wars: controlled test (src-snack-wars, release v3) — nothing published
 - Eligibility: digest pre-screen `new`; downloaded file sha256 = GitHub digest; `registry.py check` `new` (no hash,
   fingerprint or metadata match). Registered; filename bug in `register-source` found and fixed (`--filename`).
