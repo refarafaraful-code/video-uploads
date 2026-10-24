@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T21:28:20Z",
+  "updated_at": "2026-10-24T21:53:32Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -60,6 +60,9 @@
         "date": "2026-10-24",
         "event": "Owner: publish the snack-wars clips, 2 per day (one snack-wars + one of the Jake Paul type), one now. SW01 now (15:27 NY), SW02-04 at 19:00 NY Oct 25-27; general-matter 04 moved from Oct 25 19:00 to Oct 26 15:00 NY to pair with SW03. Oct 27 has only SW04 (no Jake Paul clips left)."
       }
+    ],
+    "log": [
+      "2026-10-24T21:53:32Z owner asked: the 3 Snack Wars posts moved from 01:00 to 23:00 Israel time (17:00 NY)"
     ]
   },
   "quality": {
@@ -2464,8 +2467,8 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "8960380289948533999",
-        "metricool_id": 405213742,
-        "scheduled_for": "2026-10-25T19:00:00 America/New_York",
+        "metricool_id": 405292532,
+        "scheduled_for": "2026-10-25T17:00:00 America/New_York (23:00 Israel)",
         "youtube_title": "She Warned John Cena Not To Eat It 🧂 #johncena #jessicabiel #saltlicorice #shorts",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/02_salt_licorice_warning_v2.mp4",
@@ -2558,8 +2561,8 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-7049237188628230247",
-        "metricool_id": 405213793,
-        "scheduled_for": "2026-10-26T19:00:00 America/New_York",
+        "metricool_id": 405292561,
+        "scheduled_for": "2026-10-26T17:00:00 America/New_York (23:00 Israel)",
         "youtube_title": "John Cena Had a \"Strategy\"... 😂 #johncena #jessicabiel #cupflip #shorts",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/03_cup_flip_strategy_v2.mp4",
@@ -2656,8 +2659,8 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-2577354964166031607",
-        "metricool_id": 405213839,
-        "scheduled_for": "2026-10-27T19:00:00 America/New_York",
+        "metricool_id": 405292581,
+        "scheduled_for": "2026-10-27T17:00:00 America/New_York (23:00 Israel)",
         "youtube_title": "No Hands, One Chopstick: John Cena vs Jessica Biel 🥢 #johncena #jessicabiel #shorts",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/04_chopstick_hoops_v3.mp4",
