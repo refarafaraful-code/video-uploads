@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T19:30:08Z",
+  "updated_at": "2026-10-24T20:19:57Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -276,6 +276,556 @@
       "status": "processed",
       "candidates": [],
       "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip1",
+      "title": "Pet Simulator 99 campaign footage - Clip 1",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 1.mp4",
+      "local_path": "projects/ps99-clip1/source.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "719d9d60a380c63f7b7686f3d805e00d5758c40c24bf1fbd00c4ea470712da42",
+      "size_bytes": 154395539,
+      "duration_s": 98.685,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip1.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 776,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99-clip1",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new",
+      "origin": {
+        "type": "google_drive",
+        "file_id": "1iVmAxepKN2T0uTcFs90Alwf5tr-8rxBB",
+        "folder_id": "1YUgp3qEky3UP2WwO0F38WA9u-bC9g_LY",
+        "size_check": "matches Drive fileSize"
+      }
+    },
+    {
+      "id": "src-ps99-clip03",
+      "title": "Pet Simulator 99 campaign footage - Clip 3.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 3.mp4",
+      "local_path": "projects/ps99/clip03.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "c18c152e26e8a6eb8edab9faae3bbd6a59e902ccbac91c3c9c60468e4c34e331",
+      "size_bytes": 44722652,
+      "duration_s": 22.825,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip03.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 163,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip06",
+      "title": "Pet Simulator 99 campaign footage - Clip 6.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 6.mp4",
+      "local_path": "projects/ps99/clip06.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "f95d2bbcea0676654ebe924f3454c0119d4ff949b6fbdcac5dbd45fd7c4d07eb",
+      "size_bytes": 81554320,
+      "duration_s": 48.878,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip06.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 373,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip08",
+      "title": "Pet Simulator 99 campaign footage - Clip 8.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 8.mp4",
+      "local_path": "projects/ps99/clip08.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "0b8f2a3392ae2d3b7ac09b89db35c7b126abcfea80ef6d7e3117089cde6f0e5a",
+      "size_bytes": 62044852,
+      "duration_s": 43.398,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip08.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 329,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip09",
+      "title": "Pet Simulator 99 campaign footage - Clip 9.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 9.mp4",
+      "local_path": "projects/ps99/clip09.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "78f30ba986762c6737024a76ebdc1e4567b5197f4cdd27e962862f3c06dd54b0",
+      "size_bytes": 34053423,
+      "duration_s": 24.845,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip09.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 179,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip10",
+      "title": "Pet Simulator 99 campaign footage - Clip 10.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 10.mp4",
+      "local_path": "projects/ps99/clip10.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "101b39be811d3112fff8d04cb7c79d4731d9297f16f5efbc08fd69453a7291c8",
+      "size_bytes": 24926188,
+      "duration_s": 13.374,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip10.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 87,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip12",
+      "title": "Pet Simulator 99 campaign footage - Clip 12.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 12.mp4",
+      "local_path": "projects/ps99/clip12.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "006bb995874a06229cfcc17894a730e3578bcb8175a68d57867843f8d3fcfaff",
+      "size_bytes": 48551155,
+      "duration_s": 29.35,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip12.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 216,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip15",
+      "title": "Pet Simulator 99 campaign footage - Clip 15.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 15.mp4",
+      "local_path": "projects/ps99/clip15.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "ea209adff9c8a8fbe2483573de6d3907d43ce332aa7a966babbb38c430af22b1",
+      "size_bytes": 44090680,
+      "duration_s": 26.563,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip15.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 193,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
+    },
+    {
+      "id": "src-ps99-clip02",
+      "title": "Pet Simulator 99 campaign footage - Clip 2 (great moment).mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 2 (great moment).mp4",
+      "local_path": "projects/ps99/clip02.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "23281020ca48260d0dbf882e24d1f5651de3571764632f7413bbb59d8820c0af",
+      "size_bytes": 136017602,
+      "duration_s": 84.172,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip02.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 658,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate partly shared audio: 40s of identical audio at +9s in the source (bit error 0.21), under 50% of this file (shared music? compilation?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip04",
+      "title": "Pet Simulator 99 campaign footage - Clip 4.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 4.mp4",
+      "local_path": "projects/ps99/clip04.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "e35bc4a25d2b8b2ca55125d9590f0b0d4cac708bf3635e1561cfec2ab5a13fa1",
+      "size_bytes": 135250472,
+      "duration_s": 85.519,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip04.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 669,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate partly shared audio: 25s of identical audio at +32s in the source (bit error 0.22), under 50% of this file (shared music? compilation?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip07",
+      "title": "Pet Simulator 99 campaign footage - Clip 7.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 7.mp4",
+      "local_path": "projects/ps99/clip07.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "6d08d3767b22ca945925a02299660acb83ed07214fb4a0673921599b18a537bf",
+      "size_bytes": 160699208,
+      "duration_s": 102.446,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip07.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 806,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate partly shared audio: 40s of identical audio at +7s in the source (bit error 0.17), under 50% of this file (shared music? compilation?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip11",
+      "title": "Pet Simulator 99 campaign footage - Clip 11.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 11.mp4",
+      "local_path": "projects/ps99/clip11.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "046bddf4783cc66206f8d8516e500dfb7c40cc91f213faecfc13da7b31e30a51",
+      "size_bytes": 40125961,
+      "duration_s": 24.497,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip11.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 176,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate same duration (24.5s) and height but different hash (re-encode/trim?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip13",
+      "title": "Pet Simulator 99 campaign footage - Clip 13.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 13.mp4",
+      "local_path": "projects/ps99/clip13.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "93d4b2b8a7d8a3698fe8514dbd41c1dc7c8f0b984b24744838593e3830190399",
+      "size_bytes": 47093373,
+      "duration_s": 28.839,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip13.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 211,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate same duration (28.8s) and height but different hash (re-encode/trim?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip14",
+      "title": "Pet Simulator 99 campaign footage - Clip 14.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 14.mp4",
+      "local_path": "projects/ps99/clip14.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "acbddb1e78f2c818a5b4969b85f6d8597fccf4d0b912bf3e632314728d3171a1",
+      "size_bytes": 191671576,
+      "duration_s": 102.888,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip14.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 810,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate partly shared audio: 30s of identical audio at +38s in the source (bit error 0.24), under 50% of this file (shared music? compilation?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip16",
+      "title": "Pet Simulator 99 campaign footage - Clip 16.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 16.mp4",
+      "local_path": "projects/ps99/clip16.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "3be679c3333dbf41230ec4a364b645cb9935a74838375547f65376b8b35b0998",
+      "size_bytes": 39632053,
+      "duration_s": 25.356,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip16.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 183,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate same duration (25.4s) and height but different hash (re-encode/trim?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip17",
+      "title": "Pet Simulator 99 campaign footage - Clip 17.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 17.mp4",
+      "local_path": "projects/ps99/clip17.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "e1da06fb9ef367fe592d575942f42783da4b6101e7dabf20a8d18c1db0bfd35a",
+      "size_bytes": 29904946,
+      "duration_s": 25.844,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip17.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 187,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate same duration (25.8s) and height but different hash (re-encode/trim?) - inspect before processing | resolved by visual comparison: frame strips show different hatches/pets; overlap is shared game music or coincidental ~25 s duration"
+    },
+    {
+      "id": "src-ps99-clip05",
+      "title": "Pet Simulator 99 campaign footage - Clip 5.mp4",
+      "creator": "BIG Games / campaign footage folder",
+      "campaign": "BloxClips - Pet Simulator 99 Update 99",
+      "filename": "Clip 5.mp4",
+      "local_path": "projects/ps99/clip05.mp4",
+      "release": {
+        "tag": null,
+        "asset_id": null
+      },
+      "sha256": "8df03f26aa9ee84e5d454e57669a84c27bb357e292c641c0f2a90b76ba86dd3c",
+      "size_bytes": 145593309,
+      "duration_s": 91.51,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-ps99-clip05.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 718,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/ps99",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-ps99-clip1"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: possible_duplicate shared audio: 30s of identical audio at +8s in the source (bit error 0.16) - partial overlap or high bit error (shared music? compilation?) - inspect before processing | resolved by visual comparison: frame strip shows a different hatch (Gargantuan Black Balloon Cat) from clip02 (Gargantuan Anime Agony); overlap is shared game music (bit error 0.16-0.21)"
     }
   ],
   "runs": [
@@ -832,6 +1382,42 @@
         "draft_renders_rejected_in_review": 3,
         "failed_renders": 0
       }
+    },
+    {
+      "id": "run-2026-10-24-ps99-clip1",
+      "date": "2026-10-24",
+      "type": "production",
+      "source_ids": [
+        "src-ps99-clip1",
+        "src-ps99-clip02",
+        "src-ps99-clip03",
+        "src-ps99-clip04",
+        "src-ps99-clip05",
+        "src-ps99-clip06",
+        "src-ps99-clip07",
+        "src-ps99-clip08",
+        "src-ps99-clip09",
+        "src-ps99-clip10",
+        "src-ps99-clip11",
+        "src-ps99-clip12",
+        "src-ps99-clip13",
+        "src-ps99-clip14",
+        "src-ps99-clip15",
+        "src-ps99-clip16",
+        "src-ps99-clip17"
+      ],
+      "status": "in_progress",
+      "clip_ids": [],
+      "candidates": [],
+      "output_dir": "output/ps99-clip1",
+      "campaign_rules": "BloxClips PS99: say/show 'Pet Sim 99'; strong hook; own edits; CTA to play PS99 on Roblox; no AI thumbnail; no invented features/rewards/codes; no other creators' clips; Format B = clip middle, black bars, text hook on top",
+      "log": [
+        "2026-10-24T20:08:05Z downloaded from campaign Drive folder (size matches); registry check new",
+        "2026-10-24T20:19:57Z downloaded the other 16 files from the campaign Drive folder (embeddedfolderview listing)",
+        "2026-10-24T20:19:57Z 9 flagged possible_duplicate (shared game music / similar ~25 s durations); visual strips show 17 different hatches -> registered with --verified-distinct",
+        "2026-10-24T20:19:57Z registry.py: 'processed' by fingerprint now requires bit error <= 0.12 (shared music measured 0.16-0.24 and was misread as a copy for clip05); duplicate suite 11/11"
+      ],
+      "id_note": "run covers all 17 PS99 campaign footage files"
     }
   ],
   "clips": [

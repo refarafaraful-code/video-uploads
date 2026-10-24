@@ -22,6 +22,7 @@ FP_ITEM_S = 0.1242          # chromaprint: one 32-bit item per ~0.124 s of audio
 FP_MIN_OVERLAP_S = 20       # shared audio needed to call it the same footage
 FP_MAX_BER = 0.30           # mean bit error rate on the aligned overlap (unrelated audio is ~0.5)
 FP_MIN_COVER = 0.5          # ...and it must cover this share of the candidate; less (e.g. a shared outro song) -> review
+FP_STRICT_BER = 0.12        # copies of the same footage measure 0.01-0.07; 0.12-0.30 is typically shared music -> review
 
 
 def now():
@@ -124,9 +125,9 @@ def classify(reg, digest=None, size=None, duration=None, height=None, name=None,
             overlap, ber, off = fp_match(fp, sfp)
             if overlap >= FP_MIN_OVERLAP_S and ber <= FP_MAX_BER:
                 desc = f"{overlap:.0f}s of identical audio at {off:+.0f}s in the source (bit error {ber:.2f})"
-                if overlap >= FP_MIN_COVER * len(fp) * FP_ITEM_S:
+                if overlap >= FP_MIN_COVER * len(fp) * FP_ITEM_S and ber <= FP_STRICT_BER:
                     return "processed", s["id"], f"same audio content: {desc} - re-encoded/renamed/trimmed copy"
-                partial = partial or (s["id"], f"partly shared audio: {desc}, under {FP_MIN_COVER:.0%} of this file "
+                partial = partial or (s["id"], f"shared audio: {desc} - partial overlap or high bit error "
                                                 f"(shared music? compilation?) - inspect before processing")
         if partial:
             return "possible_duplicate", *partial
@@ -178,8 +179,11 @@ def cmd_register_source(reg, a):
     p, digest, fp = probe(a.file), sha256(a.file), fingerprint(a.file)
     st, sid, why = classify(reg, digest=digest, duration=p["duration_s"], height=p["height"],
                             name=a.filename or os.path.basename(a.file), fp=fp)
-    if st != "new" and not a.allow_reprocess:
-        sys.exit(f"refusing to register: {st} ({sid}: {why}). Use --allow-reprocess only with the owner's explicit approval.")
+    if st == "possible_duplicate" and a.verified_distinct:
+        why = f"{why} | resolved by visual comparison: {a.verified_distinct}"
+    elif st != "new" and not a.allow_reprocess:
+        sys.exit(f"refusing to register: {st} ({sid}: {why}). Compare frames/audio and use --verified-distinct REASON "
+                 f"for a possible_duplicate that is different footage; --allow-reprocess only with the owner's explicit approval.")
     reg["sources"].append({"id": a.id, "title": a.title, "creator": a.creator, "campaign": a.campaign,
                            "filename": a.filename or os.path.basename(a.file), "local_path": os.path.relpath(a.file, ROOT),
                            "release": {"tag": a.tag, "asset_id": a.asset_id},
@@ -246,6 +250,7 @@ if __name__ == "__main__":
         ap.add_argument("--creator", required=True); ap.add_argument("--campaign"); ap.add_argument("--tag")
         ap.add_argument("--asset-id", type=int); ap.add_argument("--project"); ap.add_argument("--allow-reprocess", action="store_true")
         ap.add_argument("--filename", help="original filename (release asset name); defaults to the local file name")
+        ap.add_argument("--verified-distinct", help="register a possible_duplicate after a visual check showed different footage (reason is recorded)")
         cmd_register_source(reg, ap.parse_args(sys.argv[2:]))
     elif cmd == "releases":
         cmd_releases(reg)
