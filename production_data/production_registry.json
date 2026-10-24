@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T10:11:52Z",
+  "updated_at": "2026-10-24T10:16:00Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -39,6 +39,10 @@
       {
         "date": "2026-10-24",
         "event": "Scheduled the 4 general-matter clips (owner request: 2 today + 2 tomorrow, US hours) under standing authorization."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner asked for hashtags in the titles (YouTube limit 100 chars): 4 scheduled general-matter posts updated, titles 86-89 chars."
       }
     ]
   },
@@ -1804,7 +1808,8 @@
         "alternatives": [
           "Russia Controls 44% of the Fuel Behind America's Power Grid",
           "How America Lost Control of Nuclear Fuel"
-        ]
+        ],
+        "published": "America Used to Control 90% of This. Now It's Less Than 1% ☢️ #jakepaul #nuclear #shorts"
       },
       "description": "At its peak the US did more than 90% of the world's uranium enrichment - today it's under 1%, while Russia controls about 44% of the market. Jake Paul at General Matter in Paducah, Kentucky.",
       "hashtags": [
@@ -1847,12 +1852,13 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-5938770526102469908",
-        "metricool_id": 404895278,
+        "metricool_id": 404897268,
         "scheduled_for": "2026-10-24T15:00:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "youtube_title": "America Used to Control 90% of This. Now It's Less Than 1% ☢️ #jakepaul #nuclear #shorts"
       }
     },
     {
@@ -1893,7 +1899,8 @@
         "alternatives": [
           "\"The Danger of Nuclear Was Never the Technology\"",
           "Jake Paul: America Gave This Away Once"
-        ]
+        ],
+        "published": "The Real Nuclear Threat Isn't What You Think ☢️ #jakepaul #nuclearenergy #america #shorts"
       },
       "description": "Radiation, Chernobyl, bombs - or losing control of it? Jake Paul on why General Matter is bringing uranium enrichment back to the US.",
       "hashtags": [
@@ -1935,12 +1942,13 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-3363906552853412666",
-        "metricool_id": 404895528,
+        "metricool_id": 404897317,
         "scheduled_for": "2026-10-25T15:00:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/02_we_no_longer_control_it_v2.mp4",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "youtube_title": "The Real Nuclear Threat Isn't What You Think ☢️ #jakepaul #nuclearenergy #america #shorts"
       }
     },
     {
@@ -1977,7 +1985,8 @@
         "alternatives": [
           "\"Jake Paul, Welcome to Paducah, Kentucky\"",
           "The Largest Investment in Western Kentucky History"
-        ]
+        ],
+        "published": "Kentucky's Governor Never Thought He'd Say This 😂 #jakepaul #kentucky #nuclear #shorts"
       },
       "description": "Governor Andy Beshear welcomes Jake Paul to Paducah and calls General Matter the largest economic investment in the history of Western Kentucky.",
       "hashtags": [
@@ -2019,12 +2028,13 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "7843241969097198789",
-        "metricool_id": 404895485,
+        "metricool_id": 404897297,
         "scheduled_for": "2026-10-24T19:00:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/03_governor_jake_paul_welcome_v2.mp4",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "youtube_title": "Kentucky's Governor Never Thought He'd Say This 😂 #jakepaul #kentucky #nuclear #shorts"
       }
     },
     {
@@ -2057,7 +2067,8 @@
         "alternatives": [
           "\"The Cleanest and Safest Energy There Is\"",
           "Energy Secretary Chris Wright on the Cost of Electricity"
-        ]
+        ],
+        "published": "Is Nuclear Energy Actually Dangerous? ☢️ #jakepaul #nuclear #chriswright #energy #shorts"
       },
       "description": "Jake Paul calls 'nuclear is dangerous' one of the biggest misconceptions, and US Energy Secretary Chris Wright says electricity costs will decline meaningfully in the next 10-20 years.",
       "hashtags": [
@@ -2099,12 +2110,13 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "8224692345275828252",
-        "metricool_id": 404895549,
+        "metricool_id": 404897339,
         "scheduled_for": "2026-10-25T19:00:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/04_is_nuclear_dangerous.mp4",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "youtube_title": "Is Nuclear Energy Actually Dangerous? ☢️ #jakepaul #nuclear #chriswright #energy #shorts"
       }
     }
   ],
