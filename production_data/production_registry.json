@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T08:57:35Z",
+  "updated_at": "2026-10-24T10:09:10Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -568,7 +568,12 @@
         "src-general-matter"
       ],
       "status": "in_progress",
-      "clip_ids": [],
+      "clip_ids": [
+        "general-matter-01_90_percent_to_1_percent_v2",
+        "general-matter-02_we_no_longer_control_it_v2",
+        "general-matter-03_governor_jake_paul_welcome_v2",
+        "general-matter-04_is_nuclear_dangerous"
+      ],
       "candidates": [
         {
           "id": "cand-90-to-1-percent",
@@ -766,7 +771,9 @@
       "log": [
         "2026-10-24T08:44:41Z eligibility: digest pre-screen new; resumed download sha256 = GitHub digest; registry check new",
         "2026-10-24T08:52:05Z transcript + frames every 3 s over all 6:46; speakers verified via lower thirds (Chris Wright, Andy Beshear); 10 candidates: 4 selected, 1 merged, 5 rejected",
-        "2026-10-24T08:57:35Z make_clip: optional window.title_y and clip zoom strength; full-frame 16:9 layout for this graphics-heavy source. Draft 01 rejected (slow hook) -> v2 with teaser"
+        "2026-10-24T08:57:35Z make_clip: optional window.title_y and clip zoom strength; full-frame 16:9 layout for this graphics-heavy source. Draft 01 rejected (slow hook) -> v2 with teaser",
+        "2026-10-24T10:00:42Z technical QC: all 5 renders pass. Editorial review: 01_v2 and 04 pass; 02 and 03 rejected (missing final word; caption overflow). make_clip: caption merge limited to 20 characters. Re-rendering 02/03 as v2.",
+        "2026-10-24T10:09:10Z final versions 01_v2/02_v2/03_v2/04 pass technical QC and editorial review; metadata written"
       ],
       "rejected_drafts": [
         {
@@ -775,8 +782,31 @@
           "qc_technical": "pass",
           "reason": "hook too slow: punchline ('less than 1%') only at 20 s",
           "superseded_by": "01_90_percent_to_1_percent_v2"
+        },
+        {
+          "path": "output/general-matter/clips/02_we_no_longer_control_it.mp4",
+          "sha256": "17827bdd94e69c0f6c7a5fdf9ab452d20429e4c048c7aec9241915af44b42fe9",
+          "qc_technical": "pass",
+          "reason": "last word 'differently' missing from captions (segment ended before the word's end)",
+          "superseded_by": "02_we_no_longer_control_it_v2"
+        },
+        {
+          "path": "output/general-matter/clips/03_governor_jake_paul_welcome.mp4",
+          "sha256": "3de0bb1c6c81467291b5032da1d942520de1af5daf63a7d7eddf6be6b3b4710a",
+          "qc_technical": "pass",
+          "reason": "caption 'LET'S THANK GENERAL MATTER' wider than the frame (merge rule had no length limit); last word 'that' missing",
+          "superseded_by": "03_governor_jake_paul_welcome_v2"
         }
-      ]
+      ],
+      "result": {
+        "candidates_evaluated": 10,
+        "selected": 4,
+        "merged": 1,
+        "rejected_candidates": 5,
+        "clips_completed": 4,
+        "draft_renders_rejected_in_review": 3,
+        "failed_renders": 0
+      }
     }
   ],
   "clips": [
@@ -1733,6 +1763,295 @@
       "publish": {
         "status": "not_published",
         "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+      }
+    },
+    {
+      "id": "general-matter-01_90_percent_to_1_percent_v2",
+      "source_id": "src-general-matter",
+      "run_id": "run-2026-10-24-general-matter",
+      "name": "01_90_percent_to_1_percent_v2",
+      "candidate_id": "cand-90-to-1-percent",
+      "score": 87,
+      "segments_src": [
+        [
+          181.1,
+          182.9
+        ],
+        [
+          162.0,
+          198.6
+        ]
+      ],
+      "payoff_src": 185.1,
+      "duration_s": 38.4,
+      "pipeline": "make_clip v2, full-frame 16:9 window (4K source), zoom 0.4, no emojis/music bed",
+      "files": {
+        "master": {
+          "path": "output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
+          "sha256": "a8c2bc984de93b4d6b9a03b67ea5a839995af50ca85ce322c8a4eee9c9d27740",
+          "size_bytes": 31120498,
+          "in_repo": true,
+          "note": "final deliverable, committed"
+        }
+      },
+      "titles": {
+        "recommended": "America Used to Control 90% of This. Now It's Less Than 1% ☢️",
+        "alternatives": [
+          "Russia Controls 44% of the Fuel Behind America's Power Grid",
+          "How America Lost Control of Nuclear Fuel"
+        ]
+      },
+      "description": "At its peak the US did more than 90% of the world's uranium enrichment - today it's under 1%, while Russia controls about 44% of the market. Jake Paul at General Matter in Paducah, Kentucky.",
+      "hashtags": [
+        "#jakepaul",
+        "#nuclear",
+        "#energy",
+        "#uranium",
+        "#shorts"
+      ],
+      "tags": [
+        "jake paul",
+        "general matter",
+        "nuclear energy",
+        "uranium enrichment",
+        "paducah",
+        "anti fund",
+        "energy independence"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.9,
+          "duration_s": 38.4
+        },
+        "editorial": "pass: teaser hook at 0 s, charts fully visible, full ending",
+        "review_doc": "output/general-matter/metadata/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to; captions checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_yet_scheduled"
+      }
+    },
+    {
+      "id": "general-matter-02_we_no_longer_control_it_v2",
+      "source_id": "src-general-matter",
+      "run_id": "run-2026-10-24-general-matter",
+      "name": "02_we_no_longer_control_it_v2",
+      "candidate_id": "cand-no-longer-control-it",
+      "score": 84,
+      "segments_src": [
+        [
+          0.1,
+          17.8
+        ],
+        [
+          358.6,
+          362.8
+        ],
+        [
+          383.3,
+          392.47
+        ]
+      ],
+      "payoff_src": 386.6,
+      "duration_s": 31.1,
+      "pipeline": "make_clip v2, full-frame 16:9 window (4K source), zoom 0.4, no emojis/music bed",
+      "files": {
+        "master": {
+          "path": "output/general-matter/clips/02_we_no_longer_control_it_v2.mp4",
+          "sha256": "7aacad8f8ecddc79aa6bc8ea17020cea4e4bcfaa377b09e063f161169ad3bad4",
+          "size_bytes": 36098218,
+          "in_repo": true,
+          "note": "final deliverable, committed"
+        }
+      },
+      "titles": {
+        "recommended": "The Real Nuclear Threat Isn't What You Think ☢️",
+        "alternatives": [
+          "\"The Danger of Nuclear Was Never the Technology\"",
+          "Jake Paul: America Gave This Away Once"
+        ]
+      },
+      "description": "Radiation, Chernobyl, bombs - or losing control of it? Jake Paul on why General Matter is bringing uranium enrichment back to the US.",
+      "hashtags": [
+        "#jakepaul",
+        "#nuclear",
+        "#energy",
+        "#america",
+        "#shorts"
+      ],
+      "tags": [
+        "jake paul",
+        "general matter",
+        "nuclear energy",
+        "uranium",
+        "anti fund",
+        "paducah kentucky"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.3,
+          "duration_s": 31.1
+        },
+        "editorial": "pass_with_notes: strong hook, payoff from same speaker's conclusion, full ending; source subscribe overlay in last second",
+        "review_doc": "output/general-matter/metadata/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to; captions checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_yet_scheduled"
+      }
+    },
+    {
+      "id": "general-matter-03_governor_jake_paul_welcome_v2",
+      "source_id": "src-general-matter",
+      "run_id": "run-2026-10-24-general-matter",
+      "name": "03_governor_jake_paul_welcome_v2",
+      "candidate_id": "cand-governor-welcome",
+      "score": 80,
+      "segments_src": [
+        [
+          323.2,
+          331.8
+        ],
+        [
+          333.1,
+          357.15
+        ]
+      ],
+      "payoff_src": 351.3,
+      "duration_s": 32.67,
+      "pipeline": "make_clip v2, full-frame 16:9 window (4K source), zoom 0.4, no emojis/music bed",
+      "files": {
+        "master": {
+          "path": "output/general-matter/clips/03_governor_jake_paul_welcome_v2.mp4",
+          "sha256": "4d53f2ecf886be40525051a616dd561e008df0a7d99fae290b4983bf2330e0e8",
+          "size_bytes": 32612514,
+          "in_repo": true,
+          "note": "final deliverable, committed"
+        }
+      },
+      "titles": {
+        "recommended": "Kentucky's Governor Never Thought He'd Say This 😂",
+        "alternatives": [
+          "\"Jake Paul, Welcome to Paducah, Kentucky\"",
+          "The Largest Investment in Western Kentucky History"
+        ]
+      },
+      "description": "Governor Andy Beshear welcomes Jake Paul to Paducah and calls General Matter the largest economic investment in the history of Western Kentucky.",
+      "hashtags": [
+        "#jakepaul",
+        "#kentucky",
+        "#andybeshear",
+        "#nuclear",
+        "#shorts"
+      ],
+      "tags": [
+        "jake paul",
+        "andy beshear",
+        "kentucky",
+        "paducah",
+        "general matter",
+        "nuclear energy"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.1,
+          "duration_s": 32.67
+        },
+        "editorial": "pass: speaker verified (lower third), hook and payoff clear, full ending",
+        "review_doc": "output/general-matter/metadata/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to; captions checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_yet_scheduled"
+      }
+    },
+    {
+      "id": "general-matter-04_is_nuclear_dangerous",
+      "source_id": "src-general-matter",
+      "run_id": "run-2026-10-24-general-matter",
+      "name": "04_is_nuclear_dangerous",
+      "candidate_id": "cand-nuclear-misconception",
+      "score": 78,
+      "segments_src": [
+        [
+          109.8,
+          135.8
+        ]
+      ],
+      "payoff_src": 115.9,
+      "duration_s": 26.0,
+      "pipeline": "make_clip v2, full-frame 16:9 window (4K source), zoom 0.4, no emojis/music bed",
+      "files": {
+        "master": {
+          "path": "output/general-matter/clips/04_is_nuclear_dangerous.mp4",
+          "sha256": "266f564fd612634a04e7e7cf3f3f8591642096fdef5e64bf9bd3e4952ccd67da",
+          "size_bytes": 26085804,
+          "in_repo": true,
+          "note": "final deliverable, committed"
+        }
+      },
+      "titles": {
+        "recommended": "Is Nuclear Energy Actually Dangerous? ☢️",
+        "alternatives": [
+          "\"The Cleanest and Safest Energy There Is\"",
+          "Energy Secretary Chris Wright on the Cost of Electricity"
+        ]
+      },
+      "description": "Jake Paul calls 'nuclear is dangerous' one of the biggest misconceptions, and US Energy Secretary Chris Wright says electricity costs will decline meaningfully in the next 10-20 years.",
+      "hashtags": [
+        "#jakepaul",
+        "#nuclear",
+        "#energy",
+        "#chriswright",
+        "#shorts"
+      ],
+      "tags": [
+        "jake paul",
+        "chris wright",
+        "nuclear energy",
+        "safety",
+        "electricity",
+        "general matter"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.2,
+          "duration_s": 26.0
+        },
+        "editorial": "pass_with_notes: speakers verified; claims presented as speakers' statements",
+        "review_doc": "output/general-matter/metadata/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to; captions checked against ASR transcript only"
+      },
+      "publish": {
+        "status": "not_yet_scheduled"
       }
     }
   ],

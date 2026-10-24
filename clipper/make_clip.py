@@ -247,8 +247,8 @@ def phrases(words, emph):
     # a group shown for under 0.4 s cannot be read: fold it into the next one (same segment, max 4 words)
     merged = []
     for i, g in enumerate(groups):
-        if merged and merged[-1] is not None and merged[-1][-1]["seg"] == g[0]["seg"] and len(merged[-1]) + len(g) <= 4 \
-                and g[0]["s"] - merged[-1][0]["s"] < 0.4:
+        if merged and merged[-1][-1]["seg"] == g[0]["seg"] and len(merged[-1]) + len(g) <= 4 \
+                and sum(len(x["w"]) + 1 for x in merged[-1] + g) - 1 <= 20 and g[0]["s"] - merged[-1][0]["s"] < 0.4:
             merged[-1] = merged[-1] + g
         else:
             merged.append(g)
