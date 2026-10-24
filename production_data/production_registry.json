@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T19:19:44Z",
+  "updated_at": "2026-10-24T19:25:45Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -55,6 +55,10 @@
       {
         "date": "2026-10-24",
         "event": "Owner deleted the first upload (W3U37rS0JEc) in YouTube Studio and asked for a re-upload; same file/title/description re-scheduled for 15:22 New York."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner: publish the snack-wars clips, 2 per day (one snack-wars + one of the Jake Paul type), one now. SW01 now (15:27 NY), SW02-04 at 19:00 NY Oct 25-27; general-matter 04 moved from Oct 25 19:00 to Oct 26 15:00 NY to pair with SW03. Oct 27 has only SW04 (no Jake Paul clips left)."
       }
     ]
   },
@@ -1510,7 +1514,7 @@
         "seal impression",
         "funny interview"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -1527,8 +1531,21 @@
         "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_published",
-        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-1359042458424163477",
+        "metricool_id": 405213696,
+        "scheduled_for": "2026-10-24T15:27:00 America/New_York",
+        "youtube_title": "Jessica Biel Did a Seal Noise. John Cena Guessed Something Else 😂 #johncena #shorts",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/01_seal_impression_guess_v3.mp4",
+        "status_checked_at": "2026-10-24T19:25:45Z",
+        "verified_published": false,
+        "note": "owner decided to publish despite unconfirmed rights (LADbible content)"
       }
     },
     {
@@ -1599,7 +1616,7 @@
         "snack wars",
         "ladbible"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -1616,8 +1633,21 @@
         "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_published",
-        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "8960380289948533999",
+        "metricool_id": 405213742,
+        "scheduled_for": "2026-10-25T19:00:00 America/New_York",
+        "youtube_title": "She Warned John Cena Not To Eat It 🧂 #johncena #jessicabiel #saltlicorice #shorts",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/02_salt_licorice_warning_v2.mp4",
+        "status_checked_at": "2026-10-24T19:25:45Z",
+        "verified_published": false,
+        "note": "owner decided to publish despite unconfirmed rights (LADbible content)"
       }
     },
     {
@@ -1680,7 +1710,7 @@
         "snack wars",
         "ladbible"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -1697,8 +1727,21 @@
         "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_published",
-        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-7049237188628230247",
+        "metricool_id": 405213793,
+        "scheduled_for": "2026-10-26T19:00:00 America/New_York",
+        "youtube_title": "John Cena Had a \"Strategy\"... 😂 #johncena #jessicabiel #cupflip #shorts",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/03_cup_flip_strategy_v2.mp4",
+        "status_checked_at": "2026-10-24T19:25:45Z",
+        "verified_published": false,
+        "note": "owner decided to publish despite unconfirmed rights (LADbible content)"
       }
     },
     {
@@ -1765,7 +1808,7 @@
         "snack wars",
         "ladbible"
       ],
-      "status": "completed",
+      "status": "scheduled",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -1782,8 +1825,21 @@
         "not_verified": "audio not listened to; caption accuracy checked against ASR transcript only"
       },
       "publish": {
-        "status": "not_published",
-        "note": "controlled test run: upload/schedule/publish prohibited by the owner"
+        "method": "metricool",
+        "network": "youtube",
+        "type": "short",
+        "privacy": "public",
+        "made_for_kids": false,
+        "category": "ENTERTAINMENT",
+        "metricool_uuid": "-2577354964166031607",
+        "metricool_id": 405213839,
+        "scheduled_for": "2026-10-27T19:00:00 America/New_York",
+        "youtube_title": "No Hands, One Chopstick: John Cena vs Jessica Biel 🥢 #johncena #jessicabiel #shorts",
+        "status": "PENDING",
+        "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/04_chopstick_hoops_v3.mp4",
+        "status_checked_at": "2026-10-24T19:25:45Z",
+        "verified_published": false,
+        "note": "owner decided to publish despite unconfirmed rights (LADbible content)"
       }
     },
     {
@@ -1840,7 +1896,7 @@
         "anti fund",
         "energy independence"
       ],
-      "status": "scheduled",
+      "status": "published",
       "qc": {
         "status": "pass",
         "technical": {
@@ -1866,14 +1922,14 @@
         "metricool_uuid": "-641457841879167993",
         "metricool_id": 405210719,
         "scheduled_for": "2026-10-24T15:22:00 America/New_York",
-        "status": "PENDING",
+        "status": "PUBLISHED",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
-        "status_checked_at": "2026-10-24T19:19:44Z",
-        "verified_published": false,
+        "status_checked_at": "2026-10-24T19:25:45Z",
+        "verified_published": true,
         "youtube_title": "America Used to Control 90% of This. Now It's Less Than 1% ☢️ #jakepaul #nuclear #shorts",
-        "youtube_id": null,
-        "public_url": null,
-        "published_at": null,
+        "youtube_id": "ovzNxMkgLek",
+        "public_url": "https://www.youtube.com/shorts/ovzNxMkgLek",
+        "published_at": "2026-10-24T15:22:00 America/New_York",
         "verified_via": "Metricool getScheduledPosts provider status PUBLISHED",
         "history": [
           {
@@ -2140,8 +2196,8 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "8224692345275828252",
-        "metricool_id": 404897339,
-        "scheduled_for": "2026-10-25T19:00:00 America/New_York",
+        "metricool_id": 405213883,
+        "scheduled_for": "2026-10-26T15:00:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/04_is_nuclear_dangerous.mp4",
         "status_checked_at": "2026-10-24",
