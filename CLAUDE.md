@@ -54,9 +54,10 @@ Only start a production run when the owner explicitly asks for one ("העלית�
 10. Publish copies: `ffmpeg -i in.mp4 -c:v libx264 -preset slow -crf 21 -maxrate 9M -bufsize 18M -c:a copy -movflags +faststart out.mp4`
     into `shorts-<slug>/`, then QC them too. Commit `shorts-<slug>/`, `projects/<slug>/{spec.json,words.json,transcript.txt}`
     and `production_data/` on the `shorts` branch and push.
-11. **Publishing — only with approval.** Default (`publishing.mode = confirm_each_batch` in the registry): send the
-    clips + metadata and ask whether to schedule this batch; do nothing until the owner says yes for it. Only if the
-    registry records an explicit standing authorization may you schedule without asking. When approved:
+11. **Publishing.** The owner granted standing authorization (registry `publishing.mode = standing_authorization`,
+    2026-10-24): when the owner asks for clips to be published/scheduled, do it without asking again. Never
+    publish a clip that failed technical or editorial QC. If the registry mode is ever `confirm_each_batch`, ask first.
+    Scheduling:
     Metricool `createScheduledPost`, blogId `7616437`, media
     `https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/shorts-<slug>/<file>.mp4`,
     one Short per day at **15:00 America/New_York** continuing after the last day in `getScheduledPosts`,

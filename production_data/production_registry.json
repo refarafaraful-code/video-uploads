@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T08:33:59Z",
+  "updated_at": "2026-10-24T08:42:28Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
     "metricool_blog_id": "7616437"
   },
   "publishing": {
-    "mode": "confirm_each_batch",
-    "standing_authorization": false,
-    "default_behavior": "Produce and QC clips, send them with metadata, then ask the owner whether to schedule this batch. Schedule only after an explicit yes for that batch.",
+    "mode": "standing_authorization",
+    "standing_authorization": true,
+    "default_behavior": "Owner granted standing authorization (2026-10-24): produce, QC and schedule without asking for confirmation. Still never publish anything that failed QC.",
     "default_schedule_when_approved": "one Short per day, 15:00 America/New_York, after the last scheduled day",
     "history": [
       {
@@ -31,6 +31,10 @@
       {
         "date": "2026-10-24",
         "event": "Owner asked to cancel and delete ALL scheduled YouTube posts immediately. All 5 kidnapped-wife posts converted to private drafts, autoPublish off; verified with getScheduledPosts."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner: 'You have my approval for everything - stop asking for approval like a small child; do whatever is needed so you don't ask.' Standing authorization recorded; Metricool 'ask' rules removed from .claude/settings.json."
       }
     ]
   },
