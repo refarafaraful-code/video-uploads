@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T19:15:43Z",
+  "updated_at": "2026-10-24T19:19:44Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -51,6 +51,10 @@
       {
         "date": "2026-10-24",
         "event": "Owner asked to publish the governor clip (was 01:00 Israel) now; moved to 15:12 New York. Nothing else changed."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner deleted the first upload (W3U37rS0JEc) in YouTube Studio and asked for a re-upload; same file/title/description re-scheduled for 15:22 New York."
       }
     ]
   },
@@ -1836,7 +1840,7 @@
         "anti fund",
         "energy independence"
       ],
-      "status": "published",
+      "status": "scheduled",
       "qc": {
         "status": "pass",
         "technical": {
@@ -1859,18 +1863,28 @@
         "privacy": "public",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
-        "metricool_uuid": "-5938770526102469908",
-        "metricool_id": 404955128,
-        "scheduled_for": "2026-10-24T08:16:00 America/New_York",
-        "status": "PUBLISHED",
+        "metricool_uuid": "-641457841879167993",
+        "metricool_id": 405210719,
+        "scheduled_for": "2026-10-24T15:22:00 America/New_York",
+        "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
-        "status_checked_at": "2026-10-24T12:18:55Z",
-        "verified_published": true,
+        "status_checked_at": "2026-10-24T19:19:44Z",
+        "verified_published": false,
         "youtube_title": "America Used to Control 90% of This. Now It's Less Than 1% ☢️ #jakepaul #nuclear #shorts",
-        "youtube_id": "W3U37rS0JEc",
-        "public_url": "https://www.youtube.com/shorts/W3U37rS0JEc",
-        "published_at": "2026-10-24T08:16:00 America/New_York",
-        "verified_via": "Metricool getScheduledPosts provider status PUBLISHED"
+        "youtube_id": null,
+        "public_url": null,
+        "published_at": null,
+        "verified_via": "Metricool getScheduledPosts provider status PUBLISHED",
+        "history": [
+          {
+            "youtube_id": "W3U37rS0JEc",
+            "public_url": "https://www.youtube.com/shorts/W3U37rS0JEc",
+            "published_at": "2026-10-24T08:16:00 America/New_York",
+            "metricool_uuid": "-5938770526102469908",
+            "status": "deleted by owner in YouTube Studio",
+            "noted_at": "2026-10-24T19:19:44Z"
+          }
+        ]
       }
     },
     {
