@@ -19,7 +19,8 @@ SPEC.json:
     "mood": "tense",                      # music bed: tense | fun | hype | none
     "cta": "FOLLOW FOR PART 2",           # end card text (default FOLLOW FOR MORE, "" to disable)
     "frame": "group",                     # optional: keep all significant faces in frame (two-shots); default follows the largest face
-    "window": {"fg_y": 300, "fg_h": 1080, "cap_y": 1460, "emoji_y": 1230}   # optional: video window / caption / emoji position
+    "window": {"fg_y": 300, "fg_h": 1080, "cap_y": 1460, "emoji_y": 1230, "title_y": 128},  # optional: layout
+    "zoom": 1.0                           # optional: strength of zoom pulses (lower for graphics near the edges)
   }]
 }
 """
@@ -34,7 +35,7 @@ YUNET = os.path.join(HERE, "models", "yunet.onnx")
 EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 FONTS = os.path.expanduser("~/.fonts")
 W, H, FPS = 1080, 1920, 30
-DEFAULT_WINDOW = {"fg_y": 250, "fg_h": 1500, "cap_y": 1330, "emoji_y": None}  # emoji_y None -> fg_y + 330   # foreground video window; blurred copy fills the rest
+DEFAULT_WINDOW = {"fg_y": 250, "fg_h": 1500, "cap_y": 1330, "emoji_y": None, "title_y": 128}  # emoji_y None -> fg_y + 330   # foreground video window; blurred copy fills the rest
 FG_Y, FG_H, CAP_Y = DEFAULT_WINDOW["fg_y"], DEFAULT_WINDOW["fg_h"], DEFAULT_WINDOW["cap_y"]
 TITLE_Y, CTA_Y = 128, 1832
 
@@ -343,9 +344,9 @@ def windows(times, d):
 # ---------------------------------------------------------------- render
 
 def render(spec, clip, outdir):
-    global FG_Y, FG_H, CAP_Y
+    global FG_Y, FG_H, CAP_Y, TITLE_Y
     win = {**DEFAULT_WINDOW, **clip.get("window", {})}
-    FG_Y, FG_H, CAP_Y = win["fg_y"], win["fg_h"], win["cap_y"]
+    FG_Y, FG_H, CAP_Y, TITLE_Y = win["fg_y"], win["fg_h"], win["cap_y"], win["title_y"]
     emoji_y = win["emoji_y"] if win["emoji_y"] is not None else FG_Y + 330
     out = os.path.join(outdir, clip["name"] + ".mp4")
     if os.path.exists(out):
@@ -428,8 +429,9 @@ def render(spec, clip, outdir):
                  f"[{i}:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[ta{i}]")
     g.append("".join(f"[tv{i}][ta{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=1[cv][ca]")
 
-    zoom = (f"1+0.12*exp(-t*3.5)+0.03*t/{total:.2f}+" + pulse(slams, 0.08, 9) + "+" + pulse(cuts, 0.035, 7)
-            + "+" + pulse(flashes, 0.07, 6))
+    zk = clip.get("zoom", 1.0)   # <1 for sources with text/graphics near the frame edges
+    zoom = (f"1+{zk}*(0.12*exp(-t*3.5)+0.03*t/{total:.2f}+" + pulse(slams, 0.08, 9) + "+" + pulse(cuts, 0.035, 7)
+            + "+" + pulse(flashes, 0.07, 6) + ")")
     shake = pulse(slams + flashes, 16, 9).replace("exp(", "sin(t*95)*exp(")
     grade = ("eq=contrast=1.15:saturation=1.4:gamma=0.96,"
              "curves=r='0/0 0.5/0.54 1/1':b='0/0.02 0.5/0.47 1/0.96',unsharp=5:5:1.0:5:5:0")

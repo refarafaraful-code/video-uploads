@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T08:42:28Z",
+  "updated_at": "2026-10-24T08:57:35Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -220,6 +220,38 @@
       "candidates": [],
       "notes": "duplicate check at registration: new",
       "local_path": "projects/snack-wars/source.mp4"
+    },
+    {
+      "id": "src-general-matter",
+      "title": "General Matter (v7.1)",
+      "creator": "unknown",
+      "campaign": null,
+      "filename": "General.Matter_v7.1.mp4",
+      "local_path": "projects/general-matter/source.mp4",
+      "release": {
+        "tag": "factory",
+        "asset_id": 671721808
+      },
+      "sha256": "0d65cb0e54efb7f09d2b4444d7ccf492308d04dfba6815b6107cd4d4f98958fb",
+      "size_bytes": 1027233738,
+      "duration_s": 405.733,
+      "width": 3840,
+      "height": 2160,
+      "fps": 30.0,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-general-matter.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 3256,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/general-matter",
+      "first_processed": "2026-10-24",
+      "runs": [
+        "run-2026-10-24-general-matter"
+      ],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
     }
   ],
   "runs": [
@@ -527,6 +559,224 @@
         "draft_renders_rejected_in_review": 5,
         "failed_renders": 1
       }
+    },
+    {
+      "id": "run-2026-10-24-general-matter",
+      "date": "2026-10-24",
+      "type": "production",
+      "source_ids": [
+        "src-general-matter"
+      ],
+      "status": "in_progress",
+      "clip_ids": [],
+      "candidates": [
+        {
+          "id": "cand-90-to-1-percent",
+          "approx_src": [
+            162.0,
+            198.6
+          ],
+          "summary": "US went from >90% of world uranium enrichment to <1%; Russia controls ~44%; 'one of America's biggest adversaries controls the fuel behind our grid'",
+          "score": {
+            "hook": 22,
+            "curiosity": 16,
+            "payoff": 17,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 87
+          },
+          "decision": "selected",
+          "reason": "Concrete, surprising statistic with a clear stakes payoff; works standalone."
+        },
+        {
+          "id": "cand-no-longer-control-it",
+          "approx_src": [
+            0.1,
+            391.9
+          ],
+          "summary": "Opening question 'what if the real nuclear threat is that we no longer control it?' + closing answer 'The danger was never the technology...'",
+          "score": {
+            "hook": 22,
+            "curiosity": 17,
+            "payoff": 16,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "selected",
+          "reason": "Strongest hook of the video; pairs the opening question with Jake's own closing answer (same speaker, same thesis) so the clip has a payoff. Absorbs the separate closing-statement candidate to avoid two clips on the same point."
+        },
+        {
+          "id": "cand-governor-welcome",
+          "approx_src": [
+            323.2,
+            356.4
+          ],
+          "summary": "Kentucky Governor Andy Beshear: 'something I never thought I'd say - Jake Paul, welcome to Paducah'; 'largest economic investment in the history of Western Kentucky'",
+          "score": {
+            "hook": 21,
+            "curiosity": 14,
+            "payoff": 15,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 80
+          },
+          "decision": "selected",
+          "reason": "Unexpected, funny opening line from a governor; clear payoff (record investment)."
+        },
+        {
+          "id": "cand-nuclear-misconception",
+          "approx_src": [
+            109.8,
+            135.4
+          ],
+          "summary": "'Biggest misconception: nuclear is dangerous - it's the cleanest and safest energy'; Energy Secretary Chris Wright on falling electricity costs",
+          "score": {
+            "hook": 21,
+            "curiosity": 14,
+            "payoff": 14,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 78
+          },
+          "decision": "selected",
+          "reason": "Contrarian claim as hook, backed by a cabinet secretary; distinct topic (safety/cost). Claims are presented as the speakers' statements."
+        },
+        {
+          "id": "cand-closing-statement",
+          "approx_src": [
+            358.6,
+            391.9
+          ],
+          "summary": "'America gave this away once, and we're not doing it again... the danger is letting someone else control it'",
+          "score": {
+            "hook": 20,
+            "curiosity": 13,
+            "payoff": 16,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 7,
+            "total": 77
+          },
+          "decision": "merged",
+          "reason": "Score 77 but same thesis as cand-no-longer-control-it; used as that clip's payoff instead of a separate, repetitive clip."
+        },
+        {
+          "id": "cand-10-percent-electricity",
+          "approx_src": [
+            198.7,
+            240.6
+          ],
+          "summary": "Paducah used 10% of all US electricity at one point; 3 gigawatts; shut down 2013",
+          "score": {
+            "hook": 17,
+            "curiosity": 15,
+            "payoff": 13,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 74
+          },
+          "decision": "rejected",
+          "reason": "Score 74: striking fact but the payoff (economics, shutdown) is flat; overlaps the 90%->1% clip."
+        },
+        {
+          "id": "cand-marbles-analogy",
+          "approx_src": [
+            241.0,
+            270.0
+          ],
+          "summary": "Uranium enrichment explained with 1,000 marbles",
+          "score": {
+            "hook": 14,
+            "curiosity": 13,
+            "payoff": 12,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 70
+          },
+          "decision": "rejected",
+          "reason": "Score 70: clear but educational, weak hook."
+        },
+        {
+          "id": "cand-history-tnt",
+          "approx_src": [
+            138.5,
+            162.0
+          ],
+          "summary": "Paducah built for WWII TNT, then nuclear",
+          "score": {
+            "hook": 15,
+            "curiosity": 12,
+            "payoff": 11,
+            "clarity": 12,
+            "pacing": 7,
+            "distinctiveness": 7,
+            "total": 64
+          },
+          "decision": "rejected",
+          "reason": "Score 64: background history, no payoff."
+        },
+        {
+          "id": "cand-why-antifund",
+          "approx_src": [
+            75.0,
+            109.0
+          ],
+          "summary": "'Jake, why are you here?' - Anti Fund and reindustrialization",
+          "score": {
+            "hook": 15,
+            "curiosity": 12,
+            "payoff": 10,
+            "clarity": 13,
+            "pacing": 7,
+            "distinctiveness": 7,
+            "total": 64
+          },
+          "decision": "rejected",
+          "reason": "Score 64: mostly fund promotion."
+        },
+        {
+          "id": "cand-atlas-shrugged",
+          "approx_src": [
+            279.0,
+            318.0
+          ],
+          "summary": "Rail yard tour; 'I feel like I'm in Atlas Shrugged'",
+          "score": {
+            "hook": 12,
+            "curiosity": 10,
+            "payoff": 9,
+            "clarity": 10,
+            "pacing": 7,
+            "distinctiveness": 7,
+            "total": 55
+          },
+          "decision": "rejected",
+          "reason": "Score 55: niche reference, little payoff."
+        }
+      ],
+      "output_dir": "output/general-matter",
+      "publish_plan": "owner: schedule 2 today + 2 tomorrow at US hours (standing authorization)",
+      "log": [
+        "2026-10-24T08:44:41Z eligibility: digest pre-screen new; resumed download sha256 = GitHub digest; registry check new",
+        "2026-10-24T08:52:05Z transcript + frames every 3 s over all 6:46; speakers verified via lower thirds (Chris Wright, Andy Beshear); 10 candidates: 4 selected, 1 merged, 5 rejected",
+        "2026-10-24T08:57:35Z make_clip: optional window.title_y and clip zoom strength; full-frame 16:9 layout for this graphics-heavy source. Draft 01 rejected (slow hook) -> v2 with teaser"
+      ],
+      "rejected_drafts": [
+        {
+          "path": "output/general-matter/clips/01_90_percent_to_1_percent.mp4",
+          "sha256": "0804a5f8501795b8482ecca2f40136e9867d2f2aaab742cd12c8e281109101cc",
+          "qc_technical": "pass",
+          "reason": "hook too slow: punchline ('less than 1%') only at 20 s",
+          "superseded_by": "01_90_percent_to_1_percent_v2"
+        }
+      ]
     }
   ],
   "clips": [

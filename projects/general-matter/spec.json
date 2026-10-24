@@ -1,0 +1,126 @@
+{
+ "source": "source.mp4",
+ "words": "words.json",
+ "watermark": "",
+ "replace": {},
+ "clips": [
+  {
+   "name": "01_90_percent_to_1_percent_v2",
+   "title": "AMERICA WENT FROM 90% TO LESS THAN 1%",
+   "segments": [
+    [
+     181.1,
+     182.9
+    ],
+    [
+     162.0,
+     198.6
+    ]
+   ],
+   "emphasis": [
+    "90%",
+    "1%",
+    "RUSSIA",
+    "44%",
+    "ADVERSARIES"
+   ],
+   "payoff": 185.1,
+   "mood": "none",
+   "zoom": 0.4,
+   "window": {
+    "fg_y": 520,
+    "fg_h": 608,
+    "cap_y": 1270,
+    "title_y": 300
+   }
+  },
+  {
+   "name": "02_we_no_longer_control_it",
+   "title": "THE REAL NUCLEAR THREAT ISN'T WHAT YOU THINK",
+   "segments": [
+    [
+     0.1,
+     17.8
+    ],
+    [
+     358.6,
+     362.8
+    ],
+    [
+     383.3,
+     392.2
+    ]
+   ],
+   "emphasis": [
+    "NUCLEAR",
+    "CONTROL",
+    "AGAIN",
+    "DANGER",
+    "NEVER"
+   ],
+   "payoff": 386.6,
+   "mood": "none",
+   "zoom": 0.4,
+   "window": {
+    "fg_y": 520,
+    "fg_h": 608,
+    "cap_y": 1270,
+    "title_y": 300
+   }
+  },
+  {
+   "name": "03_governor_jake_paul_welcome",
+   "title": "KENTUCKY'S GOVERNOR NEVER THOUGHT HE'D SAY THIS",
+   "segments": [
+    [
+     323.2,
+     331.8
+    ],
+    [
+     333.1,
+     356.8
+    ]
+   ],
+   "emphasis": [
+    "NEVER",
+    "SKYROCKETING",
+    "LARGEST",
+    "HISTORY"
+   ],
+   "payoff": 351.3,
+   "mood": "none",
+   "zoom": 0.4,
+   "window": {
+    "fg_y": 520,
+    "fg_h": 608,
+    "cap_y": 1270,
+    "title_y": 300
+   }
+  },
+  {
+   "name": "04_is_nuclear_dangerous",
+   "title": "IS NUCLEAR ENERGY ACTUALLY DANGEROUS?",
+   "segments": [
+    [
+     109.8,
+     135.8
+    ]
+   ],
+   "emphasis": [
+    "DANGEROUS",
+    "CLEANEST",
+    "SAFEST",
+    "CHEAPER"
+   ],
+   "payoff": 115.9,
+   "mood": "none",
+   "zoom": 0.4,
+   "window": {
+    "fg_y": 520,
+    "fg_h": 608,
+    "cap_y": 1270,
+    "title_y": 300
+   }
+  }
+ ]
+}
