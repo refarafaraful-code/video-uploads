@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T23:38:51Z",
+  "updated_at": "2026-10-24T08:33:59Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -19,6 +19,18 @@
       {
         "date": "2026-10-24",
         "event": "CLIPPINGMASTER §14 requires explicit authorization; during the audit the default was set to per-batch confirmation. A standing authorization must be stated explicitly by the owner and recorded here."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner approved scheduling the 4 snack-wars clips (batch run-test-1-snack-wars): 2 Shorts per day, one Jake Paul + one snack-wars. Scheduled at 19:00 America/New_York Oct 24-27 alongside the existing 15:00 Jake Paul posts. Media = the reviewed master files in output/ (no re-encode, so the published file is exactly the reviewed one)."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "The snack-wars scheduling call was rejected by the owner; no post was created."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner asked to cancel and delete ALL scheduled YouTube posts immediately. All 5 kidnapped-wife posts converted to private drafts, autoPublish off; verified with getScheduledPosts."
       }
     ]
   },
@@ -802,7 +814,7 @@
           "\"Erica's In The Trunk!\""
         ]
       },
-      "status": "scheduled",
+      "status": "canceled",
       "qc": {
         "status": "pass",
         "automated": {
@@ -820,14 +832,17 @@
         "method": "metricool",
         "network": "youtube",
         "type": "short",
-        "privacy": "public",
+        "privacy": "private",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "6600568134462555637",
         "scheduled_for": "2026-10-24T15:00:00 America/New_York",
-        "status": "PENDING",
+        "status": "canceled",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "metricool_id": 404850681,
+        "canceled_at": "2026-10-24T08:33:59Z",
+        "note": "owner asked to cancel and delete all scheduled posts; converted to Metricool draft (draft=true, autoPublish=false, privacy=private). The connector has no delete action - delete in the Metricool planner."
       }
     },
     {
@@ -872,7 +887,7 @@
           "Shopping Cart vs Staircase"
         ]
       },
-      "status": "scheduled",
+      "status": "canceled",
       "qc": {
         "status": "pass",
         "automated": {
@@ -890,14 +905,17 @@
         "method": "metricool",
         "network": "youtube",
         "type": "short",
-        "privacy": "public",
+        "privacy": "private",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "2205981751520021054",
         "scheduled_for": "2026-10-25T15:00:00 America/New_York",
-        "status": "PENDING",
+        "status": "canceled",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "metricool_id": 404850786,
+        "canceled_at": "2026-10-24T08:33:59Z",
+        "note": "owner asked to cancel and delete all scheduled posts; converted to Metricool draft (draft=true, autoPublish=false, privacy=private). The connector has no delete action - delete in the Metricool planner."
       }
     },
     {
@@ -946,7 +964,7 @@
           "Jake vs Logan: The Parking Garage Standoff"
         ]
       },
-      "status": "scheduled",
+      "status": "canceled",
       "qc": {
         "status": "pass",
         "automated": {
@@ -964,14 +982,17 @@
         "method": "metricool",
         "network": "youtube",
         "type": "short",
-        "privacy": "public",
+        "privacy": "private",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-4975307741114777342",
         "scheduled_for": "2026-10-26T15:00:00 America/New_York",
-        "status": "PENDING",
+        "status": "canceled",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "metricool_id": 404850803,
+        "canceled_at": "2026-10-24T08:33:59Z",
+        "note": "owner asked to cancel and delete all scheduled posts; converted to Metricool draft (draft=true, autoPublish=false, privacy=private). The connector has no delete action - delete in the Metricool planner."
       }
     },
     {
@@ -1032,7 +1053,7 @@
           "Her Channel Got Deleted... Or Did It?"
         ]
       },
-      "status": "scheduled",
+      "status": "canceled",
       "qc": {
         "status": "pass",
         "automated": {
@@ -1050,14 +1071,17 @@
         "method": "metricool",
         "network": "youtube",
         "type": "short",
-        "privacy": "public",
+        "privacy": "private",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-2228738609093914757",
         "scheduled_for": "2026-10-27T15:00:00 America/New_York",
-        "status": "PENDING",
+        "status": "canceled",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "metricool_id": 404850824,
+        "canceled_at": "2026-10-24T08:33:59Z",
+        "note": "owner asked to cancel and delete all scheduled posts; converted to Metricool draft (draft=true, autoPublish=false, privacy=private). The connector has no delete action - delete in the Metricool planner."
       }
     },
     {
@@ -1102,7 +1126,7 @@
           "Nick Thinks Erica Is Using Jake"
         ]
       },
-      "status": "scheduled",
+      "status": "canceled",
       "qc": {
         "status": "pass",
         "automated": {
@@ -1120,14 +1144,17 @@
         "method": "metricool",
         "network": "youtube",
         "type": "short",
-        "privacy": "public",
+        "privacy": "private",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-8815994213356057287",
         "scheduled_for": "2026-10-28T15:00:00 America/New_York",
-        "status": "PENDING",
+        "status": "canceled",
         "status_checked_at": "2026-10-24",
-        "verified_published": false
+        "verified_published": false,
+        "metricool_id": 404850851,
+        "canceled_at": "2026-10-24T08:33:59Z",
+        "note": "owner asked to cancel and delete all scheduled posts; converted to Metricool draft (draft=true, autoPublish=false, privacy=private). The connector has no delete action - delete in the Metricool planner."
       }
     },
     {
