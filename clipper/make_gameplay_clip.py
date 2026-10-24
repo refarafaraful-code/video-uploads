@@ -20,6 +20,11 @@ SPEC.json:
     "emojis": [[59.3, "😱"]],
     "mood": "none",                       # extra music bed under the game audio: none | hype | fun | tense
     "cta": "PLAY PET SIM 99 ON ROBLOX",
+    "voice": {"file": "campaign_audio/C.mp3", "words": "campaign_audio/C.json",   # optional voice-over (e.g. the
+              "segments": [[0, 9.0]], "align": [7.2, 72.5]}, # campaign's reaction lines): kept segments of the file;
+                                          # voice time 7.2 lands on source time 72.5; captions come from the words
+                                          # file and replace the written texts while the voice runs
+    "labels": [[72.5, "GARGANTUAN ANIME AGONY"]],  # replaces the hook title from that time on (the payoff's name)
     "game_y": 479                         # optional: top of the game window (default centred)
   }]
 }
@@ -28,7 +33,8 @@ Compilations: a segment may name its own source as a 4th element ([s, e, speed, 
 """
 import argparse, json, os, re, subprocess, tempfile, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from make_clip import (W, H, FPS, SFX, FONTS, BEDS, ts, ass_escape, emoji_frames, pulse,
+from make_clip import (W, H, FPS, SFX, FONTS, BEDS, ts, ass_escape, emoji_frames, pulse, phrases, build_timeline,
+                       clean,
                        windows)
 
 YELLOW = "00E6FF"
@@ -72,7 +78,10 @@ def marked_lines(text, n=18, base_col="FFFFFF"):
             for ln in lines]
 
 
-def write_ass(path, clip, tmap, total, game_y, game_h, watermark):
+VOICE_EMPH = {"NO", "WAY", "INSANE", "CRAZY", "REAL"}
+
+
+def write_ass(path, clip, tmap, total, game_y, game_h, watermark, voice=None):
     title_y = game_y // 2
     text_y = game_y + game_h + (H - game_y - game_h) // 2 - 40
     cta_y = text_y
@@ -88,6 +97,7 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Title,Anton,112,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,8,6,5,40,40,0,1
 Style: Txt,Montserrat,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,1,0,1,7,5,5,50,50,0,1
 Style: Cta,Anton,74,&H00FFFFFF,&H00FFFFFF,&H003B3BFF,&H00000000,0,0,0,0,100,100,2,0,3,16,0,5,30,30,0,1
+Style: Cap,Montserrat,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,7,5,5,40,40,0,1
 Style: Mark,Montserrat,34,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,1,0,0,100,100,6,0,1,0,0,5,40,40,0,1
 
 [Events]
@@ -97,22 +107,54 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     cta = clip.get("cta", "PLAY PET SIM 99 ON ROBLOX")
     cta_t = max(0, total - 2.6) if cta else total
     # hook title: words land one after another, then the block stays
+    # payoff labels (e.g. the pet's name) take over the title area from their time on
+    labels = sorted((tmap(t), txt) for t, txt in clip.get("labels", []) if tmap(t) is not None)
+    title_end = labels[0][0] if labels else total
     lines = marked_lines(clip["title"].upper(), 18)
     y0 = title_y - (len(lines) - 1) * 62
     for i, ln in enumerate(lines):
         y = y0 + i * 124
         d = i * 90
-        ev.append(f"Dialogue: 2,{ts(0)},{ts(total)},Title,,0,0,0,,{{\\an5\\move({W // 2},{y - 140},{W // 2},{y},{d},{d + 200})"
+        ev.append(f"Dialogue: 2,{ts(0)},{ts(title_end)},Title,,0,0,0,,{{\\an5\\move({W // 2},{y - 140},{W // 2},{y},{d},{d + 200})"
                   f"\\frz-3\\t({d + 200},{d + 300},\\frz0)}}{ln}")
+    for k, (t, txt) in enumerate(labels):
+        end = labels[k + 1][0] if k + 1 < len(labels) else total
+        lines = marked_lines(txt.upper(), 16)
+        y0 = title_y - (len(lines) - 1) * 62
+        for i, ln in enumerate(lines):
+            y = y0 + i * 124
+            ev.append(f"Dialogue: 2,{ts(t)},{ts(end)},Title,,0,0,0,,{{\\an5\\pos({W // 2},{y})\\fscx30\\fscy30"
+                      f"\\t(0,140,\\fscx118\\fscy118)\\t(140,240,\\fscx100\\fscy100)}}{ln}")
     # timed on-screen text (source times -> output times; clipped to the CTA)
     items = []
     for t_src, dur, txt in clip.get("texts", []):
         t = tmap(t_src)
         if t is not None:
             items.append((t, dur, txt))
+    if voice:   # the voice captions own the text area while the voice runs
+        items = [it for it in items if not voice["at"] - 0.3 <= it[0] <= voice["end"]]
+        groups = phrases(voice["words"], VOICE_EMPH)
+        for gi, gr in enumerate(groups):
+            end = min(groups[gi + 1][0]["s"] if gi + 1 < len(groups) else total, gr[-1]["e"] + 0.4, cta_t)
+            for k, w in enumerate(gr):
+                t0 = gr[0]["s"] if k == 0 else w["s"]
+                t1 = gr[k + 1]["s"] if k + 1 < len(gr) else end
+                if t1 - t0 < 0.02:
+                    continue
+                parts = []
+                for j, x in enumerate(gr):
+                    txt = ass_escape(x["w"].upper())
+                    col = "3B3BFF" if clean(x["w"]) in VOICE_EMPH else YELLOW
+                    if j == k:
+                        parts.append(f"{{\\c&H{col}&\\fscx118\\fscy118\\t(0,90,\\fscx108\\fscy108)}}{txt}{{\\c&HFFFFFF&\\fscx100\\fscy100}}")
+                    else:
+                        parts.append(txt)
+                enter = f"\\move({W // 2},{text_y + 30},{W // 2},{text_y},0,90)" if k == 0 else f"\\pos({W // 2},{text_y})"
+                ev.append(f"Dialogue: 1,{ts(t0)},{ts(t1)},Cap,,0,0,0,,{{\\an5\\q0{enter}}}" + " ".join(parts))
     items.sort()
     for k, (t, dur, txt) in enumerate(items):
-        end = min(t + dur, items[k + 1][0] if k + 1 < len(items) else total, cta_t)
+        end = min(t + dur, items[k + 1][0] if k + 1 < len(items) else total, cta_t,
+                  voice["at"] if voice and t < voice["at"] else total)
         if end - t < 0.3:
             continue
         col = "FFFFFF"
@@ -151,9 +193,22 @@ def render(spec_dir, spec, clip, outdir):
     game_y = clip.get("game_y", (H - game_h) // 2)
     total = total_len(segs)
 
+    voice = None
+    if clip.get("voice"):
+        v = clip["voice"]
+        vsegs = v["segments"]
+        vwords = json.load(open(os.path.join(spec_dir, v["words"])))["words"]
+        wout, _, vlen = build_timeline(vsegs, vwords)
+        vt, src_t = v["align"]
+        at = max(0.0, tmap(src_t) - to_out(vt, vsegs))
+        vend = min(total, at + vlen)
+        words = [{**w, "s": w["s"] + at, "e": w["e"] + at} for w in wout if w["s"] + at < vend - 0.1]
+        voice = {"file": os.path.join(spec_dir, v["file"]), "segments": vsegs, "at": at, "end": vend,
+                 "words": words, "db": v.get("db", 0)}
+
     td = tempfile.mkdtemp()
     ass = os.path.join(td, "text.ass")
-    cta_t = write_ass(ass, clip, tmap, total, game_y, game_h, spec.get("watermark"))
+    cta_t = write_ass(ass, clip, tmap, total, game_y, game_h, spec.get("watermark"), voice)
 
     n = len(segs)
     inputs, junctions, acc = [], [], 0.0
@@ -169,6 +224,10 @@ def render(spec_dir, spec, clip, outdir):
     if mood in BEDS:
         inputs += ["-stream_loop", "-1", "-i", f"{SFX}/{BEDS[mood]}.wav"]
         bed_idx = idx; idx += 1
+    voice_idx = None
+    if voice:
+        inputs += ["-i", voice["file"]]
+        voice_idx = idx; idx += 1
     emojis = []
     for k, (t_src, chr_) in enumerate(clip.get("emojis", [])):
         t = tmap(t_src)
@@ -182,7 +241,8 @@ def render(spec_dir, spec, clip, outdir):
     po = clip.get("payoff")
     payoffs = [t for t in (tmap(x) for x in (po if isinstance(po, list) else [po] if po is not None else [])) if t is not None]
     text_times = [tmap(t) for t, _, _ in clip.get("texts", [])]
-    text_times = [t for t in text_times if t is not None and t > 0.5 and all(abs(t - p) > 0.3 for p in payoffs)]
+    text_times = [t for t in text_times if t is not None and t > 0.5 and all(abs(t - p) > 0.3 for p in payoffs)
+                  and not (voice and voice["at"] - 0.3 <= t <= voice["end"])]
     sfx_events = [("impact", 0.0, 0.7, None), ("swoosh", 0.05, 0.5, None)]
     for j, back in junctions:
         sfx_events.append(("rewind" if back else "whoosh", max(0, j - 0.3), 0.6, None))
@@ -235,10 +295,25 @@ def render(spec_dir, spec, clip, outdir):
     # audio: game sound (kept as the main bed), optional extra music bed, sfx
     g.append("[ca]volume=-2dB[game]")
     mix = ["[game]"]
+    if voice:
+        nv = len(voice["segments"])
+        ms = int(voice["at"] * 1000)
+        g.append(f"[{voice_idx}:a]aresample=48000,aformat=channel_layouts=stereo,asplit={nv}" + "".join(f"[vr{k}]" for k in range(nv)))
+        for k, (a, b) in enumerate(voice["segments"]):
+            g.append(f"[vr{k}]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={max(0, b - a - 0.04):.3f}:d=0.04[vs{k}]")
+        g.append("".join(f"[vs{k}]" for k in range(nv)) + f"concat=n={nv}:v=0:a=1,adelay={ms}|{ms},"
+                 f"apad,atrim=0:{total:.3f},afade=t=out:st={max(0, voice['end'] - 0.3):.3f}:d=0.3,volume={voice['db']}dB,asplit[voice][vkey]")
+        mix.append("[voice]")
     if bed_idx is not None:
         g.append(f"[{bed_idx}:a]atrim=0:{total:.3f},aresample=48000,aformat=channel_layouts=stereo,volume=-16dB,"
-                 f"afade=t=in:d=0.3,afade=t=out:st={max(0, total - 1):.3f}:d=1[bed]")
+                 f"afade=t=in:d=0.3,afade=t=out:st={max(0, total - 1):.3f}:d=1[bedraw]")
+        if voice:
+            g.append("[bedraw][vkey]sidechaincompress=threshold=0.03:ratio=5:attack=20:release=350[bed]")
+        else:
+            g.append("[bedraw]anull[bed]")
         mix.append("[bed]")
+    elif voice:
+        g.append("[vkey]anullsink")
     for nm in names:
         uses = [e for e in sfx_events if e[0] == nm]
         g.append(f"[{sfx_idx[nm]}:a]aresample=48000,aformat=channel_layouts=stereo,asplit={len(uses)}"

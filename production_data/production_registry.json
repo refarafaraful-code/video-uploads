@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T20:34:17Z",
+  "updated_at": "2026-10-24T21:25:05Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1407,7 +1407,14 @@
         "src-ps99-clip17"
       ],
       "status": "in_progress",
-      "clip_ids": [],
+      "clip_ids": [
+        "ps99-v3-gargantuan-1x1x1x1",
+        "ps99-v3-gargantuan-anime-agony",
+        "ps99-v3-gargantuan-aura-cat",
+        "ps99-v3-gargantuan-black-balloon-cat",
+        "ps99-v3-gargantuan-capybara",
+        "ps99-v3-4-rare-hatches"
+      ],
       "candidates": [
         {
           "id": "ps99-gargantuan-1x1x1x1",
@@ -1641,7 +1648,8 @@
         "2026-10-24T20:19:57Z downloaded the other 16 files from the campaign Drive folder (embeddedfolderview listing)",
         "2026-10-24T20:19:57Z 9 flagged possible_duplicate (shared game music / similar ~25 s durations); visual strips show 17 different hatches -> registered with --verified-distinct",
         "2026-10-24T20:19:57Z registry.py: 'processed' by fingerprint now requires bit error <= 0.12 (shared music measured 0.16-0.24 and was misread as a copy for clip05); duplicate suite 11/11",
-        "2026-10-24T20:34:17Z reviewed all 17 files (2 s contact sheets + 2-4 fps around reveals): 14 candidates, 6 selected (5 gargantuan reveals + 1 titanic/huge compilation); footage has no speech -> new clipper/make_gameplay_clip.py (format B, written on-screen text)"
+        "2026-10-24T20:34:17Z reviewed all 17 files (2 s contact sheets + 2-4 fps around reveals): 14 candidates, 6 selected (5 gargantuan reveals + 1 titanic/huge compilation); footage has no speech -> new clipper/make_gameplay_clip.py (format B, written on-screen text)",
+        "2026-10-24T21:25:05Z v1 (silent game audio) and v2 (no name on payoff) rejected; v3 x6 delivered: masters projects/ps99/clips/, publish copies shorts-ps99/, metadata output/ps99/"
       ],
       "id_note": "run covers all 17 PS99 campaign footage files"
     }
@@ -3018,6 +3026,669 @@
         "status_checked_at": "2026-10-24",
         "verified_published": false,
         "youtube_title": "Is Nuclear Energy Actually Dangerous? ☢️ #jakepaul #nuclear #chriswright #energy #shorts"
+      }
+    },
+    {
+      "id": "ps99-v3-gargantuan-1x1x1x1",
+      "source_id": "src-ps99-clip1",
+      "run_id": "run-2026-10-24-ps99-clip1",
+      "name": "ps99-v3-gargantuan-1x1x1x1",
+      "candidate_id": "ps99-gargantuan-1x1x1x1",
+      "score": 90,
+      "segments_src": [
+        [
+          87.8,
+          89.4
+        ],
+        [
+          58.0,
+          64.5
+        ],
+        [
+          64.5,
+          80.0,
+          2.0
+        ],
+        [
+          80.0,
+          94.0
+        ]
+      ],
+      "payoff_src": 87.5,
+      "duration_s": 29.87,
+      "pipeline": "make_gameplay_clip (format B, written texts, campaign reaction voice + captions, hype bed, payoff label)",
+      "voice": {
+        "file": "campaign_audio/H.mp3",
+        "words": "campaign_audio/H.json",
+        "segments": [
+          [
+            0,
+            12.3
+          ]
+        ],
+        "align": [
+          8.7,
+          87.5
+        ]
+      },
+      "files": {
+        "master": {
+          "path": "projects/ps99/clips/ps99-v3-gargantuan-1x1x1x1.mp4",
+          "sha256": "361d827df3d2f8ebda21c96b14fbced90456daec2b4a233196d176d2ed73d0d8",
+          "size_bytes": 34896962,
+          "in_repo": false,
+          "note": "git-ignored master"
+        },
+        "publish": {
+          "path": "shorts-ps99/ps99-v3-gargantuan-1x1x1x1.mp4",
+          "sha256": "489a87b5ecf0e4985f310783acdf1afb5f5d8a0fdba22c02ecc774de587f7420",
+          "size_bytes": 25298872,
+          "in_repo": true
+        }
+      },
+      "titles": {
+        "recommended": "Wait For It... GARGANTUAN 1x1x1x1 😱 #petsim99 #roblox #shorts",
+        "alternatives": [
+          "Gargantuan 1x1x1x1 Hatch in Pet Simulator 99 #petsim99 #roblox #shorts",
+          "This Pet Sim 99 Hatch Went Cosmic 😱 #petsim99 #roblox #shorts"
+        ]
+      },
+      "description": "A hatch that keeps growing, a cosmic animation, and a Gargantuan 1x1x1x1 at the end - Pet Simulator 99. Play Pet Simulator 99 on Roblox!\n\n#petsim99 #petsimulator99 #roblox #shorts",
+      "hashtags": [
+        "#petsim99",
+        "#petsimulator99",
+        "#roblox",
+        "#shorts"
+      ],
+      "tags": [
+        "pet simulator 99",
+        "pet sim 99",
+        "roblox",
+        "ps99",
+        "gargantuan",
+        "titanic",
+        "hatching",
+        "roblox shorts"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "black frames at 8.7-10.0s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -11.4,
+          "duration_s": 29.87
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass_with_notes: black/frozen flags are the game's own dark-space intro / static name-card close-up (see review doc)",
+        "review_doc": "output/ps99/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to by a human; voice captions checked against ASR transcript"
+      }
+    },
+    {
+      "id": "ps99-v3-gargantuan-anime-agony",
+      "source_id": "src-ps99-clip02",
+      "run_id": "run-2026-10-24-ps99-clip1",
+      "name": "ps99-v3-gargantuan-anime-agony",
+      "candidate_id": "ps99-gargantuan-anime-agony",
+      "score": 86,
+      "segments_src": [
+        [
+          72.8,
+          74.4
+        ],
+        [
+          43.5,
+          48.6
+        ],
+        [
+          48.6,
+          64.0,
+          2.0
+        ],
+        [
+          64.0,
+          79.5
+        ]
+      ],
+      "payoff_src": 72.5,
+      "duration_s": 29.9,
+      "pipeline": "make_gameplay_clip (format B, written texts, campaign reaction voice + captions, hype bed, payoff label)",
+      "voice": {
+        "file": "campaign_audio/C.mp3",
+        "words": "campaign_audio/C.json",
+        "segments": [
+          [
+            0,
+            9.0
+          ],
+          [
+            11.3,
+            12.6
+          ]
+        ],
+        "align": [
+          7.2,
+          72.5
+        ]
+      },
+      "files": {
+        "master": {
+          "path": "projects/ps99/clips/ps99-v3-gargantuan-anime-agony.mp4",
+          "sha256": "b289c528ca9046c5cff551009a662171e05dc75c2bc93baa1728b719f4c1949b",
+          "size_bytes": 27692303,
+          "in_repo": false,
+          "note": "git-ignored master"
+        },
+        "publish": {
+          "path": "shorts-ps99/ps99-v3-gargantuan-anime-agony.mp4",
+          "sha256": "4eaec978921df194fde4f5185859202df98e71b5d71ef0117e3470f3f0e8695d",
+          "size_bytes": 20693457,
+          "in_repo": true
+        }
+      },
+      "titles": {
+        "recommended": "Pet Sim 99: Wait For The End... Gargantuan Anime Agony 😱 #petsim99 #roblox #shorts",
+        "alternatives": [
+          "Gargantuan Anime Agony Hatch in Pet Simulator 99 #petsim99 #roblox #shorts",
+          "It Kept Getting Bigger... 😱 #petsim99 #roblox #shorts"
+        ]
+      },
+      "description": "The hatch keeps growing until a Gargantuan Anime Agony drops in - Pet Simulator 99. Play Pet Simulator 99 on Roblox!\n\n#petsim99 #petsimulator99 #roblox #shorts",
+      "hashtags": [
+        "#petsim99",
+        "#petsimulator99",
+        "#roblox",
+        "#shorts"
+      ],
+      "tags": [
+        "pet simulator 99",
+        "pet sim 99",
+        "roblox",
+        "ps99",
+        "gargantuan",
+        "titanic",
+        "hatching",
+        "roblox shorts"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "black frames at 7.8-8.2s, 8.3-9.0s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -12.5,
+          "duration_s": 29.9
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass_with_notes: black/frozen flags are the game's own dark-space intro / static name-card close-up (see review doc)",
+        "review_doc": "output/ps99/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to by a human; voice captions checked against ASR transcript"
+      }
+    },
+    {
+      "id": "ps99-v3-gargantuan-aura-cat",
+      "source_id": "src-ps99-clip04",
+      "run_id": "run-2026-10-24-ps99-clip1",
+      "name": "ps99-v3-gargantuan-aura-cat",
+      "candidate_id": "ps99-gargantuan-aura-cat",
+      "score": 83,
+      "segments_src": [
+        [
+          72.9,
+          74.5
+        ],
+        [
+          43.0,
+          49.0
+        ],
+        [
+          49.0,
+          65.0,
+          2.0
+        ],
+        [
+          65.0,
+          80.5
+        ]
+      ],
+      "payoff_src": 72.6,
+      "duration_s": 31.1,
+      "pipeline": "make_gameplay_clip (format B, written texts, campaign reaction voice + captions, hype bed, payoff label)",
+      "voice": {
+        "file": "campaign_audio/F.mp3",
+        "words": "campaign_audio/F.json",
+        "segments": [
+          [
+            0,
+            11.3
+          ]
+        ],
+        "align": [
+          7.9,
+          72.6
+        ]
+      },
+      "files": {
+        "master": {
+          "path": "projects/ps99/clips/ps99-v3-gargantuan-aura-cat.mp4",
+          "sha256": "c1c5ea34bac1b9b117cb88e4df8413e57b35b1ca05211625bf4e40f3ec155453",
+          "size_bytes": 25298881,
+          "in_repo": false,
+          "note": "git-ignored master"
+        },
+        "publish": {
+          "path": "shorts-ps99/ps99-v3-gargantuan-aura-cat.mp4",
+          "sha256": "9bcb62c80cdcf325edbcd9c4a60945857bc94c6aadf574d2286bd8544a0d02e7",
+          "size_bytes": 18869381,
+          "in_repo": true
+        }
+      },
+      "titles": {
+        "recommended": "This Pet Sim 99 Hatch Got HUGE - Gargantuan Aura Cat 😱 #petsim99 #roblox #shorts",
+        "alternatives": [
+          "Gargantuan Aura Cat Hatch in Pet Simulator 99 #petsim99 #roblox #shorts",
+          "How Big Is a Gargantuan? 😳 #petsim99 #roblox #shorts"
+        ]
+      },
+      "description": "Watch the full cosmic hatch animation end in a Gargantuan Aura Cat - Pet Simulator 99. Play Pet Simulator 99 on Roblox!\n\n#petsim99 #petsimulator99 #roblox #shorts",
+      "hashtags": [
+        "#petsim99",
+        "#petsimulator99",
+        "#roblox",
+        "#shorts"
+      ],
+      "tags": [
+        "pet simulator 99",
+        "pet sim 99",
+        "roblox",
+        "ps99",
+        "gargantuan",
+        "titanic",
+        "hatching",
+        "roblox shorts"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "black frames at 9.1-9.9s",
+            "frozen video at 28.8s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -12.6,
+          "duration_s": 31.1
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass_with_notes: black/frozen flags are the game's own dark-space intro / static name-card close-up (see review doc)",
+        "review_doc": "output/ps99/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to by a human; voice captions checked against ASR transcript"
+      }
+    },
+    {
+      "id": "ps99-v3-gargantuan-black-balloon-cat",
+      "source_id": "src-ps99-clip05",
+      "run_id": "run-2026-10-24-ps99-clip1",
+      "name": "ps99-v3-gargantuan-black-balloon-cat",
+      "candidate_id": "ps99-gargantuan-black-balloon-cat",
+      "score": 83,
+      "segments_src": [
+        [
+          81.8,
+          83.4
+        ],
+        [
+          50.0,
+          57.0
+        ],
+        [
+          57.0,
+          73.3,
+          2.0
+        ],
+        [
+          73.3,
+          88.0
+        ]
+      ],
+      "payoff_src": 81.5,
+      "duration_s": 31.47,
+      "pipeline": "make_gameplay_clip (format B, written texts, campaign reaction voice + captions, hype bed, payoff label)",
+      "voice": {
+        "file": "campaign_audio/M.mp3",
+        "words": "campaign_audio/M.json",
+        "segments": [
+          [
+            0,
+            8.7
+          ],
+          [
+            10.0,
+            13.1
+          ]
+        ],
+        "align": [
+          6.8,
+          81.5
+        ]
+      },
+      "files": {
+        "master": {
+          "path": "projects/ps99/clips/ps99-v3-gargantuan-black-balloon-cat.mp4",
+          "sha256": "d265f7fb580f26cb21e1da5fbc8806970b995c3aaec51f39d8e116367c7f1535",
+          "size_bytes": 27435682,
+          "in_repo": false,
+          "note": "git-ignored master"
+        },
+        "publish": {
+          "path": "shorts-ps99/ps99-v3-gargantuan-black-balloon-cat.mp4",
+          "sha256": "c35025d2ecb8b3b981aa4d4ef319e9bd52fbaa1a62e19bc9972cf00f97044b27",
+          "size_bytes": 20330259,
+          "in_repo": true
+        }
+      },
+      "titles": {
+        "recommended": "Gargantuan Black Balloon Cat Hatch 🎈 #petsim99 #roblox #shorts",
+        "alternatives": [
+          "The Black Balloon Cat Is HUGE in Pet Sim 99 😱 #petsim99 #roblox #shorts",
+          "Pet Simulator 99 Gargantuan Reveal 🎈 #petsim99 #roblox #shorts"
+        ]
+      },
+      "description": "From the ship egg to a Gargantuan Black Balloon Cat - Pet Simulator 99. Play Pet Simulator 99 on Roblox!\n\n#petsim99 #petsimulator99 #roblox #shorts",
+      "hashtags": [
+        "#petsim99",
+        "#petsimulator99",
+        "#roblox",
+        "#shorts"
+      ],
+      "tags": [
+        "pet simulator 99",
+        "pet sim 99",
+        "roblox",
+        "ps99",
+        "gargantuan",
+        "titanic",
+        "hatching",
+        "roblox shorts"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.8,
+          "duration_s": 31.47
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass_with_notes: black/frozen flags are the game's own dark-space intro / static name-card close-up (see review doc)",
+        "review_doc": "output/ps99/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to by a human; voice captions checked against ASR transcript"
+      }
+    },
+    {
+      "id": "ps99-v3-gargantuan-capybara",
+      "source_id": "src-ps99-clip07",
+      "run_id": "run-2026-10-24-ps99-clip1",
+      "name": "ps99-v3-gargantuan-capybara",
+      "candidate_id": "ps99-gargantuan-capybara",
+      "score": 83,
+      "segments_src": [
+        [
+          76.8,
+          78.4
+        ],
+        [
+          44.0,
+          52.5
+        ],
+        [
+          52.5,
+          68.3,
+          2.0
+        ],
+        [
+          68.3,
+          82.0
+        ]
+      ],
+      "payoff_src": 76.5,
+      "duration_s": 31.7,
+      "pipeline": "make_gameplay_clip (format B, written texts, campaign reaction voice + captions, hype bed, payoff label)",
+      "voice": {
+        "file": "campaign_audio/A.mp3",
+        "words": "campaign_audio/A.json",
+        "segments": [
+          [
+            0,
+            6.9
+          ],
+          [
+            7.4,
+            8.9
+          ]
+        ],
+        "align": [
+          4.2,
+          76.5
+        ]
+      },
+      "files": {
+        "master": {
+          "path": "projects/ps99/clips/ps99-v3-gargantuan-capybara.mp4",
+          "sha256": "a39df9c9d833975c25e906bf8123c167839f4129f30950efaad1eb03af12cbc7",
+          "size_bytes": 26669487,
+          "in_repo": false,
+          "note": "git-ignored master"
+        },
+        "publish": {
+          "path": "shorts-ps99/ps99-v3-gargantuan-capybara.mp4",
+          "sha256": "317025a52c1f0e4de4247ae16091f1ac4e48328a5b437e3ef27c11e91f526307",
+          "size_bytes": 19936589,
+          "in_repo": true
+        }
+      },
+      "titles": {
+        "recommended": "A GARGANTUAN Capybara in Pet Sim 99 😱 #petsim99 #roblox #shorts",
+        "alternatives": [
+          "Gargantuan Capybara Hatch in Pet Simulator 99 #petsim99 #roblox #shorts",
+          "Pet Sim 99 Capybara Reveal 😳 #petsim99 #roblox #shorts"
+        ]
+      },
+      "description": "The cosmic hatch animation ends with a Gargantuan Capybara - Pet Simulator 99. Play Pet Simulator 99 on Roblox!\n\n#petsim99 #petsimulator99 #roblox #shorts",
+      "hashtags": [
+        "#petsim99",
+        "#petsimulator99",
+        "#roblox",
+        "#shorts"
+      ],
+      "tags": [
+        "pet simulator 99",
+        "pet sim 99",
+        "roblox",
+        "ps99",
+        "gargantuan",
+        "titanic",
+        "hatching",
+        "roblox shorts"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "frozen video at 29.7s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -12.8,
+          "duration_s": 31.7
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass_with_notes: black/frozen flags are the game's own dark-space intro / static name-card close-up (see review doc)",
+        "review_doc": "output/ps99/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to by a human; voice captions checked against ASR transcript"
+      }
+    },
+    {
+      "id": "ps99-v3-4-rare-hatches",
+      "source_id": "src-ps99-clip13,src-ps99-clip09,src-ps99-clip08,src-ps99-clip06",
+      "run_id": "run-2026-10-24-ps99-clip1",
+      "name": "ps99-v3-4-rare-hatches",
+      "candidate_id": "ps99-4-rare-hatches",
+      "score": 83,
+      "segments_src": [
+        [
+          46.7,
+          47.9,
+          1.0,
+          "clip06.mp4"
+        ],
+        [
+          19.0,
+          23.6,
+          1.2,
+          "clip13.mp4"
+        ],
+        [
+          23.6,
+          26.2,
+          1.0,
+          "clip13.mp4"
+        ],
+        [
+          9.4,
+          13.3,
+          1.2,
+          "clip09.mp4"
+        ],
+        [
+          13.3,
+          16.0,
+          1.0,
+          "clip09.mp4"
+        ],
+        [
+          35.0,
+          39.1,
+          1.2,
+          "clip08.mp4"
+        ],
+        [
+          39.1,
+          42.0,
+          1.0,
+          "clip08.mp4"
+        ],
+        [
+          41.8,
+          46.6,
+          1.2,
+          "clip06.mp4"
+        ],
+        [
+          46.6,
+          48.7,
+          1.0,
+          "clip06.mp4"
+        ]
+      ],
+      "payoff_src": [
+        5.683,
+        11.833,
+        18.15,
+        24.05
+      ],
+      "duration_s": 26.0,
+      "pipeline": "make_gameplay_clip (format B, written texts, campaign reaction voice + captions, hype bed, payoff label)",
+      "voice": {
+        "file": "campaign_audio/K.mp3",
+        "words": "campaign_audio/K.json",
+        "segments": [
+          [
+            0,
+            5.0
+          ]
+        ],
+        "align": [
+          2.8,
+          24.05
+        ]
+      },
+      "files": {
+        "master": {
+          "path": "projects/ps99/clips/ps99-v3-4-rare-hatches.mp4",
+          "sha256": "455a4d09bbcf8ec05559aff9143c11bdf1bd2d7b152608661af8a8d9588617bf",
+          "size_bytes": 22258295,
+          "in_repo": false,
+          "note": "git-ignored master"
+        },
+        "publish": {
+          "path": "shorts-ps99/ps99-v3-4-rare-hatches.mp4",
+          "sha256": "b353dbfabef1b9d7d5bf86aac8de07044207010a9629608ec3a818dcded7d080",
+          "size_bytes": 16856569,
+          "in_repo": true
+        }
+      },
+      "titles": {
+        "recommended": "Huge or Titanic? 4 Rare Pet Sim 99 Hatches 🐉 #petsim99 #roblox #shorts",
+        "alternatives": [
+          "4 Rare Hatches in Pet Simulator 99 - Wait for the Dragon 🐉 #petsim99 #roblox #shorts",
+          "Huge Axolotl to Titanic Dragon 🐉 #petsim99 #roblox #shorts"
+        ]
+      },
+      "description": "Huge Abyssal Axolotl, Titanic Arcane Cat, Titanic Arcane Halo Cat and Titanic Ancient Dragon - four hatches in Pet Simulator 99. Play Pet Simulator 99 on Roblox!\n\n#petsim99 #petsimulator99 #roblox #shorts",
+      "hashtags": [
+        "#petsim99",
+        "#petsimulator99",
+        "#roblox",
+        "#shorts"
+      ],
+      "tags": [
+        "pet simulator 99",
+        "pet sim 99",
+        "roblox",
+        "ps99",
+        "gargantuan",
+        "titanic",
+        "hatching",
+        "roblox shorts"
+      ],
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.8,
+          "duration_s": 26.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass_with_notes: black/frozen flags are the game's own dark-space intro / static name-card close-up (see review doc)",
+        "review_doc": "output/ps99/editorial_review.md",
+        "checked_at": "2026-10-24",
+        "not_verified": "audio not listened to by a human; voice captions checked against ASR transcript"
       }
     }
   ],

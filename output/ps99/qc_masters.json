@@ -1,0 +1,113 @@
+[
+ {
+  "file": "projects/ps99/clips/ps99-v3-4-rare-hatches.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 26.0,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "455a4d09bbcf8ec05559aff9143c11bdf1bd2d7b152608661af8a8d9588617bf",
+  "loudness_lufs": -10.8
+ },
+ {
+  "file": "projects/ps99/clips/ps99-v3-gargantuan-1x1x1x1.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 8.7-10.0s"
+  ],
+  "warnings": [],
+  "duration_s": 29.87,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 1,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "361d827df3d2f8ebda21c96b14fbced90456daec2b4a233196d176d2ed73d0d8",
+  "loudness_lufs": -11.4
+ },
+ {
+  "file": "projects/ps99/clips/ps99-v3-gargantuan-anime-agony.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 7.8-8.2s, 8.3-9.0s"
+  ],
+  "warnings": [],
+  "duration_s": 29.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 2,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "b289c528ca9046c5cff551009a662171e05dc75c2bc93baa1728b719f4c1949b",
+  "loudness_lufs": -12.5
+ },
+ {
+  "file": "projects/ps99/clips/ps99-v3-gargantuan-aura-cat.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 9.1-9.9s",
+   "frozen video at 28.8s"
+  ],
+  "warnings": [],
+  "duration_s": 31.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 1,
+  "freeze_segments": 1,
+  "silent_segments": 0,
+  "sha256": "c1c5ea34bac1b9b117cb88e4df8413e57b35b1ca05211625bf4e40f3ec155453",
+  "loudness_lufs": -12.6
+ },
+ {
+  "file": "projects/ps99/clips/ps99-v3-gargantuan-black-balloon-cat.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 31.47,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "d265f7fb580f26cb21e1da5fbc8806970b995c3aaec51f39d8e116367c7f1535",
+  "loudness_lufs": -11.8
+ },
+ {
+  "file": "projects/ps99/clips/ps99-v3-gargantuan-capybara.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "frozen video at 29.7s"
+  ],
+  "warnings": [],
+  "duration_s": 31.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 1,
+  "silent_segments": 0,
+  "sha256": "a39df9c9d833975c25e906bf8123c167839f4129f30950efaad1eb03af12cbc7",
+  "loudness_lufs": -12.8
+ }
+]

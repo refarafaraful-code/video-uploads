@@ -2,7 +2,7 @@
  "watermark": "",
  "clips": [
   {
-   "name": "ps99-gargantuan-1x1x1x1",
+   "name": "ps99-v3-gargantuan-1x1x1x1",
    "source": "../ps99-clip1/source.mp4",
    "crop": [
     354,
@@ -26,7 +26,7 @@
     ],
     [
      80.0,
-     92.5
+     94.0
     ]
    ],
    "title": "WATCH THIS PET SIM 99 HATCH",
@@ -69,11 +69,31 @@
      "😱"
     ]
    ],
-   "mood": "none",
-   "cta": "PLAY PET SIM 99 ON ROBLOX"
+   "mood": "hype",
+   "cta": "PLAY PET SIM 99 ON ROBLOX",
+   "labels": [
+    [
+     87.5,
+     "GARGANTUAN *1X1X1X1*!"
+    ]
+   ],
+   "voice": {
+    "file": "campaign_audio/H.mp3",
+    "words": "campaign_audio/H.json",
+    "segments": [
+     [
+      0,
+      12.3
+     ]
+    ],
+    "align": [
+     8.7,
+     87.5
+    ]
+   }
   },
   {
-   "name": "ps99-gargantuan-anime-agony",
+   "name": "ps99-v3-gargantuan-anime-agony",
    "source": "clip02.mp4",
    "crop": [
     354,
@@ -97,7 +117,7 @@
     ],
     [
      64.0,
-     78.0
+     79.5
     ]
    ],
    "title": "PET SIM 99: WAIT FOR THE END",
@@ -140,11 +160,35 @@
      "😱"
     ]
    ],
-   "mood": "none",
-   "cta": "PLAY PET SIM 99 ON ROBLOX"
+   "mood": "hype",
+   "cta": "PLAY PET SIM 99 ON ROBLOX",
+   "labels": [
+    [
+     72.5,
+     "GARGANTUAN *ANIME AGONY*!"
+    ]
+   ],
+   "voice": {
+    "file": "campaign_audio/C.mp3",
+    "words": "campaign_audio/C.json",
+    "segments": [
+     [
+      0,
+      9.0
+     ],
+     [
+      11.3,
+      12.6
+     ]
+    ],
+    "align": [
+     7.2,
+     72.5
+    ]
+   }
   },
   {
-   "name": "ps99-gargantuan-aura-cat",
+   "name": "ps99-v3-gargantuan-aura-cat",
    "source": "clip04.mp4",
    "crop": [
     354,
@@ -168,7 +212,7 @@
     ],
     [
      65.0,
-     79.0
+     80.5
     ]
    ],
    "title": "THIS PET SIM 99 HATCH GOT HUGE",
@@ -211,11 +255,31 @@
      "😱"
     ]
    ],
-   "mood": "none",
-   "cta": "PLAY PET SIM 99 ON ROBLOX"
+   "mood": "hype",
+   "cta": "PLAY PET SIM 99 ON ROBLOX",
+   "labels": [
+    [
+     72.6,
+     "GARGANTUAN *AURA CAT*!"
+    ]
+   ],
+   "voice": {
+    "file": "campaign_audio/F.mp3",
+    "words": "campaign_audio/F.json",
+    "segments": [
+     [
+      0,
+      11.3
+     ]
+    ],
+    "align": [
+     7.9,
+     72.6
+    ]
+   }
   },
   {
-   "name": "ps99-gargantuan-black-balloon-cat",
+   "name": "ps99-v3-gargantuan-black-balloon-cat",
    "source": "clip05.mp4",
    "crop": [
     354,
@@ -239,7 +303,7 @@
     ],
     [
      73.3,
-     86.5
+     88.0
     ]
    ],
    "title": "PET SIM 99 BLACK BALLOON CAT HATCH",
@@ -282,11 +346,35 @@
      "😱"
     ]
    ],
-   "mood": "none",
-   "cta": "PLAY PET SIM 99 ON ROBLOX"
+   "mood": "hype",
+   "cta": "PLAY PET SIM 99 ON ROBLOX",
+   "labels": [
+    [
+     81.5,
+     "GARGANTUAN *BLACK BALLOON CAT*!"
+    ]
+   ],
+   "voice": {
+    "file": "campaign_audio/M.mp3",
+    "words": "campaign_audio/M.json",
+    "segments": [
+     [
+      0,
+      8.7
+     ],
+     [
+      10.0,
+      13.1
+     ]
+    ],
+    "align": [
+     6.8,
+     81.5
+    ]
+   }
   },
   {
-   "name": "ps99-gargantuan-capybara",
+   "name": "ps99-v3-gargantuan-capybara",
    "source": "clip07.mp4",
    "crop": [
     354,
@@ -310,7 +398,7 @@
     ],
     [
      68.3,
-     80.5
+     82.0
     ]
    ],
    "title": "A GARGANTUAN CAPYBARA IN PET SIM 99",
@@ -353,11 +441,35 @@
      "😱"
     ]
    ],
-   "mood": "none",
-   "cta": "PLAY PET SIM 99 ON ROBLOX"
+   "mood": "hype",
+   "cta": "PLAY PET SIM 99 ON ROBLOX",
+   "labels": [
+    [
+     76.5,
+     "GARGANTUAN *CAPYBARA*!"
+    ]
+   ],
+   "voice": {
+    "file": "campaign_audio/A.mp3",
+    "words": "campaign_audio/A.json",
+    "segments": [
+     [
+      0,
+      6.9
+     ],
+     [
+      7.4,
+      8.9
+     ]
+    ],
+    "align": [
+     4.2,
+     76.5
+    ]
+   }
   },
   {
-   "name": "ps99-4-rare-hatches",
+   "name": "ps99-v3-4-rare-hatches",
    "source": "clip06.mp4",
    "crop": [
     354,
@@ -482,8 +594,40 @@
      "🐉"
     ]
    ],
-   "mood": "none",
-   "cta": "PLAY PET SIM 99 ON ROBLOX"
+   "mood": "hype",
+   "cta": "PLAY PET SIM 99 ON ROBLOX",
+   "voice": {
+    "file": "campaign_audio/K.mp3",
+    "words": "campaign_audio/K.json",
+    "segments": [
+     [
+      0,
+      5.0
+     ]
+    ],
+    "align": [
+     2.8,
+     24.05
+    ]
+   },
+   "labels": [
+    [
+     5.683,
+     "HUGE *ABYSSAL AXOLOTL*"
+    ],
+    [
+     11.833,
+     "TITANIC *ARCANE CAT*"
+    ],
+    [
+     18.15,
+     "TITANIC *ARCANE HALO CAT*"
+    ],
+    [
+     24.05,
+     "TITANIC *ANCIENT DRAGON*"
+    ]
+   ]
   }
  ]
 }
