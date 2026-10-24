@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T10:16:00Z",
+  "updated_at": "2026-10-24T12:13:31Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -43,6 +43,10 @@
       {
         "date": "2026-10-24",
         "event": "Owner asked for hashtags in the titles (YouTube limit 100 chars): 4 scheduled general-matter posts updated, titles 86-89 chars."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner asked to publish the first general-matter clip now instead of 22:00 Israel; moved to 08:16 New York (earliest accepted time). Nothing else changed."
       }
     ]
   },
@@ -1852,8 +1856,8 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "-5938770526102469908",
-        "metricool_id": 404897268,
-        "scheduled_for": "2026-10-24T15:00:00 America/New_York",
+        "metricool_id": 404955128,
+        "scheduled_for": "2026-10-24T08:16:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/01_90_percent_to_1_percent_v2.mp4",
         "status_checked_at": "2026-10-24",
