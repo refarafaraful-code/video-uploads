@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T12:18:55Z",
+  "updated_at": "2026-10-24T19:10:20Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -47,6 +47,10 @@
       {
         "date": "2026-10-24",
         "event": "Owner asked to publish the first general-matter clip now instead of 22:00 Israel; moved to 08:16 New York (earliest accepted time). Nothing else changed."
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Owner asked to publish the governor clip (was 01:00 Israel) now; moved to 15:12 New York. Nothing else changed."
       }
     ]
   },
@@ -2036,8 +2040,8 @@
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "7843241969097198789",
-        "metricool_id": 404897297,
-        "scheduled_for": "2026-10-24T19:00:00 America/New_York",
+        "metricool_id": 405205428,
+        "scheduled_for": "2026-10-24T15:12:00 America/New_York",
         "status": "PENDING",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/03_governor_jake_paul_welcome_v2.mp4",
         "status_checked_at": "2026-10-24",
