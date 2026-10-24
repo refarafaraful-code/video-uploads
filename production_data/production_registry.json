@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T19:10:20Z",
+  "updated_at": "2026-10-24T19:15:43Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2016,7 +2016,7 @@
         "general matter",
         "nuclear energy"
       ],
-      "status": "scheduled",
+      "status": "published",
       "qc": {
         "status": "pass",
         "technical": {
@@ -2042,11 +2042,15 @@
         "metricool_uuid": "7843241969097198789",
         "metricool_id": 405205428,
         "scheduled_for": "2026-10-24T15:12:00 America/New_York",
-        "status": "PENDING",
+        "status": "PUBLISHED",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/03_governor_jake_paul_welcome_v2.mp4",
-        "status_checked_at": "2026-10-24",
-        "verified_published": false,
-        "youtube_title": "Kentucky's Governor Never Thought He'd Say This 😂 #jakepaul #kentucky #nuclear #shorts"
+        "status_checked_at": "2026-10-24T19:15:43Z",
+        "verified_published": true,
+        "youtube_title": "Kentucky's Governor Never Thought He'd Say This 😂 #jakepaul #kentucky #nuclear #shorts",
+        "youtube_id": "W2EJYAMl_ro",
+        "public_url": "https://www.youtube.com/shorts/W2EJYAMl_ro",
+        "published_at": "2026-10-24T15:12:00 America/New_York",
+        "verified_via": "Metricool getScheduledPosts provider status PUBLISHED"
       }
     },
     {
