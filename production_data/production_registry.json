@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-25T19:04:22Z",
+  "updated_at": "2026-10-25T20:35:58Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -63,7 +63,8 @@
     ],
     "log": [
       "2026-10-24T21:53:32Z owner asked: the 3 Snack Wars posts moved from 01:00 to 23:00 Israel time (17:00 NY)",
-      "2026-10-25T18:36:24Z owner deleted rWBLFRGBrN8 (anime agony) and asked for a re-upload: published again as ZnmWjj_S4Ds"
+      "2026-10-25T18:36:24Z owner deleted rWBLFRGBrN8 (anime agony) and asked for a re-upload: published again as ZnmWjj_S4Ds",
+      "2026-10-25T20:35:58Z owner cancelled the 23:00 Israel salt-licorice upload -> private draft; clip sent to owner"
     ]
   },
   "quality": {
@@ -2444,7 +2445,7 @@
         "snack wars",
         "ladbible"
       ],
-      "status": "scheduled",
+      "status": "completed",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -2464,18 +2465,18 @@
         "method": "metricool",
         "network": "youtube",
         "type": "short",
-        "privacy": "public",
+        "privacy": "private",
         "made_for_kids": false,
         "category": "ENTERTAINMENT",
         "metricool_uuid": "8960380289948533999",
-        "metricool_id": 405292532,
+        "metricool_id": 405960197,
         "scheduled_for": "2026-10-25T17:00:00 America/New_York (23:00 Israel)",
         "youtube_title": "She Warned John Cena Not To Eat It 🧂 #johncena #jessicabiel #saltlicorice #shorts",
-        "status": "PENDING",
+        "status": "CANCELLED_DRAFT",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/test-run-1-snack-wars/clips/02_salt_licorice_warning_v2.mp4",
-        "status_checked_at": "2026-10-24T19:25:45Z",
+        "status_checked_at": "2026-10-25",
         "verified_published": false,
-        "note": "owner decided to publish despite unconfirmed rights (LADbible content)"
+        "note": "owner cancelled the 23:00 upload; Metricool post turned into a private draft (connector has no delete)"
       }
     },
     {
