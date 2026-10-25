@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-25T18:36:24Z",
+  "updated_at": "2026-10-25T19:04:22Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2828,7 +2828,7 @@
         "anti fund",
         "paducah kentucky"
       ],
-      "status": "scheduled",
+      "status": "published",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -2854,11 +2854,13 @@
         "metricool_uuid": "-3363906552853412666",
         "metricool_id": 404897317,
         "scheduled_for": "2026-10-25T15:00:00 America/New_York",
-        "status": "PENDING",
+        "status": "PUBLISHED",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/output/general-matter/clips/02_we_no_longer_control_it_v2.mp4",
-        "status_checked_at": "2026-10-24",
-        "verified_published": false,
-        "youtube_title": "The Real Nuclear Threat Isn't What You Think ☢️ #jakepaul #nuclearenergy #america #shorts"
+        "status_checked_at": "2026-10-25",
+        "verified_published": true,
+        "youtube_title": "The Real Nuclear Threat Isn't What You Think ☢️ #jakepaul #nuclearenergy #america #shorts",
+        "youtube_id": "gSoPaFAGplg",
+        "public_url": "https://www.youtube.com/shorts/gSoPaFAGplg"
       }
     },
     {
