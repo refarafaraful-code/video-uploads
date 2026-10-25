@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24T21:53:32Z",
+  "updated_at": "2026-10-25T18:36:24Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -62,7 +62,8 @@
       }
     ],
     "log": [
-      "2026-10-24T21:53:32Z owner asked: the 3 Snack Wars posts moved from 01:00 to 23:00 Israel time (17:00 NY)"
+      "2026-10-24T21:53:32Z owner asked: the 3 Snack Wars posts moved from 01:00 to 23:00 Israel time (17:00 NY)",
+      "2026-10-25T18:36:24Z owner deleted rWBLFRGBrN8 (anime agony) and asked for a re-upload: published again as ZnmWjj_S4Ds"
     ]
   },
   "quality": {
@@ -3238,7 +3239,7 @@
         "hatching",
         "roblox shorts"
       ],
-      "status": "scheduled",
+      "status": "published",
       "qc": {
         "status": "pass_with_notes",
         "technical": {
@@ -3264,14 +3265,24 @@
         "privacy": "public",
         "made_for_kids": false,
         "category": "GAMING",
-        "metricool_uuid": "-2385307869224681283",
-        "metricool_id": 405279681,
-        "scheduled_for": "2026-10-25T11:00:00 America/New_York",
-        "status": "PENDING",
+        "metricool_uuid": "-5015089880642073768",
+        "metricool_id": 405875432,
+        "scheduled_for": "2026-10-25T20:33:00 Asia/Jerusalem",
+        "status": "PUBLISHED",
         "media_url": "https://raw.githubusercontent.com/refarafaraful-code/video-uploads/shorts/shorts-ps99/ps99-v3-gargantuan-anime-agony.mp4",
-        "status_checked_at": "2026-10-24",
-        "verified_published": false,
-        "youtube_title": "Pet Sim 99: Wait For The End... Gargantuan Anime Agony 😱 #petsim99 #roblox #shorts"
+        "status_checked_at": "2026-10-25",
+        "verified_published": true,
+        "youtube_title": "Pet Sim 99: Wait For The End... Gargantuan Anime Agony 😱 #petsim99 #roblox #shorts",
+        "history": [
+          {
+            "metricool_uuid": "-2385307869224681283",
+            "youtube_id": "rWBLFRGBrN8",
+            "published": "2026-10-25T17:00 Asia/Jerusalem",
+            "removed": "deleted on YouTube by the owner 2026-10-25"
+          }
+        ],
+        "youtube_id": "ZnmWjj_S4Ds",
+        "public_url": "https://www.youtube.com/shorts/ZnmWjj_S4Ds"
       }
     },
     {
