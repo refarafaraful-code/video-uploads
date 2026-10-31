@@ -54,7 +54,7 @@ Only start a production run when the owner explicitly asks for one ("העלית�
 10. Publish copies: `ffmpeg -i in.mp4 -c:v libx264 -preset slow -crf 21 -maxrate 9M -bufsize 18M -c:a copy -movflags +faststart out.mp4`
     into `shorts-<slug>/`, then QC them too. Commit `shorts-<slug>/`, `projects/<slug>/{spec.json,words.json,transcript.txt}`
     and `production_data/` on the `shorts` branch and push.
-11. **Publishing.** The owner granted standing authorization (registry `publishing.mode = standing_authorization`,
+11. **Publishing.** *Current state (2026-10-31): registry `publishing.mode = owner_uploads_manually`. The owner moved to a new channel and Metricool still points at the old one, so do NOT schedule anything; deliver the clips with title/description/hashtags for the owner to upload. The rest of this step applies only once the mode is changed back.* The owner granted standing authorization (registry `publishing.mode = standing_authorization`,
     2026-10-24): when the owner asks for clips to be published/scheduled, do it without asking again. Never
     publish a clip that failed technical or editorial QC. If the registry mode is ever `confirm_each_batch`, ask first.
     Scheduling:
