@@ -50,7 +50,8 @@ Only start a production run when the owner explicitly asks for one ("העלית�
      included, meaning not distorted.
    Fix and re-render failures; anything unfixable is `failed`/`needs_review`, not delivered.
 9. Titles/metadata per clip: a recommended title + 2 alternatives, 1–2 line description, a few relevant hashtags,
-   tags — accurate, no fabricated claims. Store them in the clip's registry entry.
+   tags — accurate, no fabricated claims. Since 2026-10-31 the owner also posts every clip to **TikTok**: add a
+   TikTok caption (short hook line + 3–5 hashtags, no #shorts). Store all of it in the clip's registry entry.
 10. Publish copies: `ffmpeg -i in.mp4 -c:v libx264 -preset slow -crf 21 -maxrate 9M -bufsize 18M -c:a copy -movflags +faststart out.mp4`
     into `shorts-<slug>/`, then QC them too. Commit `shorts-<slug>/`, `projects/<slug>/{spec.json,words.json,transcript.txt}`
     and `production_data/` on the `shorts` branch and push.
