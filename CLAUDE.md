@@ -13,6 +13,13 @@ approval per batch (see Publishing).
 ## Never start producing on your own
 Only start a production run when the owner explicitly asks for one ("העליתי סרטון חדש", "make clips", …).
 
+## Before every new campaign: research what works (standing owner instruction, 2026-10-31)
+Before producing for a new campaign/topic, research the social platforms the clips go to (TikTok, Reels, Shorts):
+find successful recent short videos in the same niche (same game/creator/topic, campaign clips if visible), and
+write down what they do right — hook in the first second, on-screen text style and wording, length, pacing/cut
+rhythm, music use, captions/hashtags. Save the findings in `projects/<slug>/research.md` (sources linked, no
+invented view counts) and apply them to the edit. Use real evidence only; if a platform can't be reached, say so.
+
 ## Production run
 1. `bash clipper/setup.sh` (deps, fonts, Parakeet ASR model, synthesized `clipper/sfx/`).
 2. **Eligibility before anything else:**
