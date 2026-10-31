@@ -6,7 +6,7 @@ repo. Reply in the language the owner writes in (usually Hebrew).
 
 @production_data/CLIPPINGMASTER.md
 
-The owner uploads long videos (mostly Jake Paul vlogs) as **GitHub Release assets** of this repo; Claude turns
+The owner now sends source videos as **public Google Drive links** (file or folder; preferred since 2026-10-31 — download with `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`, list a folder with `https://drive.google.com/embeddedfolderview?id=<FOLDER>`, then run the same `registry.py check` / `register-source` steps; put the Drive file id in the source record). Older uploads came as **GitHub Release assets** of this repo; Claude turns
 them into vertical Shorts. Scheduling on YouTube goes through the **Metricool** connector and needs the owner's
 approval per batch (see Publishing).
 
