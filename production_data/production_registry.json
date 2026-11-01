@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01T06:02:47Z",
+  "updated_at": "2026-11-01T12:55:58Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1706,7 +1706,11 @@
         "cod-mw4-industrial-double-v2",
         "cod-mw4-bomb-glider",
         "cod-mw4-snow-sniper",
-        "cod-mw4-street-details"
+        "cod-mw4-street-details",
+        "cod-mw4-shotgun-mains",
+        "cod-mw4-was-that-a-triple",
+        "cod-mw4-pick-one-v2",
+        "cod-mw4-map-vibe-check-v2"
       ],
       "candidates": [
         {
@@ -1852,6 +1856,70 @@
           },
           "decision": "rejected",
           "reason": "solid gunplay but less visual distinctiveness than the 5 picked; candidates for a later batch"
+        },
+        {
+          "id": "mw4-shotgun-mains",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P2 15.0-37.5",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 87
+          },
+          "decision": "accepted",
+          "reason": "meme framing + player's own words + game's DOUBLE/TRIPLE KILL banners"
+        },
+        {
+          "id": "mw4-was-that-a-triple",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P18 361.4-369.7 + P14 270-284.2",
+          "score": {
+            "hook": 22,
+            "curiosity": 17,
+            "payoff": 17,
+            "clarity": 12,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 85
+          },
+          "decision": "accepted",
+          "reason": "player's real reaction line as hook, contrast with a play the game labels TRIPLE KILL"
+        },
+        {
+          "id": "mw4-pick-one",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P16 333-340.5, P6 94.3-101.3, P10 194.2-202.4",
+          "score": {
+            "hook": 18,
+            "curiosity": 17,
+            "payoff": 14,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 8,
+            "total": 80
+          },
+          "decision": "accepted",
+          "reason": "comment prompt format (1, 2 or 3) on three unused plays"
+        },
+        {
+          "id": "mw4-map-vibe-check",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "8 x 2.5 s across plays",
+          "score": {
+            "hook": 18,
+            "curiosity": 16,
+            "payoff": 13,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 80
+          },
+          "decision": "accepted",
+          "reason": "fast environment montage, different format from the single-play showcases"
         }
       ],
       "output_dir": "output/cod-mw4",
@@ -1860,7 +1928,15 @@
       "log": [
         "2026-11-01T05:42:25Z source from owner's Drive folder (campaign MediaSilo link blocked by session network); registry check new",
         "2026-11-01T05:51:51Z 26 plays split at black separators; research saved; 5 selected; new: payoff/labels map to the real moment, not the teaser",
-        "2026-11-01T06:02:47Z 5 clips delivered (14-29 s; shorter than the usual 25-60 s on purpose: gameplay hype clips, research favours short); owner posts to TikTok/IG manually"
+        "2026-11-01T06:02:47Z 5 clips delivered (14-29 s; shorter than the usual 25-60 s on purpose: gameplay hype clips, research favours short); owner posts to TikTok/IG manually",
+        "2026-11-01T12:55:58Z creative batch: 4 clips delivered (shotgun mains, was that a triple, pick one, map vibe check)"
+      ],
+      "reprocessing_authorizations": [
+        {
+          "date": "2026-11-01",
+          "by": "owner",
+          "what": "more creative/funny/cynical clips from src-cod-mw4-topplays (within campaign rules)"
+        }
       ]
     }
   ],
@@ -4328,6 +4404,298 @@
         },
         "technical_publish_copy": "pass",
         "editorial": "pass: hook title in frame 0, labels on the real moment, captions describe visible things only (game's own DOUBLE KILL / BOMB GLIDER text); v1 of industrial said 'smoke' which couldn't be verified -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-shotgun-mains",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-shotgun-mains",
+      "candidate_id": "mw4-shotgun-mains",
+      "score": 87,
+      "segments_src": [
+        [
+          34.4,
+          35.8
+        ],
+        [
+          15.0,
+          37.5
+        ]
+      ],
+      "duration_s": 23.9,
+      "batch": "creative (owner request 2026-11-01)",
+      "pipeline": "make_gameplay_clip: centre 3:4 crop, meme/joke framing with on-screen text, player's own words quoted, game's own kill banners, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-shotgun-mains.mp4",
+          "sha256": "685f11ee4878450fe39af1b5e663f08bb1e21047a2033428dab482f4bac24f5f",
+          "size_bytes": 50505343,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-shotgun-mains.mp4",
+          "sha256": "85a195830993bb3b7ead749f776a964ed75ec88581300c74c071f2e6052e51e8",
+          "size_bytes": 28293137,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Every shotgun main says they'll play it slow. Then this happens 😂 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "Every shotgun main says they'll play it slow. Then this happens 😂 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.8,
+          "duration_s": 23.9
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: quotes are the players' own words from the ASR transcript; kill counts are the game's own banners; v1 of pick-one had redundant PLAY n texts + weak play 2 ending, v1 of map-vibe had a static wall shot -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-was-that-a-triple",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-was-that-a-triple",
+      "candidate_id": "mw4-was-that-a-triple",
+      "score": 85,
+      "segments_src": [
+        [
+          367.1,
+          369.7
+        ],
+        [
+          361.4,
+          369.7
+        ],
+        [
+          270.0,
+          284.2
+        ]
+      ],
+      "duration_s": 25.1,
+      "batch": "creative (owner request 2026-11-01)",
+      "pipeline": "make_gameplay_clip: centre 3:4 crop, meme/joke framing with on-screen text, player's own words quoted, game's own kill banners, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-was-that-a-triple.mp4",
+          "sha256": "040cddd7082ede0dec3b92436a8553cf938fc00a0d12587b84ccae76b13d1767",
+          "size_bytes": 47525663,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-was-that-a-triple.mp4",
+          "sha256": "28a8a5fd797b8e6cba8ccc6cf23a3ba3fd5911ff89c8d617041d350209629859",
+          "size_bytes": 28722252,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "\"Was that a triple?\" Yes. Yes it was 😭 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "\"Was that a triple?\" Yes. Yes it was 😭 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.6,
+          "duration_s": 25.1
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: quotes are the players' own words from the ASR transcript; kill counts are the game's own banners; v1 of pick-one had redundant PLAY n texts + weak play 2 ending, v1 of map-vibe had a static wall shot -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-pick-one-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-pick-one-v2",
+      "candidate_id": "mw4-pick-one",
+      "score": 80,
+      "segments_src": [
+        [
+          333.0,
+          340.5
+        ],
+        [
+          94.3,
+          99.6
+        ],
+        [
+          194.2,
+          202.4
+        ]
+      ],
+      "duration_s": 21.0,
+      "batch": "creative (owner request 2026-11-01)",
+      "pipeline": "make_gameplay_clip: centre 3:4 crop, meme/joke framing with on-screen text, player's own words quoted, game's own kill banners, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-pick-one-v2.mp4",
+          "sha256": "330f06cf17f36f777c759eeb6d42922bff96555f6fe31d27ec9fcd05d5a48118",
+          "size_bytes": 35752910,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-pick-one-v2.mp4",
+          "sha256": "8a0631b3963d938e3968b51cf3049f28dd5c7347decfda7cb5e1494e926dde52",
+          "size_bytes": 22799087,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Three MW4 plays. Which one is the best? 1, 2 or 3 👇 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "Three MW4 plays. Which one is the best? 1, 2 or 3 👇 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.5,
+          "duration_s": 21.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: quotes are the players' own words from the ASR transcript; kill counts are the game's own banners; v1 of pick-one had redundant PLAY n texts + weak play 2 ending, v1 of map-vibe had a static wall shot -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-map-vibe-check-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-map-vibe-check-v2",
+      "candidate_id": "mw4-map-vibe-check",
+      "score": 80,
+      "segments_src": [
+        [
+          42.0,
+          44.5
+        ],
+        [
+          258.3,
+          260.8
+        ],
+        [
+          205.0,
+          207.5
+        ],
+        [
+          351.5,
+          354.0
+        ],
+        [
+          143.0,
+          145.5
+        ],
+        [
+          374.5,
+          377.0
+        ],
+        [
+          13.5,
+          16.0
+        ],
+        [
+          106.0,
+          108.5
+        ]
+      ],
+      "duration_s": 20.0,
+      "batch": "creative (owner request 2026-11-01)",
+      "pipeline": "make_gameplay_clip: centre 3:4 crop, meme/joke framing with on-screen text, player's own words quoted, game's own kill banners, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-map-vibe-check-v2.mp4",
+          "sha256": "0c38d217ab681906c587b720454e6278255393b8ea6baeef79018a1fb19d2503",
+          "size_bytes": 40265802,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-map-vibe-check-v2.mp4",
+          "sha256": "44c03f3d0714cbc8625412a70a3dde30d0770b5975ab2fda08a16b4afc5242c0",
+          "size_bytes": 23329611,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Which MW4 map vibe is yours? 👀 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "Which MW4 map vibe is yours? 👀 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.8,
+          "duration_s": 20.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: quotes are the players' own words from the ASR transcript; kill counts are the game's own banners; v1 of pick-one had redundant PLAY n texts + weak play 2 ending, v1 of map-vibe had a static wall shot -> v2",
         "review_doc": "output/cod-mw4/review_frames/",
         "checked_at": "2026-11-01",
         "not_verified": "audio not listened to by a human"

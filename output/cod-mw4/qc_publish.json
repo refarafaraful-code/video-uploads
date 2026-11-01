@@ -34,6 +34,40 @@
   "loudness_lufs": -11.6
  },
  {
+  "file": "shorts-cod-mw4/mw4-map-vibe-check-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 20.0,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "44c03f3d0714cbc8625412a70a3dde30d0770b5975ab2fda08a16b4afc5242c0",
+  "loudness_lufs": -11.8
+ },
+ {
+  "file": "shorts-cod-mw4/mw4-pick-one-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 21.0,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "8a0631b3963d938e3968b51cf3049f28dd5c7347decfda7cb5e1494e926dde52",
+  "loudness_lufs": -11.5
+ },
+ {
   "file": "shorts-cod-mw4/mw4-rain-forest.mp4",
   "status": "pass",
   "errors": [],
@@ -49,6 +83,23 @@
   "silent_segments": 0,
   "sha256": "285aa2cc4c63d307a78441934fea7af078435f65511af41c66a5893ed29317bb",
   "loudness_lufs": -11.6
+ },
+ {
+  "file": "shorts-cod-mw4/mw4-shotgun-mains.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 23.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "85a195830993bb3b7ead749f776a964ed75ec88581300c74c071f2e6052e51e8",
+  "loudness_lufs": -11.8
  },
  {
   "file": "shorts-cod-mw4/mw4-snow-sniper.mp4",
@@ -83,5 +134,22 @@
   "silent_segments": 0,
   "sha256": "9e8ffd491cf682f62f9b320daf0062256d5f6d2033be3e969079b07863d1f1fd",
   "loudness_lufs": -11.3
+ },
+ {
+  "file": "shorts-cod-mw4/mw4-was-that-a-triple.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 25.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "28a8a5fd797b8e6cba8ccc6cf23a3ba3fd5911ff89c8d617041d350209629859",
+  "loudness_lufs": -11.6
  }
 ]

@@ -229,7 +229,8 @@ def render(spec_dir, spec, clip, outdir):
     for i, seg in enumerate(segs):
         s, e, sp = seg_parts(seg)
         if i:
-            junctions.append((acc, srcs[i] == srcs[i - 1] and seg_parts(segs[i - 1])[1] > s + 1))
+            # "montage": cuts between unrelated moments get a whoosh, never the rewind used for teasers
+            junctions.append((acc, not clip.get("montage") and srcs[i] == srcs[i - 1] and seg_parts(segs[i - 1])[1] > s + 1))
         inputs += ["-ss", f"{s:.3f}", "-t", f"{e - s:.3f}", "-i", srcs[i]]
         acc += (e - s) / sp
     idx = n

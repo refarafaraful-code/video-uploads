@@ -1,0 +1,289 @@
+{
+ "watermark": "",
+ "clips": [
+  {
+   "name": "mw4-shotgun-mains",
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "mood": "hype",
+   "cta": "",
+   "emojis": [],
+   "segments": [
+    [
+     34.4,
+     35.8
+    ],
+    [
+     15.0,
+     37.5
+    ]
+   ],
+   "payoff": 34.64,
+   "title": "Shotgun mains in *MW4*:",
+   "texts": [
+    [
+     15.1,
+     3.2,
+     "ME: \"I'LL PLAY IT *SLOW*\""
+    ],
+    [
+     18.4,
+     3.0,
+     "ALSO ME:"
+    ],
+    [
+     23.8,
+     1.2,
+     "\"ALRIGHT, LET'S GO\""
+    ],
+    [
+     27.5,
+     1.3,
+     "\"I'M DOING IT\""
+    ],
+    [
+     28.8,
+     2.4,
+     "\"I'M LITERALLY *BUNNY HOPPING*\""
+    ]
+   ],
+   "labels": [
+    [
+     24.64,
+     "*DOUBLE KILL*"
+    ],
+    [
+     34.64,
+     "*TRIPLE KILL*"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-was-that-a-triple",
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "mood": "hype",
+   "cta": "",
+   "emojis": [],
+   "segments": [
+    [
+     367.1,
+     369.7
+    ],
+    [
+     361.4,
+     369.7
+    ],
+    [
+     270.0,
+     284.2
+    ]
+   ],
+   "times": "output",
+   "payoff": 21.3,
+   "title": "\"Was that a *triple*?\"",
+   "texts": [
+    [
+     0.1,
+     1.0,
+     "\"OH MY GOD,\""
+    ],
+    [
+     1.1,
+     1.4,
+     "\"WAS THAT A *TRIPLE*?\""
+    ],
+    [
+     8.4,
+     1.0,
+     "\"OH MY GOD,\""
+    ],
+    [
+     9.4,
+     1.6,
+     "\"WAS THAT A *TRIPLE*?\""
+    ],
+    [
+     11.0,
+     3.5,
+     "MEANWHILE, THIS PLAYER:"
+    ]
+   ],
+   "labels": [
+    [
+     11.0,
+     "Meanwhile..."
+    ],
+    [
+     21.3,
+     "*TRIPLE KILL*"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-pick-one-v2",
+   "montage": true,
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "mood": "hype",
+   "cta": "",
+   "emojis": [],
+   "segments": [
+    [
+     333.0,
+     340.5
+    ],
+    [
+     94.3,
+     99.6
+    ],
+    [
+     194.2,
+     202.4
+    ]
+   ],
+   "times": "output",
+   "payoff": null,
+   "title": "Which MW4 play *wins*?",
+   "texts": [
+    [
+     0.1,
+     3.0,
+     "WHICH ONE IS BEST?"
+    ],
+    [
+     17.6,
+     4.0,
+     "COMMENT *1, 2 OR 3*"
+    ]
+   ],
+   "labels": [
+    [
+     0.0,
+     "Play *1*"
+    ],
+    [
+     7.5,
+     "Play *2*"
+    ],
+    [
+     12.8,
+     "Play *3*"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-map-vibe-check-v2",
+   "montage": true,
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "mood": "hype",
+   "cta": "",
+   "emojis": [],
+   "segments": [
+    [
+     42.0,
+     44.5
+    ],
+    [
+     258.3,
+     260.8
+    ],
+    [
+     205.0,
+     207.5
+    ],
+    [
+     351.5,
+     354.0
+    ],
+    [
+     143.0,
+     145.5
+    ],
+    [
+     374.5,
+     377.0
+    ],
+    [
+     13.5,
+     16.0
+    ],
+    [
+     106.0,
+     108.5
+    ]
+   ],
+   "times": "output",
+   "payoff": null,
+   "title": "MW4 map *vibe check*",
+   "texts": [
+    [
+     0.05,
+     2.4,
+     "RAINY *FOREST*"
+    ],
+    [
+     2.55,
+     2.4,
+     "SNOWY *CITY*"
+    ],
+    [
+     5.05,
+     2.4,
+     "CITY *ALLEYS*"
+    ],
+    [
+     7.55,
+     2.4,
+     "SUNNY *STREETS*"
+    ],
+    [
+     10.05,
+     2.4,
+     "INDUSTRIAL *YARD*"
+    ],
+    [
+     12.55,
+     2.4,
+     "SNOW *BASE*"
+    ],
+    [
+     15.05,
+     2.4,
+     "COLORFUL *ALLEYS*"
+    ],
+    [
+     17.55,
+     2.4,
+     "OLD *TOWN*"
+    ]
+   ],
+   "labels": []
+  }
+ ]
+}
