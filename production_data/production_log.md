@@ -60,3 +60,11 @@ Newest first. One entry per production run or system change. The machine-readabl
 - v1 was rejected (silent audio) and so was v2 (no pet name at the payoff). v3 was delivered.
 - QC: technical pass / pass_with_notes. The black and frozen flags are the game's own animation (see output/ps99/editorial_review.md).
 - Scheduled on Metricool: Oct 24 17:30 NY, then Oct 25-29 at 11:00 NY.
+
+## 2026-11-01 - CoD MW4 Multiplayer Launch (Clipping Culture) - run-2026-11-01-cod-mw4
+- Source: official "Top Plays Finalists" compilation (8:13, 26 plays) from the owner's Drive. The campaign MediaSilo link is blocked by the session network.
+- Pre-campaign research is in projects/cod-mw4/research.md (new standing step).
+- 5 clips: rain forest car flip, industrial double kill, Bomb Glider streets, snow sniper, street details.
+  Rejected: plays with another creator's facecam, the vertical capture, and silent plays.
+- Format: centre 3:4 crop, hook title, timed on-screen captions, payoff labels, original audio with a low bed, and no voice (AI voice is banned).
+- TikTok/IG captions with @callofduty and #ad on its own line: output/cod-mw4/captions.json. The owner uploads manually.

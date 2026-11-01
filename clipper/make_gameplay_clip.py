@@ -56,6 +56,17 @@ def to_out(t, segments):
     return None
 
 
+def to_out_last(t, segments):
+    """last output time showing source time t (skips a teaser that repeats a later moment)"""
+    acc, hit = 0.0, None
+    for seg in segments:
+        s, e, sp = seg_parts(seg)
+        if s <= t <= e:
+            hit = acc + (t - s) / sp
+        acc += (e - s) / sp
+    return hit
+
+
 def total_len(segments):
     return sum((e - s) / sp for s, e, sp in map(seg_parts, segments))
 
@@ -81,7 +92,8 @@ def marked_lines(text, n=18, base_col="FFFFFF"):
 VOICE_EMPH = {"NO", "WAY", "INSANE", "CRAZY", "REAL"}
 
 
-def write_ass(path, clip, tmap, total, game_y, game_h, watermark, voice=None):
+def write_ass(path, clip, tmap, total, game_y, game_h, watermark, voice=None, tmap_last=None):
+    tmap_last = tmap_last or tmap
     title_y = game_y // 2
     text_y = game_y + game_h + (H - game_y - game_h) // 2 - 40
     cta_y = text_y
@@ -108,7 +120,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     cta_t = max(0, total - 2.6) if cta else total
     # hook title: words land one after another, then the block stays
     # payoff labels (e.g. the pet's name) take over the title area from their time on
-    labels = sorted((tmap(t), txt) for t, txt in clip.get("labels", []) if tmap(t) is not None)
+    labels = sorted((tmap_last(t), txt) for t, txt in clip.get("labels", []) if tmap_last(t) is not None)
     title_end = labels[0][0] if labels else total
     lines = marked_lines(clip["title"].upper(), 18)
     y0 = title_y - (len(lines) - 1) * 62
@@ -188,6 +200,8 @@ def render(spec_dir, spec, clip, outdir):
     segs = clip["segments"]
     srcs = [os.path.join(spec_dir, sg[3] if len(sg) > 3 else clip["source"]) for sg in segs]
     tmap = (lambda t: t) if clip.get("times") == "output" else (lambda t: to_out(t, segs))
+    # payoff and labels belong to the real moment, not to a teaser that shows it first
+    tmap_last = (lambda t: t) if clip.get("times") == "output" else (lambda t: to_out_last(t, segs))
     cx, cy, cw, ch = clip["crop"]
     game_h = int(round(W * ch / cw / 2)) * 2
     game_y = clip.get("game_y", (H - game_h) // 2)
@@ -208,7 +222,7 @@ def render(spec_dir, spec, clip, outdir):
 
     td = tempfile.mkdtemp()
     ass = os.path.join(td, "text.ass")
-    cta_t = write_ass(ass, clip, tmap, total, game_y, game_h, spec.get("watermark"), voice)
+    cta_t = write_ass(ass, clip, tmap, total, game_y, game_h, spec.get("watermark"), voice, tmap_last)
 
     n = len(segs)
     inputs, junctions, acc = [], [], 0.0
@@ -239,7 +253,7 @@ def render(spec_dir, spec, clip, outdir):
         emojis.append((idx, t, canvas)); idx += 1
 
     po = clip.get("payoff")
-    payoffs = [t for t in (tmap(x) for x in (po if isinstance(po, list) else [po] if po is not None else [])) if t is not None]
+    payoffs = [t for t in (tmap_last(x) for x in (po if isinstance(po, list) else [po] if po is not None else [])) if t is not None]
     text_times = [tmap(t) for t, _, _ in clip.get("texts", [])]
     text_times = [t for t in text_times if t is not None and t > 0.5 and all(abs(t - p) > 0.3 for p in payoffs)
                   and not (voice and voice["at"] - 0.3 <= t <= voice["end"])]

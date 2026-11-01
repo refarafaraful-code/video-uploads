@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T21:06:38Z",
+  "updated_at": "2026-11-01T06:02:47Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -833,6 +833,38 @@
       "status": "in_progress",
       "candidates": [],
       "notes": "duplicate check at registration: possible_duplicate shared audio: 30s of identical audio at +8s in the source (bit error 0.16) - partial overlap or high bit error (shared music? compilation?) - inspect before processing | resolved by visual comparison: frame strip shows a different hatch (Gargantuan Black Balloon Cat) from clip02 (Gargantuan Anime Agony); overlap is shared game music (bit error 0.16-0.21)"
+    },
+    {
+      "id": "src-cod-mw4-topplays",
+      "title": "MW4 Multiplayer - Top Plays Finalists (10/27/26)",
+      "creator": "Activision / Call of Duty (official campaign footage)",
+      "campaign": "Clipping Culture - CoD MW4 Multiplayer Launch",
+      "filename": "TopPlaysFinalists102726_16x9.mp4",
+      "local_path": "projects/cod-mw4/source.mp4",
+      "release": {
+        "tag": "drive-folder-1khLung2k2bcPhwePOREGXmngLIGA54vY",
+        "asset_id": null
+      },
+      "sha256": "b55a9188ce548880dd721ea5db9896f7090f9f484cf5874c98234ed58008105b",
+      "size_bytes": 2462374855,
+      "duration_s": 492.976,
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.94,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-cod-mw4-topplays.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 3960,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/cod-mw4",
+      "first_processed": "2026-11-01",
+      "runs": [],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new",
+      "drive_file_id": "1xoc4m4MdCAt3AFmrO05igTOgnCC_-Ov0",
+      "drive_folder_id": "1khLung2k2bcPhwePOREGXmngLIGA54vY"
     }
   ],
   "runs": [
@@ -1660,6 +1692,176 @@
         "2026-10-24T21:28:20Z scheduled on Metricool at the owner's request: first one now (17:30 NY), then one per day 11:00 NY Oct 25-29 (third daily slot next to 15:00/19:00); category GAMING"
       ],
       "id_note": "run covers all 17 PS99 campaign footage files"
+    },
+    {
+      "id": "run-2026-11-01-cod-mw4",
+      "date": "2026-11-01",
+      "type": "production",
+      "status": "completed",
+      "source_ids": [
+        "src-cod-mw4-topplays"
+      ],
+      "clip_ids": [
+        "cod-mw4-rain-forest",
+        "cod-mw4-industrial-double-v2",
+        "cod-mw4-bomb-glider",
+        "cod-mw4-snow-sniper",
+        "cod-mw4-street-details"
+      ],
+      "candidates": [
+        {
+          "id": "mw4-rain-forest",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P3 38.7-57.0",
+          "score": {
+            "hook": 22,
+            "curiosity": 16,
+            "payoff": 19,
+            "clarity": 14,
+            "pacing": 8,
+            "distinctiveness": 9,
+            "total": 88
+          },
+          "decision": "accepted",
+          "reason": "storm/fog forest map, physics car flip payoff - strongest graphics showcase"
+        },
+        {
+          "id": "mw4-industrial-double",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P9 138.3-193.1 (used 138.5-166.3)",
+          "score": {
+            "hook": 20,
+            "curiosity": 16,
+            "payoff": 17,
+            "clarity": 13,
+            "pacing": 8,
+            "distinctiveness": 7,
+            "total": 81
+          },
+          "decision": "accepted",
+          "reason": "game shows DOUBLE KILL, smoke grenade burst; trimmed the 55 s play to the first 28 s"
+        },
+        {
+          "id": "mw4-bomb-glider",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P17 343.9-360.3",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 9,
+            "distinctiveness": 7,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "loudest play, sunlit streets, Bomb Glider killstreak on screen"
+        },
+        {
+          "id": "mw4-snow-sniper",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P19 370.8-384.0",
+          "score": {
+            "hook": 20,
+            "curiosity": 15,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 81
+          },
+          "decision": "accepted",
+          "reason": "snow map sniper - distinct weapon + environment"
+        },
+        {
+          "id": "mw4-street-details",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P11 203.5-217.9",
+          "score": {
+            "hook": 18,
+            "curiosity": 14,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 77
+          },
+          "decision": "accepted",
+          "reason": "bright city alleys, signage detail - fits 'details speak for themselves'"
+        },
+        {
+          "id": "plays-with-facecam",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P4, P12, P24",
+          "score": {
+            "hook": 0,
+            "curiosity": 0,
+            "payoff": 0,
+            "clarity": 0,
+            "pacing": 0,
+            "distinctiveness": 0,
+            "total": 0
+          },
+          "decision": "rejected",
+          "reason": "original creator's facecam in frame (another creator's identity)"
+        },
+        {
+          "id": "vertical-play",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P15 285.3-328.0",
+          "score": {
+            "hook": 12,
+            "curiosity": 12,
+            "payoff": 12,
+            "clarity": 8,
+            "pacing": 7,
+            "distinctiveness": 6,
+            "total": 57
+          },
+          "decision": "rejected",
+          "reason": "pillarboxed vertical capture, dark, low detail"
+        },
+        {
+          "id": "silent-plays",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P7, P8, P21, P23",
+          "score": {
+            "hook": 10,
+            "curiosity": 10,
+            "payoff": 10,
+            "clarity": 10,
+            "pacing": 5,
+            "distinctiveness": 5,
+            "total": 50
+          },
+          "decision": "rejected",
+          "reason": "no game audio; brief wants original audio audible"
+        },
+        {
+          "id": "other-plays",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "P1, P2, P5, P6, P10, P13, P14, P16, P18, P20, P22, P25, P26",
+          "score": {
+            "hook": 15,
+            "curiosity": 13,
+            "payoff": 13,
+            "clarity": 12,
+            "pacing": 7,
+            "distinctiveness": 5,
+            "total": 65
+          },
+          "decision": "rejected",
+          "reason": "solid gunplay but less visual distinctiveness than the 5 picked; candidates for a later batch"
+        }
+      ],
+      "output_dir": "output/cod-mw4",
+      "research": "projects/cod-mw4/research.md",
+      "campaign_rules": "Clipping Culture CoD MW4 MP Launch: official footage only; TikTok + IG Reels; caption must tag @callofduty and #ad/#Advertisement/#Sponsored on its own line after caption, max 3 more hashtags; on-screen text optional, genuine tone; original audio audible, music allowed underneath; NO AI voice; >=10 s, English, high quality; no exaggerated hooks/rage bait, no made-up facts, don't mislabel (trailer != gameplay); no NSFW/violent/controversial; keep live 30 days, likes visible",
+      "log": [
+        "2026-11-01T05:42:25Z source from owner's Drive folder (campaign MediaSilo link blocked by session network); registry check new",
+        "2026-11-01T05:51:51Z 26 plays split at black separators; research saved; 5 selected; new: payoff/labels map to the real moment, not the teaser",
+        "2026-11-01T06:02:47Z 5 clips delivered (14-29 s; shorter than the usual 25-60 s on purpose: gameplay hype clips, research favours short); owner posts to TikTok/IG manually"
+      ]
     }
   ],
   "clips": [
@@ -3811,6 +4013,332 @@
         "status_checked_at": "2026-10-24",
         "verified_published": false,
         "youtube_title": "Huge or Titanic? 4 Rare Pet Sim 99 Hatches 🐉 #petsim99 #roblox #shorts"
+      }
+    },
+    {
+      "id": "cod-mw4-rain-forest",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-rain-forest",
+      "candidate_id": "mw4-rain-forest",
+      "score": 88,
+      "segments_src": [
+        [
+          51.0,
+          52.4
+        ],
+        [
+          40.0,
+          56.9
+        ]
+      ],
+      "payoff_src": 51.2,
+      "duration_s": 18.3,
+      "pipeline": "make_gameplay_clip: centre 3:4 crop (1080x1440 window), hook title, timed on-screen captions, labels, low hype bed under original audio, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-rain-forest.mp4",
+          "sha256": "76de04ea0060991fe748001ce4eb8ba13f1f2bb1c7768c92238e0b1ea589e938",
+          "size_bytes": 32347541,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-rain-forest.mp4",
+          "sha256": "285aa2cc4c63d307a78441934fea7af078435f65511af41c66a5893ed29317bb",
+          "size_bytes": 21452865,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "The rain and fog in MW4 Multiplayer are actually crazy @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "The rain and fog in MW4 Multiplayer are actually crazy @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "youtube_title_optional": "No filter needed for this. MW4 Multiplayer 🌧️",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.6,
+          "duration_s": 18.3
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: hook title in frame 0, labels on the real moment, captions describe visible things only (game's own DOUBLE KILL / BOMB GLIDER text); v1 of industrial said 'smoke' which couldn't be verified -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-industrial-double-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-industrial-double-v2",
+      "candidate_id": "mw4-industrial-double",
+      "score": 81,
+      "segments_src": [
+        [
+          151.0,
+          152.6
+        ],
+        [
+          138.5,
+          166.3
+        ]
+      ],
+      "payoff_src": 151.8,
+      "duration_s": 29.4,
+      "pipeline": "make_gameplay_clip: centre 3:4 crop (1080x1440 window), hook title, timed on-screen captions, labels, low hype bed under original audio, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-industrial-double-v2.mp4",
+          "sha256": "df5250f07ce448ab47587f0fb20b4b9c381d099f6257c7e1815e49df00a8f5bc",
+          "size_bytes": 37281637,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-industrial-double-v2.mp4",
+          "sha256": "7a5df6037df6e2142e2a231ebe9ec45de438a10d3a4bda9927469460ba439804",
+          "size_bytes": 25781453,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 MP looks unreal @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "MW4 MP looks unreal @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "youtube_title_optional": "MW4 Multiplayer is looking unreal 🔥",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.6,
+          "duration_s": 29.4
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: hook title in frame 0, labels on the real moment, captions describe visible things only (game's own DOUBLE KILL / BOMB GLIDER text); v1 of industrial said 'smoke' which couldn't be verified -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-bomb-glider",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-bomb-glider",
+      "candidate_id": "mw4-bomb-glider",
+      "score": 84,
+      "segments_src": [
+        [
+          356.9,
+          358.3
+        ],
+        [
+          343.9,
+          360.2
+        ]
+      ],
+      "payoff_src": 356.9,
+      "duration_s": 17.7,
+      "pipeline": "make_gameplay_clip: centre 3:4 crop (1080x1440 window), hook title, timed on-screen captions, labels, low hype bed under original audio, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-bomb-glider.mp4",
+          "sha256": "2274fcc403369fbe28a7455e3596b9abaf4d408409ea9355dc1403c4126da478",
+          "size_bytes": 41004411,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-bomb-glider.mp4",
+          "sha256": "ecb0817f2757a379d756b69708b9814aae3fd7e3d2c35b6cd0cf4aef905e0c40",
+          "size_bytes": 21140393,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "COD MP hits different this year @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "COD MP hits different this year @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "youtube_title_optional": "COD MP hits different 💣",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.9,
+          "duration_s": 17.7
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: hook title in frame 0, labels on the real moment, captions describe visible things only (game's own DOUBLE KILL / BOMB GLIDER text); v1 of industrial said 'smoke' which couldn't be verified -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-snow-sniper",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-snow-sniper",
+      "candidate_id": "mw4-snow-sniper",
+      "score": 81,
+      "segments_src": [
+        [
+          372.9,
+          374.1
+        ],
+        [
+          370.8,
+          384.0
+        ]
+      ],
+      "payoff_src": 382.2,
+      "duration_s": 14.4,
+      "pipeline": "make_gameplay_clip: centre 3:4 crop (1080x1440 window), hook title, timed on-screen captions, labels, low hype bed under original audio, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-snow-sniper.mp4",
+          "sha256": "faecca9b2b5ad66a406a8f2140a0569f556c43b58cb5d8f4c98be634d518fcc6",
+          "size_bytes": 35487623,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-snow-sniper.mp4",
+          "sha256": "b5c79285800d9d84a6c82774348f178bb0bb839f8e4b4b6093f81b1e8d295df8",
+          "size_bytes": 17307208,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 never looked so good @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "MW4 never looked so good @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "youtube_title_optional": "Sniping in the snow in MW4 Multiplayer ❄️",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.2,
+          "duration_s": 14.4
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: hook title in frame 0, labels on the real moment, captions describe visible things only (game's own DOUBLE KILL / BOMB GLIDER text); v1 of industrial said 'smoke' which couldn't be verified -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-street-details",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-street-details",
+      "candidate_id": "mw4-street-details",
+      "score": 77,
+      "segments_src": [
+        [
+          203.6,
+          217.8
+        ]
+      ],
+      "payoff_src": null,
+      "duration_s": 14.2,
+      "pipeline": "make_gameplay_clip: centre 3:4 crop (1080x1440 window), hook title, timed on-screen captions, labels, low hype bed under original audio, no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-street-details.mp4",
+          "sha256": "a6651c785bcf49392e1b4cea8ae15398d098b940740074d865a851f29823e39e",
+          "size_bytes": 33723618,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-street-details.mp4",
+          "sha256": "9e8ffd491cf682f62f9b320daf0062256d5f6d2033be3e969079b07863d1f1fd",
+          "size_bytes": 17197271,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "The details in MW4 speak for themselves @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "The details in MW4 speak for themselves @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "youtube_title_optional": "The details in MW4 Multiplayer speak for themselves 👀",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.3,
+          "duration_s": 14.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: hook title in frame 0, labels on the real moment, captions describe visible things only (game's own DOUBLE KILL / BOMB GLIDER text); v1 of industrial said 'smoke' which couldn't be verified -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-01",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
       }
     }
   ],
