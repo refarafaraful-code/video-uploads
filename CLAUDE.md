@@ -60,7 +60,8 @@ invented view counts) and apply them to the edit. Use real evidence only; if a p
    tags — accurate, no fabricated claims. Since 2026-10-31 the owner also posts every clip to **TikTok**: add a
    TikTok caption (short hook line + 3–5 hashtags, no #shorts). Store all of it in the clip's registry entry.
    Disclosure hashtag (owner preference, 2026-11-02): when a campaign accepts several (#ad / #Advertisement / #Sponsored),
-   use **#Sponsored** in new captions; keep it on its own line as the brief requires. Older captions stay as they are.
+   use **#Sponsored** in new captions; keep it on its own line as the brief requires.
+   TikTok allows at most **5 hashtags in total** (owner, 2026-11-02): count #Sponsored among them (default set: #Sponsored + #mw4-style game tag, #callofduty-style brand tag, #cod-style short tag, #fyp). Older captions stay as they are.
 10. Publish copies: `ffmpeg -i in.mp4 -c:v libx264 -preset slow -crf 21 -maxrate 9M -bufsize 18M -c:a copy -movflags +faststart out.mp4`
     into `shorts-<slug>/`, then QC them too. Commit `shorts-<slug>/`, `projects/<slug>/{spec.json,words.json,transcript.txt}`
     and `production_data/` on the `shorts` branch and push.
