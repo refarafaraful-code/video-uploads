@@ -1,0 +1,162 @@
+{
+ "watermark": "",
+ "clips": [
+  {
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "cta": "",
+   "emojis": [],
+   "mood": "hype",
+   "montage": true,
+   "times": "output",
+   "payoff": null,
+   "labels": [],
+   "name": "mw4-beat-montage",
+   "title": "Every MW4 kill on the *beat*",
+   "segments": [
+    [
+     50.44285714285714,
+     52.15714285714285
+    ],
+    [
+     94.14285714285714,
+     95.85714285714286
+    ],
+    [
+     198.89285714285714,
+     200.60714285714286
+    ],
+    [
+     372.4428571428572,
+     374.15714285714284
+    ],
+    [
+     151.34285714285713,
+     153.05714285714285
+    ],
+    [
+     355.89285714285717,
+     357.60714285714283
+    ],
+    [
+     279.79285714285714,
+     281.5071428571428
+    ],
+    [
+     34.292857142857144,
+     37.15
+    ]
+   ],
+   "bed_db": -11,
+   "beat_hits": [
+    0.857,
+    2.571,
+    4.286,
+    6.0,
+    7.714,
+    9.429,
+    11.143,
+    12.857
+   ],
+   "texts": [
+    [
+     12.0,
+     2.9,
+     "BEST ONE? *1-8*"
+    ]
+   ]
+  },
+  {
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "cta": "",
+   "emojis": [],
+   "mood": "hype",
+   "montage": false,
+   "times": "source",
+   "payoff": null,
+   "labels": [],
+   "name": "mw4-rate-this-play-v2",
+   "title": "Rate this MW4 play *1-10*",
+   "segments": [
+    [
+     273.3,
+     284.2,
+     1.0
+    ]
+   ],
+   "texts": [
+    [
+     281.4,
+     2.8,
+     "COMMENT YOUR *RATING*"
+    ]
+   ]
+  },
+  {
+   "source": "source.mp4",
+   "crop": [
+    555,
+    0,
+    810,
+    1080
+   ],
+   "game_y": 300,
+   "cta": "",
+   "emojis": [],
+   "mood": "hype",
+   "montage": true,
+   "times": "output",
+   "payoff": null,
+   "labels": [],
+   "name": "mw4-slow-motion",
+   "title": "MW4 in *slow motion*",
+   "segments": [
+    [
+     50.0,
+     50.6,
+     1.0
+    ],
+    [
+     50.6,
+     52.6,
+     0.4
+    ],
+    [
+     372.9,
+     373.9,
+     0.4
+    ],
+    [
+     356.5,
+     357.7,
+     0.5
+    ],
+    [
+     94.5,
+     95.5,
+     0.5
+    ],
+    [
+     280.1,
+     281.1,
+     0.5
+    ]
+   ],
+   "bed_db": -13,
+   "texts": []
+  }
+ ]
+}

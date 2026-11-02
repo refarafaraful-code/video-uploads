@@ -1,5 +1,22 @@
 [
  {
+  "file": "projects/cod-mw4/clips/mw4-beat-montage.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 14.87,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "843387c43aae84a3bd3786cb881fe8c5d137b4d6d1d54f46411c376fabfa2885",
+  "loudness_lufs": -10.2
+ },
+ {
   "file": "projects/cod-mw4/clips/mw4-bomb-glider.mp4",
   "status": "pass",
   "errors": [],
@@ -136,6 +153,40 @@
   "loudness_lufs": -11.6
  },
  {
+  "file": "projects/cod-mw4/clips/mw4-rate-this-play-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 10.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "063b950f1d91e0a3e6719e9a4884c7212fa1f270edd9942cbad23be910f81006",
+  "loudness_lufs": -11.7
+ },
+ {
+  "file": "projects/cod-mw4/clips/mw4-rate-this-play.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 14.2,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "528c76f7b4c4b87631a45b0bf69fa2e50dfd072548e4ec24e7f61d63b77964f7",
+  "loudness_lufs": -11.5
+ },
+ {
   "file": "projects/cod-mw4/clips/mw4-shotgun-mains.mp4",
   "status": "pass",
   "errors": [],
@@ -151,6 +202,23 @@
   "silent_segments": 0,
   "sha256": "685f11ee4878450fe39af1b5e663f08bb1e21047a2033428dab482f4bac24f5f",
   "loudness_lufs": -11.8
+ },
+ {
+  "file": "projects/cod-mw4/clips/mw4-slow-motion.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 14.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "3bd02b7b8c2294fcd475a0f6b0f531faac3ead5aef2cd08a7353dffec027f89e",
+  "loudness_lufs": -10.8
  },
  {
   "file": "projects/cod-mw4/clips/mw4-snow-sniper.mp4",

@@ -25,7 +25,9 @@ SPEC.json:
                                           # voice time 7.2 lands on source time 72.5; captions come from the words
                                           # file and replace the written texts while the voice runs
     "labels": [[72.5, "GARGANTUAN ANIME AGONY"]],  # replaces the hook title from that time on (the payoff's name)
-    "game_y": 479                         # optional: top of the game window (default centred)
+    "game_y": 479,                        # optional: top of the game window (default centred)
+    "bed_db": -16,                        # optional: music bed level (montages cut to the bed's beat run it louder)
+    "beat_hits": [0.86, 2.57]             # optional: output seconds that get a zoom punch + flash (no sfx)
   }]
 }
 Compilations: a segment may name its own source as a 4th element ([s, e, speed, "../ps99/clip09.mp4"]); set
@@ -283,8 +285,10 @@ def render(spec_dir, spec, clip, outdir):
         g.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{sp},fps={FPS},format=yuv420p[tv{i}];"
                  f"[{i}:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS,{atempo(sp)}[ta{i}]")
     g.append("".join(f"[tv{i}][ta{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=1[cv][ca]")
-    flashes = [j for j, _ in junctions] + payoffs
-    punch = pulse(payoffs, 0.16, 2.2)
+    # beat_hits (output seconds): zoom punch + flash without sfx, for cuts/kills synced to the music bed
+    hits = list(clip.get("beat_hits", []))
+    flashes = [j for j, _ in junctions] + payoffs + hits
+    punch = pulse(payoffs, 0.16, 2.2) + "+" + pulse(hits, 0.09, 8)
     zoom = f"1+0.06*exp(-t*3)+0.02*t/{total:.2f}+{punch}+{pulse([j for j, _ in junctions], 0.05, 7)}"
     shake = pulse(payoffs, 14, 7).replace("exp(", "sin(t*90)*exp(")
     grade = "eq=contrast=1.08:saturation=1.25,unsharp=5:5:0.8:5:5:0"
@@ -320,7 +324,7 @@ def render(spec_dir, spec, clip, outdir):
                  f"apad,atrim=0:{total:.3f},afade=t=out:st={max(0, voice['end'] - 0.3):.3f}:d=0.3,volume={voice['db']}dB,asplit[voice][vkey]")
         mix.append("[voice]")
     if bed_idx is not None:
-        g.append(f"[{bed_idx}:a]atrim=0:{total:.3f},aresample=48000,aformat=channel_layouts=stereo,volume=-16dB,"
+        g.append(f"[{bed_idx}:a]atrim=0:{total:.3f},aresample=48000,aformat=channel_layouts=stereo,volume={clip.get('bed_db', -16)}dB,"
                  f"afade=t=in:d=0.3,afade=t=out:st={max(0, total - 1):.3f}:d=1[bedraw]")
         if voice:
             g.append("[bedraw][vkey]sidechaincompress=threshold=0.03:ratio=5:attack=20:release=350[bed]")

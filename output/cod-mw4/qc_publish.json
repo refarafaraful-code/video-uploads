@@ -1,5 +1,22 @@
 [
  {
+  "file": "shorts-cod-mw4/mw4-beat-montage.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 14.87,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "6dc0fee8f35933cba995adcfc903f6d97492caddaa063df5ea251c0524b2b867",
+  "loudness_lufs": -10.2
+ },
+ {
   "file": "shorts-cod-mw4/mw4-bomb-glider.mp4",
   "status": "pass",
   "errors": [],
@@ -85,6 +102,23 @@
   "loudness_lufs": -11.6
  },
  {
+  "file": "shorts-cod-mw4/mw4-rate-this-play-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 10.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "3b6c239058f032f188670e9f2acb4456cfa8de1b90993ba20e8bf5f60d614da6",
+  "loudness_lufs": -11.7
+ },
+ {
   "file": "shorts-cod-mw4/mw4-shotgun-mains.mp4",
   "status": "pass",
   "errors": [],
@@ -100,6 +134,23 @@
   "silent_segments": 0,
   "sha256": "85a195830993bb3b7ead749f776a964ed75ec88581300c74c071f2e6052e51e8",
   "loudness_lufs": -11.8
+ },
+ {
+  "file": "shorts-cod-mw4/mw4-slow-motion.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 14.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "a6c5d3b76e92f62220e6695166476293f5dc813463dbdb35d1d7a793226cb1fa",
+  "loudness_lufs": -10.8
  },
  {
   "file": "shorts-cod-mw4/mw4-snow-sniper.mp4",

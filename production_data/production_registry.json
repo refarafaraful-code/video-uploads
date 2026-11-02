@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01T12:55:58Z",
+  "updated_at": "2026-11-02T04:35:50Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1710,7 +1710,10 @@
         "cod-mw4-shotgun-mains",
         "cod-mw4-was-that-a-triple",
         "cod-mw4-pick-one-v2",
-        "cod-mw4-map-vibe-check-v2"
+        "cod-mw4-map-vibe-check-v2",
+        "cod-mw4-beat-montage",
+        "cod-mw4-rate-this-play-v2",
+        "cod-mw4-slow-motion"
       ],
       "candidates": [
         {
@@ -1920,6 +1923,54 @@
           },
           "decision": "accepted",
           "reason": "fast environment montage, different format from the single-play showcases"
+        },
+        {
+          "id": "mw4-beat-montage",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "see spec_viral.json",
+          "score": {
+            "hook": 23,
+            "curiosity": 18,
+            "payoff": 18,
+            "clarity": 13,
+            "pacing": 10,
+            "distinctiveness": 9,
+            "total": 91
+          },
+          "decision": "accepted",
+          "reason": "music-synced kill edit - the most prominent COD format in research; 8 verified kills on the beat"
+        },
+        {
+          "id": "mw4-rate-this-play",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "see spec_viral.json",
+          "score": {
+            "hook": 19,
+            "curiosity": 16,
+            "payoff": 17,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "comment prompt for engagement; P14 triple kill; v1 opened on 4 s of walking -> trimmed (v2)"
+        },
+        {
+          "id": "mw4-slow-motion",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "see spec_viral.json",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 17,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "speed ramps on the most cinematic moments; graphics-focused like the brief's tone"
         }
       ],
       "output_dir": "output/cod-mw4",
@@ -1929,13 +1980,19 @@
         "2026-11-01T05:42:25Z source from owner's Drive folder (campaign MediaSilo link blocked by session network); registry check new",
         "2026-11-01T05:51:51Z 26 plays split at black separators; research saved; 5 selected; new: payoff/labels map to the real moment, not the teaser",
         "2026-11-01T06:02:47Z 5 clips delivered (14-29 s; shorter than the usual 25-60 s on purpose: gameplay hype clips, research favours short); owner posts to TikTok/IG manually",
-        "2026-11-01T12:55:58Z creative batch: 4 clips delivered (shotgun mains, was that a triple, pick one, map vibe check)"
+        "2026-11-01T12:55:58Z creative batch: 4 clips delivered (shotgun mains, was that a triple, pick one, map vibe check)",
+        "2026-11-02T04:35:50Z research round 2 -> 3 viral-format clips (beat montage, rate 1-10, slow motion); paused by owner, resumed"
       ],
       "reprocessing_authorizations": [
         {
           "date": "2026-11-01",
           "by": "owner",
           "what": "more creative/funny/cynical clips from src-cod-mw4-topplays (within campaign rules)"
+        },
+        {
+          "date": "2026-11-01",
+          "by": "owner",
+          "what": "research-driven viral batch, reuse of already used plays allowed"
         }
       ]
     }
@@ -4699,6 +4756,247 @@
         "review_doc": "output/cod-mw4/review_frames/",
         "checked_at": "2026-11-01",
         "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-beat-montage",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-beat-montage",
+      "candidate_id": "mw4-beat-montage",
+      "score": 91,
+      "segments_src": [
+        [
+          50.44285714285714,
+          52.15714285714285
+        ],
+        [
+          94.14285714285714,
+          95.85714285714286
+        ],
+        [
+          198.89285714285714,
+          200.60714285714286
+        ],
+        [
+          372.4428571428572,
+          374.15714285714284
+        ],
+        [
+          151.34285714285713,
+          153.05714285714285
+        ],
+        [
+          355.89285714285717,
+          357.60714285714283
+        ],
+        [
+          279.79285714285714,
+          281.5071428571428
+        ],
+        [
+          34.292857142857144,
+          37.15
+        ]
+      ],
+      "duration_s": 14.87,
+      "batch": "viral (research round 2)",
+      "pipeline": "make_gameplay_clip with beat_hits/bed_db/speed ramps; no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-beat-montage.mp4",
+          "sha256": "843387c43aae84a3bd3786cb881fe8c5d137b4d6d1d54f46411c376fabfa2885",
+          "size_bytes": 30119572,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-beat-montage.mp4",
+          "sha256": "6dc0fee8f35933cba995adcfc903f6d97492caddaa063df5ea251c0524b2b867",
+          "size_bytes": 17922206,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Every kill on the beat. MW4 Multiplayer 🔊 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "Every kill on the beat. MW4 Multiplayer 🔊 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.2,
+          "duration_s": 14.87
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: kills verified on 4 fps strips, texts are prompts only, no invented claims",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio mix (bed vs game audio) not listened to by a human",
+        "note": "first publish copies were truncated by an interruption (owner stopped the run); re-encoded and re-QC'd 2026-11-02"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-rate-this-play-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-rate-this-play-v2",
+      "candidate_id": "mw4-rate-this-play",
+      "score": 83,
+      "segments_src": [
+        [
+          273.3,
+          284.2,
+          1.0
+        ]
+      ],
+      "duration_s": 10.9,
+      "batch": "viral (research round 2)",
+      "pipeline": "make_gameplay_clip with beat_hits/bed_db/speed ramps; no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-rate-this-play-v2.mp4",
+          "sha256": "063b950f1d91e0a3e6719e9a4884c7212fa1f270edd9942cbad23be910f81006",
+          "size_bytes": 17186875,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-rate-this-play-v2.mp4",
+          "sha256": "3b6c239058f032f188670e9f2acb4456cfa8de1b90993ba20e8bf5f60d614da6",
+          "size_bytes": 11949949,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Rate this MW4 play 1-10 👇 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "Rate this MW4 play 1-10 👇 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.7,
+          "duration_s": 10.9
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: kills verified on 4 fps strips, texts are prompts only, no invented claims",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio mix (bed vs game audio) not listened to by a human",
+        "note": "first publish copies were truncated by an interruption (owner stopped the run); re-encoded and re-QC'd 2026-11-02"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-slow-motion",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-slow-motion",
+      "candidate_id": "mw4-slow-motion",
+      "score": 86,
+      "segments_src": [
+        [
+          50.0,
+          50.6,
+          1.0
+        ],
+        [
+          50.6,
+          52.6,
+          0.4
+        ],
+        [
+          372.9,
+          373.9,
+          0.4
+        ],
+        [
+          356.5,
+          357.7,
+          0.5
+        ],
+        [
+          94.5,
+          95.5,
+          0.5
+        ],
+        [
+          280.1,
+          281.1,
+          0.5
+        ]
+      ],
+      "duration_s": 14.5,
+      "batch": "viral (research round 2)",
+      "pipeline": "make_gameplay_clip with beat_hits/bed_db/speed ramps; no voice",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-slow-motion.mp4",
+          "sha256": "3bd02b7b8c2294fcd475a0f6b0f531faac3ead5aef2cd08a7353dffec027f89e",
+          "size_bytes": 20416459,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-slow-motion.mp4",
+          "sha256": "a6c5d3b76e92f62220e6695166476293f5dc813463dbdb35d1d7a793226cb1fa",
+          "size_bytes": 14294375,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Multiplayer in slow motion is something else 🎥 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "instagram_caption": "MW4 Multiplayer in slow motion is something else 🎥 @callofduty\n#ad\n#mw4 #callofduty #modernwarfare4",
+        "rules": "keep #ad on its own line; likes visible; keep the post up 30+ days; TikTok + Instagram Reels per brief"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -10.8,
+          "duration_s": 14.5
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: kills verified on 4 fps strips, texts are prompts only, no invented claims",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio mix (bed vs game audio) not listened to by a human",
+        "note": "first publish copies were truncated by an interruption (owner stopped the run); re-encoded and re-QC'd 2026-11-02"
       },
       "publish": {
         "method": "owner_manual",
