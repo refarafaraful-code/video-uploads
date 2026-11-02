@@ -1,0 +1,164 @@
+{
+ "clips": [
+  {
+   "name": "mw4-native-real-life",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     241.0,
+     268.3
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     4.0,
+     "MW4 looks like real life"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-shotgun",
+   "source": "source.mp4",
+   "layout": "letterbox",
+   "segments": [
+    [
+     12.6,
+     37.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     25.0,
+     "shotgun players in MW4 be like"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-multiplayer",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     138.5,
+     179.5
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     3.0,
+     "MW4 Multiplayer."
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-details",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     203.6,
+     217.8
+    ],
+    [
+     343.9,
+     360.2
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     4.0,
+     "the details in MW4"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-sniping",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     370.8,
+     384.0
+    ],
+    [
+     194.2,
+     202.4
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     3.5,
+     "sniping in MW4 hits different"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-real-life-v2",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     343.9,
+     360.2
+    ],
+    [
+     38.7,
+     57.0
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     4.0,
+     "MW4 looks like real life"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-multiplayer-v2",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     139.3,
+     179.5
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     3.0,
+     "MW4 Multiplayer."
+    ]
+   ]
+  },
+  {
+   "name": "mw4-native-details-v2",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     203.6,
+     217.8
+    ],
+    [
+     93.3,
+     111.2
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     4.0,
+     "the details in MW4"
+    ]
+   ]
+  }
+ ]
+}

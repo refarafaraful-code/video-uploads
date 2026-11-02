@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02T04:35:50Z",
+  "updated_at": "2026-11-02T18:02:47Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1713,7 +1713,12 @@
         "cod-mw4-map-vibe-check-v2",
         "cod-mw4-beat-montage",
         "cod-mw4-rate-this-play-v2",
-        "cod-mw4-slow-motion"
+        "cod-mw4-slow-motion",
+        "cod-mw4-native-real-life-v2",
+        "cod-mw4-native-shotgun",
+        "cod-mw4-native-multiplayer-v2",
+        "cod-mw4-native-details-v2",
+        "cod-mw4-native-sniping"
       ],
       "candidates": [
         {
@@ -1971,6 +1976,86 @@
           },
           "decision": "accepted",
           "reason": "speed ramps on the most cinematic moments; graphics-focused like the brief's tone"
+        },
+        {
+          "id": "mw4-native-real-life-v2",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[343.9, 360.2], [38.7, 57.0]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "native style per deep dive (full-screen/letterbox, one small text line, original audio, 21-41 s)"
+        },
+        {
+          "id": "mw4-native-shotgun",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[12.6, 37.6]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "native style per deep dive (full-screen/letterbox, one small text line, original audio, 21-41 s)"
+        },
+        {
+          "id": "mw4-native-multiplayer-v2",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[139.3, 179.5]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "native style per deep dive (full-screen/letterbox, one small text line, original audio, 21-41 s)"
+        },
+        {
+          "id": "mw4-native-details-v2",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[203.6, 217.8], [93.3, 111.2]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "native style per deep dive (full-screen/letterbox, one small text line, original audio, 21-41 s)"
+        },
+        {
+          "id": "mw4-native-sniping",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[370.8, 384.0], [194.2, 202.4]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 8,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "native style per deep dive (full-screen/letterbox, one small text line, original audio, 21-41 s)"
         }
       ],
       "output_dir": "output/cod-mw4",
@@ -1981,7 +2066,8 @@
         "2026-11-01T05:51:51Z 26 plays split at black separators; research saved; 5 selected; new: payoff/labels map to the real moment, not the teaser",
         "2026-11-01T06:02:47Z 5 clips delivered (14-29 s; shorter than the usual 25-60 s on purpose: gameplay hype clips, research favours short); owner posts to TikTok/IG manually",
         "2026-11-01T12:55:58Z creative batch: 4 clips delivered (shotgun mains, was that a triple, pick one, map vibe check)",
-        "2026-11-02T04:35:50Z research round 2 -> 3 viral-format clips (beat montage, rate 1-10, slow motion); paused by owner, resumed"
+        "2026-11-02T04:35:50Z research round 2 -> 3 viral-format clips (beat montage, rate 1-10, slow motion); paused by owner, resumed",
+        "2026-11-02T18:02:47Z native batch: 5 clips (new renderer clipper/make_native_clip.py)"
       ],
       "reprocessing_authorizations": [
         {
@@ -1993,6 +2079,11 @@
           "date": "2026-11-01",
           "by": "owner",
           "what": "research-driven viral batch, reuse of already used plays allowed"
+        },
+        {
+          "date": "2026-11-02",
+          "by": "owner",
+          "what": "native-style batch after TikTok deep dive"
         }
       ]
     }
@@ -5003,6 +5094,320 @@
         "platforms": [
           "tiktok",
           "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-native-real-life-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-native-real-life-v2",
+      "candidate_id": "mw4-native-real-life-v2",
+      "score": 83,
+      "segments_src": [
+        [
+          343.9,
+          360.2
+        ],
+        [
+          38.7,
+          57.0
+        ]
+      ],
+      "duration_s": 34.6,
+      "batch": "native (deep dive 2026-11-02)",
+      "pipeline": "make_native_clip: full, one TikTok-style text line, original audio, loudnorm -11",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-native-real-life-v2.mp4",
+          "sha256": "c7708f779c94f74df4be466757dd0b6aeaa3ff484a22647d710ab2171c04128b",
+          "size_bytes": 74317452,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-native-real-life-v2.mp4",
+          "sha256": "b4a31fb01040d5894e11f9fc7f6dbd932e4cb4dc65f345294546c7efac1e4026",
+          "size_bytes": 40648229,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 looks INSANE 😍 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "instagram_caption": "MW4 looks INSANE 😍 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "rules": "#Sponsored on its own line; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -13.1,
+          "duration_s": 34.6
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 real-life had a toy-green weapon skin under 'looks like real life', v1 multiplayer opened on a dark room, v1 details reused footage -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-native-shotgun",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-native-shotgun",
+      "candidate_id": "mw4-native-shotgun",
+      "score": 83,
+      "segments_src": [
+        [
+          12.6,
+          37.6
+        ]
+      ],
+      "duration_s": 25.0,
+      "batch": "native (deep dive 2026-11-02)",
+      "pipeline": "make_native_clip: letterbox, one TikTok-style text line, original audio, loudnorm -11",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-native-shotgun.mp4",
+          "sha256": "7ffa7700335439456e2e814055f3e529158f04bfbf89ab30f9dc74eb085c2358",
+          "size_bytes": 33813468,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-native-shotgun.mp4",
+          "sha256": "874199135447f3720346d06f7747f9ff5f9851dc7ed0e497097a4b7bfa1a896c",
+          "size_bytes": 23445694,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "shotgun players in MW4 be like 😭 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "instagram_caption": "shotgun players in MW4 be like 😭 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "rules": "#Sponsored on its own line; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.0,
+          "duration_s": 25.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 real-life had a toy-green weapon skin under 'looks like real life', v1 multiplayer opened on a dark room, v1 details reused footage -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-native-multiplayer-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-native-multiplayer-v2",
+      "candidate_id": "mw4-native-multiplayer-v2",
+      "score": 83,
+      "segments_src": [
+        [
+          139.3,
+          179.5
+        ]
+      ],
+      "duration_s": 40.2,
+      "batch": "native (deep dive 2026-11-02)",
+      "pipeline": "make_native_clip: full, one TikTok-style text line, original audio, loudnorm -11",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-native-multiplayer-v2.mp4",
+          "sha256": "bedd7b36eb1b39f90264b5fec2d6856dbcb856bfdc646c3b68dc324b28a3882e",
+          "size_bytes": 50814445,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-native-multiplayer-v2.mp4",
+          "sha256": "6428245223b1d4dc81840aa5eec997520afb1c2594be19753581fad7f7450280",
+          "size_bytes": 35606880,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Multiplayer is looking unreal @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "instagram_caption": "MW4 Multiplayer is looking unreal @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "rules": "#Sponsored on its own line; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -13.2,
+          "duration_s": 40.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 real-life had a toy-green weapon skin under 'looks like real life', v1 multiplayer opened on a dark room, v1 details reused footage -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-native-details-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-native-details-v2",
+      "candidate_id": "mw4-native-details-v2",
+      "score": 83,
+      "segments_src": [
+        [
+          203.6,
+          217.8
+        ],
+        [
+          93.3,
+          111.2
+        ]
+      ],
+      "duration_s": 32.1,
+      "batch": "native (deep dive 2026-11-02)",
+      "pipeline": "make_native_clip: full, one TikTok-style text line, original audio, loudnorm -11",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-native-details-v2.mp4",
+          "sha256": "c22440008a393a86359af6fb7fc0edca2bdd84ce1e46709bbe4262b18ae04ffc",
+          "size_bytes": 61219690,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-native-details-v2.mp4",
+          "sha256": "d1fb929aacfbad825958c9893d9382c6e9509c0c92460e8afcfc9af5d404aeea",
+          "size_bytes": 35864003,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "the details in MW4 👀 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "instagram_caption": "the details in MW4 👀 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "rules": "#Sponsored on its own line; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass_with_notes",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [
+            "loudness -14.1 LUFS (target about -9)"
+          ],
+          "loudness_lufs": -14.1,
+          "duration_s": 32.1
+        },
+        "technical_publish_copy": "pass_with_notes",
+        "editorial": "pass: v1 real-life had a toy-green weapon skin under 'looks like real life', v1 multiplayer opened on a dark room, v1 details reused footage -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-native-sniping",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-native-sniping",
+      "candidate_id": "mw4-native-sniping",
+      "score": 83,
+      "segments_src": [
+        [
+          370.8,
+          384.0
+        ],
+        [
+          194.2,
+          202.4
+        ]
+      ],
+      "duration_s": 21.4,
+      "batch": "native (deep dive 2026-11-02)",
+      "pipeline": "make_native_clip: full, one TikTok-style text line, original audio, loudnorm -11",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-native-sniping.mp4",
+          "sha256": "b57dd68dafe1604e95bce9f0d4041506115ad95d9d08baffe34f7e560b04144f",
+          "size_bytes": 51141764,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-native-sniping.mp4",
+          "sha256": "a18fb4cfafe7e7d8191578b72b99ea4b840b7616668f8b777045453cafc86c15",
+          "size_bytes": 25440004,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "sniping in MW4 hits different 🎯 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "instagram_caption": "sniping in MW4 hits different 🎯 @callofduty\n#Sponsored\n#mw4 #callofduty #cod #modernwarfare4 #fyp #gaming #codclips",
+        "rules": "#Sponsored on its own line; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.8,
+          "duration_s": 21.4
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 real-life had a toy-green weapon skin under 'looks like real life', v1 multiplayer opened on a dark room, v1 details reused footage -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-02",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
         ],
         "status": "delivered_to_owner"
       }

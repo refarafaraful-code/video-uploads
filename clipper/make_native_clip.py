@@ -1,0 +1,91 @@
+"""Render "native-looking" TikTok gameplay clips: no titles, bars or SFX, just the footage and one short
+TikTok-style text line (research 2026-11-02: the niche's top posts look unedited).
+
+usage: python3 -I clipper/make_native_clip.py SPEC.json [--only NAME] [--outdir DIR]
+
+SPEC.json:
+{
+  "clips": [{
+    "name": "mw4-native-real-life",
+    "source": "source.mp4",                 # relative to the spec file
+    "layout": "full",                       # full: 9:16 centre crop filling the screen | letterbox: whole 16:9 frame, black around
+    "crop_x": 0.5,                          # optional (full): horizontal centre of the crop, 0..1
+    "segments": [[241.0, 268.3]],           # source seconds, played in order (hard cuts between them)
+    "text": [[0.0, 4.0, "MW4 looks like real life"]]   # output seconds, text; TikTok-like white text, upper third
+  }]
+}
+"""
+import argparse, json, os, re, subprocess, tempfile
+
+W, H, FPS = 1080, 1920, 30
+FONTS = os.path.expanduser("~/.fonts")
+
+
+def ts(t):
+    return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
+
+
+def write_ass(path, items, text_y):
+    head = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Native,Montserrat,60,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2.6,1.5,5,90,90,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    ev = [f"Dialogue: 0,{ts(a)},{ts(b)},Native,,0,0,0,,{{\\an5\\pos({W // 2},{text_y})}}{t.replace('{', '(').replace('}', ')')}"
+          for a, b, t in items]
+    open(path, "w", encoding="utf-8").write(head + "\n".join(ev) + "\n")
+
+
+def render(base, clip, outdir):
+    out = os.path.join(outdir, clip["name"] + ".mp4")
+    if os.path.exists(out):
+        raise SystemExit(f"{out} already exists - finished clips are never overwritten; give the new version a new name")
+    src = os.path.join(base, clip["source"])
+    segs = clip["segments"]
+    total = sum(e - s for s, e in segs)
+    layout = clip.get("layout", "full")
+    td = tempfile.mkdtemp()
+    ass = os.path.join(td, "t.ass")
+    if layout == "full":
+        frame = f"crop=w='trunc(ih*9/16/2)*2':h=ih:x='(iw-ow)*{clip.get('crop_x', 0.5)}':y=0,scale={W}:{H}:flags=lanczos"
+        text_y = 560
+    else:
+        gh = int(W * 9 / 16) // 2 * 2
+        frame = f"scale={W}:{gh}:flags=lanczos,pad={W}:{H}:0:(oh-ih)/2:black"
+        text_y = (H - gh) // 2 - 70
+    write_ass(ass, clip.get("text", []), text_y)
+    inputs, g = [], []
+    for i, (s, e) in enumerate(segs):
+        inputs += ["-ss", f"{s:.3f}", "-t", f"{e - s:.3f}", "-i", src]
+        g.append(f"[{i}:v]fps={FPS},setpts=PTS-STARTPTS,format=yuv420p[v{i}];[{i}:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[a{i}]")
+    n = len(segs)
+    g.append("".join(f"[v{i}][a{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=1[cv][ca]")
+    g.append(f"[cv]{frame},unsharp=5:5:0.6:5:5:0,ass='{ass}':fontsdir='{FONTS}',format=yuv420p[vout]")
+    g.append("[ca]loudnorm=I=-11:TP=-1.0:LRA=11[aout]")
+    gp = os.path.join(td, "g.txt")
+    open(gp, "w").write(";\n".join(g))
+    os.makedirs(outdir, exist_ok=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex_script", gp, "-map", "[vout]", "-map", "[aout]",
+                    "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", str(FPS),
+                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", out], check=True)
+    print(f"{out}  ({total:.1f}s, {layout}, {n} segment(s))")
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("spec"); ap.add_argument("--only"); ap.add_argument("--outdir", default="clips")
+    a = ap.parse_args()
+    spec = json.load(open(a.spec))
+    base = os.path.dirname(os.path.abspath(a.spec))
+    for c in spec["clips"]:
+        if not a.only or c["name"] == a.only:
+            render(base, c, a.outdir)

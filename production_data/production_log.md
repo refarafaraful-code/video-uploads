@@ -70,3 +70,4 @@ Newest first. One entry per production run or system change. The machine-readabl
 - TikTok/IG captions with @callofduty and #ad on its own line: output/cod-mw4/captions.json. The owner uploads manually.
 - Creative batch (same day, owner request): 4 more clips. "Shotgun mains" meme with the player's own quotes and the game's DOUBLE/TRIPLE KILL banners; "Was that a triple?" contrast; "Pick one" (comment 1/2/3); "Map vibe check" montage. Renderer gained a `montage` option. pick-one and map-vibe were re-rendered as v2 after visual review.
 - Viral batch (research round 2): beat-synced kill montage, rate-this-play 1-10, slow-motion graphics. The renderer gained `beat_hits` and `bed_db`. An owner pause truncated the publish copies; they were re-encoded and re-QC'd.
+- Native batch (after the TikTok deep dive): 5 clips, full-screen or letterbox, one small TikTok-style text line, original audio, 21-41 s. New renderer clipper/make_native_clip.py. Captions use #Sponsored.
