@@ -34,6 +34,23 @@
   "loudness_lufs": -10.9
  },
  {
+  "file": "shorts-cod-mw4/mw4-count-the-kills.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 16.3,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "5176e2afb320116c3f0aa16a48306a438861c0ecb2445cc12baf259f0a9870d8",
+  "loudness_lufs": -12.2
+ },
+ {
   "file": "shorts-cod-mw4/mw4-industrial-double-v2.mp4",
   "status": "pass",
   "errors": [],
@@ -206,6 +223,23 @@
   "loudness_lufs": -11.7
  },
  {
+  "file": "shorts-cod-mw4/mw4-rating-kills-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 10.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "8c5e8b94aea2014ef3cc94ee6179e9a47f4eb9d7c5c3ff89a1bc261d99b541c2",
+  "loudness_lufs": -13.0
+ },
+ {
   "file": "shorts-cod-mw4/mw4-shotgun-mains.mp4",
   "status": "pass",
   "errors": [],
@@ -238,6 +272,23 @@
   "silent_segments": 0,
   "sha256": "a6c5d3b76e92f62220e6695166476293f5dc813463dbdb35d1d7a793226cb1fa",
   "loudness_lufs": -10.8
+ },
+ {
+  "file": "shorts-cod-mw4/mw4-sniper-vs-shotgun.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 13.2,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "6ee56f54dddbbdcfea3804c77bba92ab483cac45d1be5d5d3d846a496b6be847",
+  "loudness_lufs": -11.8
  },
  {
   "file": "shorts-cod-mw4/mw4-snow-sniper.mp4",

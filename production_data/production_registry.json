@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02T21:15:11Z",
+  "updated_at": "2026-11-04T07:23:13Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -1718,7 +1718,10 @@
         "cod-mw4-native-shotgun",
         "cod-mw4-native-multiplayer-v2",
         "cod-mw4-native-details-v2",
-        "cod-mw4-native-sniping"
+        "cod-mw4-native-sniping",
+        "cod-mw4-rating-kills-v2",
+        "cod-mw4-sniper-vs-shotgun",
+        "cod-mw4-count-the-kills"
       ],
       "candidates": [
         {
@@ -2056,6 +2059,54 @@
           },
           "decision": "accepted",
           "reason": "native style per deep dive (full-screen/letterbox, one small text line, original audio, 21-41 s)"
+        },
+        {
+          "id": "mw4-rating-kills-v2",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[273.3, 284.2]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 10,
+            "total": 87
+          },
+          "decision": "accepted",
+          "reason": "transformed format (ratings / split-screen comparison / count prompt) to avoid duplicate-footage flagging"
+        },
+        {
+          "id": "mw4-sniper-vs-shotgun",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[370.8, 384.0]][[24.3, 37.5]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 10,
+            "total": 87
+          },
+          "decision": "accepted",
+          "reason": "transformed format (ratings / split-screen comparison / count prompt) to avoid duplicate-footage flagging"
+        },
+        {
+          "id": "mw4-count-the-kills",
+          "source": "src-cod-mw4-topplays",
+          "timestamps": "[[343.9, 360.2]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 17,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 10,
+            "total": 87
+          },
+          "decision": "accepted",
+          "reason": "transformed format (ratings / split-screen comparison / count prompt) to avoid duplicate-footage flagging"
         }
       ],
       "output_dir": "output/cod-mw4",
@@ -2067,7 +2118,8 @@
         "2026-11-01T06:02:47Z 5 clips delivered (14-29 s; shorter than the usual 25-60 s on purpose: gameplay hype clips, research favours short); owner posts to TikTok/IG manually",
         "2026-11-01T12:55:58Z creative batch: 4 clips delivered (shotgun mains, was that a triple, pick one, map vibe check)",
         "2026-11-02T04:35:50Z research round 2 -> 3 viral-format clips (beat montage, rate 1-10, slow motion); paused by owner, resumed",
-        "2026-11-02T18:02:47Z native batch: 5 clips (new renderer clipper/make_native_clip.py)"
+        "2026-11-02T18:02:47Z native batch: 5 clips (new renderer clipper/make_native_clip.py)",
+        "2026-11-04T07:23:13Z transformed batch: rating-kills, sniper-vs-shotgun split, count-the-kills"
       ],
       "reprocessing_authorizations": [
         {
@@ -2084,6 +2136,11 @@
           "date": "2026-11-02",
           "by": "owner",
           "what": "native-style batch after TikTok deep dive"
+        },
+        {
+          "date": "2026-11-04",
+          "by": "owner",
+          "what": "transformed batch after low-views diagnosis"
         }
       ]
     }
@@ -5402,6 +5459,186 @@
         "editorial": "pass: v1 real-life had a toy-green weapon skin under 'looks like real life', v1 multiplayer opened on a dark room, v1 details reused footage -> v2",
         "review_doc": "output/cod-mw4/review_frames/",
         "checked_at": "2026-11-02",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-rating-kills-v2",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-rating-kills-v2",
+      "candidate_id": "mw4-rating-kills-v2",
+      "score": 87,
+      "segments_src": [
+        [
+          273.3,
+          284.2
+        ]
+      ],
+      "duration_s": 10.9,
+      "batch": "transformed (2026-11-04)",
+      "pipeline": "make_native_clip: full, commentary text overlays, original audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-rating-kills-v2.mp4",
+          "sha256": "37a43bef0fbe20991a0b7d277b58ff5dd6dc792dcf56f63a84b4d4cba0b6ba6b",
+          "size_bytes": 17785831,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-rating-kills-v2.mp4",
+          "sha256": "8c5e8b94aea2014ef3cc94ee6179e9a47f4eb9d7c5c3ff89a1bc261d99b541c2",
+          "size_bytes": 12707186,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "I rated every kill in this MW4 play. Do you agree? @callofduty\n#Sponsored\n#mw4 #callofduty #cod #fyp",
+        "instagram_caption": "I rated every kill in this MW4 play. Do you agree? @callofduty\n#Sponsored\n#mw4 #callofduty #cod #fyp",
+        "rules": "max 5 hashtags incl. #Sponsored; turn on TikTok content disclosure toggle; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -13.0,
+          "duration_s": 10.9
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: ratings placed on kills verified at 4 fps; TRIPLE KILL / FRENZY KILL are the game's own banners; no kill count claimed in count-the-kills; v1 rating clip missed the 2nd kill -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-04",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-sniper-vs-shotgun",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-sniper-vs-shotgun",
+      "candidate_id": "mw4-sniper-vs-shotgun",
+      "score": 87,
+      "segments_src": [
+        [
+          370.8,
+          384.0
+        ]
+      ],
+      "duration_s": 13.2,
+      "batch": "transformed (2026-11-04)",
+      "pipeline": "make_native_clip: split, commentary text overlays, original audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-sniper-vs-shotgun.mp4",
+          "sha256": "6a33de7092f84cb128d464776555d846c9b55dd8ae837cc0bf301896190a772c",
+          "size_bytes": 46630303,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-sniper-vs-shotgun.mp4",
+          "sha256": "6ee56f54dddbbdcfea3804c77bba92ab483cac45d1be5d5d3d846a496b6be847",
+          "size_bytes": 15911850,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Two MW4 plays at the same time. Top or bottom? @callofduty\n#Sponsored\n#mw4 #callofduty #cod #fyp",
+        "instagram_caption": "Two MW4 plays at the same time. Top or bottom? @callofduty\n#Sponsored\n#mw4 #callofduty #cod #fyp",
+        "rules": "max 5 hashtags incl. #Sponsored; turn on TikTok content disclosure toggle; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.8,
+          "duration_s": 13.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: ratings placed on kills verified at 4 fps; TRIPLE KILL / FRENZY KILL are the game's own banners; no kill count claimed in count-the-kills; v1 rating clip missed the 2nd kill -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-04",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-mw4-count-the-kills",
+      "source_id": "src-cod-mw4-topplays",
+      "run_id": "run-2026-11-01-cod-mw4",
+      "name": "mw4-count-the-kills",
+      "candidate_id": "mw4-count-the-kills",
+      "score": 87,
+      "segments_src": [
+        [
+          343.9,
+          360.2
+        ]
+      ],
+      "duration_s": 16.3,
+      "batch": "transformed (2026-11-04)",
+      "pipeline": "make_native_clip: full, commentary text overlays, original audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4/clips/mw4-count-the-kills.mp4",
+          "sha256": "d195890685a7d6934846d629105b57a10a6220465ba1e79c66fd5b8e6537b2da",
+          "size_bytes": 40315216,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4/mw4-count-the-kills.mp4",
+          "sha256": "5176e2afb320116c3f0aa16a48306a438861c0ecb2445cc12baf259f0a9870d8",
+          "size_bytes": 19585439,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "How many kills did you count? MW4 Multiplayer @callofduty\n#Sponsored\n#mw4 #callofduty #cod #fyp",
+        "instagram_caption": "How many kills did you count? MW4 Multiplayer @callofduty\n#Sponsored\n#mw4 #callofduty #cod #fyp",
+        "rules": "max 5 hashtags incl. #Sponsored; turn on TikTok content disclosure toggle; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.2,
+          "duration_s": 16.3
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: ratings placed on kills verified at 4 fps; TRIPLE KILL / FRENZY KILL are the game's own banners; no kill count claimed in count-the-kills; v1 rating clip missed the 2nd kill -> v2",
+        "review_doc": "output/cod-mw4/review_frames/",
+        "checked_at": "2026-11-04",
         "not_verified": "audio not listened to by a human"
       },
       "publish": {

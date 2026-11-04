@@ -1,0 +1,145 @@
+{
+ "clips": [
+  {
+   "name": "mw4-rating-kills",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     273.3,
+     284.2
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     10.9,
+     "rating every kill in this MW4 play"
+    ],
+    [
+     1.5,
+     3.6,
+     "7/10",
+     1000,
+     130
+    ],
+    [
+     7.45,
+     9.0,
+     "TRIPLE KILL = 9/10",
+     1000,
+     110
+    ],
+    [
+     9.0,
+     10.9,
+     "another one?? 10/10",
+     1000,
+     110
+    ]
+   ]
+  },
+  {
+   "name": "mw4-sniper-vs-shotgun",
+   "source": "source.mp4",
+   "layout": "split",
+   "segments": [
+    [
+     370.8,
+     384.0
+    ]
+   ],
+   "segments_b": [
+    [
+     24.3,
+     37.5
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     10.4,
+     "sniper or shotgun?",
+     960,
+     66
+    ],
+    [
+     10.4,
+     13.2,
+     "comment TOP or BOTTOM",
+     960,
+     66
+    ]
+   ]
+  },
+  {
+   "name": "mw4-count-the-kills",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     343.9,
+     360.2
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     14.0,
+     "count the kills"
+    ],
+    [
+     14.0,
+     16.3,
+     "comment your number"
+    ]
+   ]
+  },
+  {
+   "name": "mw4-rating-kills-v2",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     273.3,
+     284.2
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     10.9,
+     "rating every kill in this MW4 play"
+    ],
+    [
+     1.5,
+     3.6,
+     "7/10",
+     1000,
+     130
+    ],
+    [
+     4.0,
+     6.0,
+     "8/10",
+     1000,
+     130
+    ],
+    [
+     7.45,
+     9.0,
+     "TRIPLE KILL = 9/10",
+     1000,
+     110
+    ],
+    [
+     9.0,
+     10.9,
+     "another one?? 10/10",
+     1000,
+     110
+    ]
+   ]
+  }
+ ]
+}
