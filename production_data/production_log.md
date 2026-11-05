@@ -77,3 +77,4 @@ Newest first. One entry per production run or system change. The machine-readabl
 ## 2026-11-05 - CoD MW4 Season 01 Trailer (Clipping Culture) - run-2026-11-05-cod-mw4-s1
 - Source: official Season 1 trailer (MediaSilo folder, downloaded directly). Research in projects/cod-mw4-s1/research.md: campaign posts have a median of 179 views; one square-format post got 143K.
 - 4 clips in a square native layout with factual labels (Backstab/Canyon new, Shoot House reimagined, DMZ X01) and comment prompts. The burning-soldier shot was cut (violent content ban). Captions use #Sponsored first plus 3 hashtags.
+- Owner's 430K-view reference edit was checked against the brief. It does not comply: own gameplay, an outside song, and a promo for another service. Made 3 compliant edits in its style instead (grade, beat cuts on the trailer's own music, glowing map titles). New renderer clipper/make_edit_clip.py.

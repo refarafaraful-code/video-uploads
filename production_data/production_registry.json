@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T14:21:37Z",
+  "updated_at": "2026-11-05T15:37:50Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2194,7 +2194,10 @@
         "cod-s1-mw4s1-three-maps",
         "cod-s1-mw4s1-shoot-house",
         "cod-s1-mw4s1-dmz-x01",
-        "cod-s1-mw4s1-looks-crazy-v2"
+        "cod-s1-mw4s1-looks-crazy-v2",
+        "cod-s1-mw4s1-maps-edit-v2",
+        "cod-s1-mw4s1-hype-edit-v2",
+        "cod-s1-mw4s1-dmz-edit-v2"
       ],
       "output_dir": "output/cod-mw4-s1",
       "research": "projects/cod-mw4-s1/research.md",
@@ -2279,10 +2282,59 @@
           },
           "decision": "rejected",
           "reason": "ended on a burning soldier (violent content ban) -> v2"
+        },
+        {
+          "id": "mw4s1-maps-edit",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "see spec_edit.json",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 10,
+            "distinctiveness": 9,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "edit style modelled on owner's 430K reference (grade, beat cuts, glowing titles) within brief: trailer footage + trailer music only; v1 had a burning-soldier shot and a cropped end card -> v2"
+        },
+        {
+          "id": "mw4s1-hype-edit",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "see spec_edit.json",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 10,
+            "distinctiveness": 9,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "edit style modelled on owner's 430K reference (grade, beat cuts, glowing titles) within brief: trailer footage + trailer music only; v1 had a burning-soldier shot and a cropped end card -> v2"
+        },
+        {
+          "id": "mw4s1-dmz-edit",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "see spec_edit.json",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 16,
+            "clarity": 14,
+            "pacing": 10,
+            "distinctiveness": 9,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "edit style modelled on owner's 430K reference (grade, beat cuts, glowing titles) within brief: trailer footage + trailer music only; v1 had a burning-soldier shot and a cropped end card -> v2"
         }
       ],
       "log": [
-        "2026-11-05T14:21:37Z trailer downloaded from the campaign MediaSilo folder (1080p); blog facts verified; 4 clips delivered"
+        "2026-11-05T14:21:37Z trailer downloaded from the campaign MediaSilo folder (1080p); blog facts verified; 4 clips delivered",
+        "2026-11-05T15:37:50Z owner reference (430K views, own gameplay + licensed song + sweatproof.gg promo) does not fit the brief; made 3 compliant edits in its style (new clipper/make_edit_clip.py)"
       ]
     }
   ],
@@ -6052,6 +6104,328 @@
         "review_doc": "output/cod-mw4-s1/review_frames/",
         "checked_at": "2026-11-05",
         "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-maps-edit-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-maps-edit-v2",
+      "candidate_id": "mw4s1-maps-edit",
+      "score": 86,
+      "segments_src": [
+        [
+          20.2,
+          4
+        ],
+        [
+          22.8,
+          2
+        ],
+        [
+          26.4,
+          2,
+          0.6
+        ],
+        [
+          28.4,
+          4
+        ],
+        [
+          34.0,
+          4
+        ],
+        [
+          36.3,
+          2
+        ],
+        [
+          38.0,
+          2
+        ],
+        [
+          40.0,
+          4
+        ],
+        [
+          45.5,
+          4,
+          0.6
+        ],
+        [
+          49.0,
+          2
+        ],
+        [
+          51.0,
+          2
+        ],
+        [
+          53.0,
+          4
+        ],
+        [
+          134.6,
+          6,
+          1.0,
+          "fit"
+        ]
+      ],
+      "duration_s": 16.58,
+      "pipeline": "make_edit_clip: 9:16 graded, beat cuts at 152 bpm on trailer music, glowing map titles, fit end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-maps-edit-v2.mp4",
+          "sha256": "970cfbabdf33558e5cad8a2ffe155074e00f3e027468d1596d7edbb80dd31acf",
+          "size_bytes": 44327031,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-maps-edit-v2.mp4",
+          "sha256": "a1d054966b4cdbd07e1f8554a3ef7917cbfec1015fd8117a1de2c798c77a0e10",
+          "size_bytes": 18740516,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Canyon, Shoot House and Backstab all land in MW4 Season 1 and I'm ready @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Canyon, Shoot House and Backstab all land in MW4 Season 1 and I'm ready @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.5,
+          "duration_s": 16.58
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map titles match the trailer's own map cards; date Nov 6 from blog and end card; no burning-soldier shot; music = trailer audio (from folder)",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human; beat alignment estimated (152 bpm), not checked by ear"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-hype-edit-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-hype-edit-v2",
+      "candidate_id": "mw4s1-hype-edit",
+      "score": 86,
+      "segments_src": [
+        [
+          5.0,
+          2
+        ],
+        [
+          8.8,
+          2
+        ],
+        [
+          15.5,
+          2
+        ],
+        [
+          20.5,
+          2
+        ],
+        [
+          31.0,
+          2
+        ],
+        [
+          29.4,
+          2
+        ],
+        [
+          35.2,
+          2
+        ],
+        [
+          38.2,
+          2
+        ],
+        [
+          46.0,
+          2,
+          0.6
+        ],
+        [
+          49.8,
+          2
+        ],
+        [
+          52.4,
+          2
+        ],
+        [
+          60.8,
+          2
+        ],
+        [
+          65.4,
+          2
+        ],
+        [
+          70.0,
+          2
+        ],
+        [
+          134.6,
+          6,
+          1.0,
+          "fit"
+        ]
+      ],
+      "duration_s": 13.43,
+      "pipeline": "make_edit_clip: 9:16 graded, beat cuts at 152 bpm on trailer music, glowing map titles, fit end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-hype-edit-v2.mp4",
+          "sha256": "40b93a2d4cfafda4b473fe606f3b365121580539e3d3a9314f69c20ffb4c8c21",
+          "size_bytes": 29534904,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-hype-edit-v2.mp4",
+          "sha256": "bee8c67e0b81ad7d910874a6b91295c080b63b7be38eeea05d9242d41c5daf41",
+          "size_bytes": 14950723,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Season 1 has me hyped, Nov 6 can't come fast enough @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "MW4 Season 1 has me hyped, Nov 6 can't come fast enough @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.6,
+          "duration_s": 13.43
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map titles match the trailer's own map cards; date Nov 6 from blog and end card; no burning-soldier shot; music = trailer audio (from folder)",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human; beat alignment estimated (152 bpm), not checked by ear"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-dmz-edit-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-dmz-edit-v2",
+      "candidate_id": "mw4s1-dmz-edit",
+      "score": 86,
+      "segments_src": [
+        [
+          79.0,
+          4
+        ],
+        [
+          84.5,
+          4
+        ],
+        [
+          86.6,
+          2
+        ],
+        [
+          100.5,
+          4
+        ],
+        [
+          104.4,
+          2,
+          0.6
+        ],
+        [
+          107.0,
+          4
+        ],
+        [
+          110.3,
+          2
+        ],
+        [
+          134.6,
+          6,
+          1.0,
+          "fit"
+        ]
+      ],
+      "duration_s": 11.05,
+      "pipeline": "make_edit_clip: 9:16 graded, beat cuts at 152 bpm on trailer music, glowing map titles, fit end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-dmz-edit-v2.mp4",
+          "sha256": "36cbdc61a2e73122edf0b3800d3ca4d8ead3037e5afb5db49a589f1fb4284f80",
+          "size_bytes": 17404265,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-dmz-edit-v2.mp4",
+          "sha256": "cfd04428758628f26454c829601c86e10f3aa3a3c45fb868b27c60d37b459dea",
+          "size_bytes": 10442136,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "X01 is the new DMZ location in MW4 Season 1 and the vibes are crazy @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "X01 is the new DMZ location in MW4 Season 1 and the vibes are crazy @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.9,
+          "duration_s": 11.05
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map titles match the trailer's own map cards; date Nov 6 from blog and end card; no burning-soldier shot; music = trailer audio (from folder)",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human; beat alignment estimated (152 bpm), not checked by ear"
       },
       "publish": {
         "method": "owner_manual",

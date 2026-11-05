@@ -1,5 +1,22 @@
 [
  {
+  "file": "shorts-cod-mw4-s1/mw4s1-dmz-edit-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 11.05,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "cfd04428758628f26454c829601c86e10f3aa3a3c45fb868b27c60d37b459dea",
+  "loudness_lufs": -11.9
+ },
+ {
   "file": "shorts-cod-mw4-s1/mw4s1-dmz-x01.mp4",
   "status": "pass",
   "errors": [],
@@ -17,6 +34,23 @@
   "loudness_lufs": -12.5
  },
  {
+  "file": "shorts-cod-mw4-s1/mw4s1-hype-edit-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 13.43,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "bee8c67e0b81ad7d910874a6b91295c080b63b7be38eeea05d9242d41c5daf41",
+  "loudness_lufs": -11.6
+ },
+ {
   "file": "shorts-cod-mw4-s1/mw4s1-looks-crazy-v2.mp4",
   "status": "pass",
   "errors": [],
@@ -32,6 +66,23 @@
   "silent_segments": 0,
   "sha256": "a4779e371b8bdd3ad9e1ad76c22e256256a677e038d520c4e8c31b5a81a58222",
   "loudness_lufs": -11.9
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-maps-edit-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 16.58,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "a1d054966b4cdbd07e1f8554a3ef7917cbfec1015fd8117a1de2c798c77a0e10",
+  "loudness_lufs": -11.5
  },
  {
   "file": "shorts-cod-mw4-s1/mw4s1-shoot-house.mp4",
