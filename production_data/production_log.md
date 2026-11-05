@@ -72,3 +72,4 @@ Newest first. One entry per production run or system change. The machine-readabl
 - Viral batch (research round 2): beat-synced kill montage, rate-this-play 1-10, slow-motion graphics. The renderer gained `beat_hits` and `bed_db`. An owner pause truncated the publish copies; they were re-encoded and re-QC'd.
 - Native batch (after the TikTok deep dive): 5 clips, full-screen or letterbox, one small TikTok-style text line, original audio, 21-41 s. New renderer clipper/make_native_clip.py. Captions use #Sponsored.
 - Transformed batch (2026-11-04, after diagnosing low views: campaign posts median 411): rate-every-kill, split-screen sniper vs shotgun, count-the-kills. make_native_clip gained a split layout and per-text position/size.
+- 2026-11-05: the MW4 Multiplayer Launch campaign is **Paused** with its budget exhausted ($0 of $23,058 left; 311 clippers, 16.4M approved views). Clipping Culture has opened 'MW4 Season 01 Trailer Clipping' ($1.85/1K, about $12K left).

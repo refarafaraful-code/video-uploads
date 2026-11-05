@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-04T07:23:13Z",
+  "updated_at": "2026-11-05T08:48:18Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2119,7 +2119,8 @@
         "2026-11-01T12:55:58Z creative batch: 4 clips delivered (shotgun mains, was that a triple, pick one, map vibe check)",
         "2026-11-02T04:35:50Z research round 2 -> 3 viral-format clips (beat montage, rate 1-10, slow motion); paused by owner, resumed",
         "2026-11-02T18:02:47Z native batch: 5 clips (new renderer clipper/make_native_clip.py)",
-        "2026-11-04T07:23:13Z transformed batch: rating-kills, sniper-vs-shotgun split, count-the-kills"
+        "2026-11-04T07:23:13Z transformed batch: rating-kills, sniper-vs-shotgun split, count-the-kills",
+        "2026-11-05T08:48:18Z campaign page shows Paused, $0 remaining; new clips for it will not be paid"
       ],
       "reprocessing_authorizations": [
         {
@@ -2142,7 +2143,14 @@
           "by": "owner",
           "what": "transformed batch after low-views diagnosis"
         }
-      ]
+      ],
+      "campaign_status": {
+        "checked_at": "2026-11-05",
+        "status": "Paused - budget exhausted ($23,058 of $23,058 paid, $0 remaining)",
+        "clippers": 311,
+        "approved_views_total": "16.4M",
+        "top_clipper": "$2.3K"
+      }
     }
   ],
   "clips": [
