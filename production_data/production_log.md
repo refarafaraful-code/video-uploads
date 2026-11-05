@@ -73,3 +73,7 @@ Newest first. One entry per production run or system change. The machine-readabl
 - Native batch (after the TikTok deep dive): 5 clips, full-screen or letterbox, one small TikTok-style text line, original audio, 21-41 s. New renderer clipper/make_native_clip.py. Captions use #Sponsored.
 - Transformed batch (2026-11-04, after diagnosing low views: campaign posts median 411): rate-every-kill, split-screen sniper vs shotgun, count-the-kills. make_native_clip gained a split layout and per-text position/size.
 - 2026-11-05: the MW4 Multiplayer Launch campaign is **Paused** with its budget exhausted ($0 of $23,058 left; 311 clippers, 16.4M approved views). Clipping Culture has opened 'MW4 Season 01 Trailer Clipping' ($1.85/1K, about $12K left).
+
+## 2026-11-05 - CoD MW4 Season 01 Trailer (Clipping Culture) - run-2026-11-05-cod-mw4-s1
+- Source: official Season 1 trailer (MediaSilo folder, downloaded directly). Research in projects/cod-mw4-s1/research.md: campaign posts have a median of 179 views; one square-format post got 143K.
+- 4 clips in a square native layout with factual labels (Backstab/Canyon new, Shoot House reimagined, DMZ X01) and comment prompts. The burning-soldier shot was cut (violent content ban). Captions use #Sponsored first plus 3 hashtags.

@@ -9,6 +9,7 @@ SPEC.json:
     "name": "mw4-native-real-life",
     "source": "source.mp4",                 # relative to the spec file
     "layout": "full",                       # full: 9:16 centre crop filling the screen | letterbox: whole 16:9 frame, black around
+                                            # | square: 1:1 centre crop, black around
     "crop_x": 0.5,                          # optional (full): horizontal centre of the crop, 0..1
     "segments": [[241.0, 268.3]],           # source seconds, played in order (hard cuts between them)
     "text": [[0.0, 4.0, "MW4 looks like real life"]]   # output seconds, text; TikTok-like white text, upper third
@@ -65,14 +66,20 @@ def render(base, clip, outdir):
     ass = os.path.join(td, "t.ass")
     if layout == "split":
         return render_split(src, clip, out, td, ass, total)
-    if layout == "full":
+    if layout == "square":   # 1:1 centre of the 16:9 frame, black around (as the best Season 1 trailer clips do)
+        sq_y = (H - W) // 2
+        frame = f"crop=w=ih:h=ih:x=(iw-ow)/2:y=0,scale={W}:{W}:flags=lanczos,pad={W}:{H}:0:{sq_y}:black"
+        text_y = sq_y - 90
+        write_ass(ass, clip.get("text", []), text_y)
+    elif layout == "full":
         frame = f"crop=w='trunc(ih*9/16/2)*2':h=ih:x='(iw-ow)*{clip.get('crop_x', 0.5)}':y=0,scale={W}:{H}:flags=lanczos"
         text_y = 560
-    else:
+    if layout == "letterbox":
         gh = int(W * 9 / 16) // 2 * 2
         frame = f"scale={W}:{gh}:flags=lanczos,pad={W}:{H}:0:(oh-ih)/2:black"
         text_y = (H - gh) // 2 - 70
-    write_ass(ass, clip.get("text", []), text_y)
+    if layout != "square":
+        write_ass(ass, clip.get("text", []), text_y)
     inputs, g = [], []
     for i, (s, e) in enumerate(segs):
         inputs += ["-ss", f"{s:.3f}", "-t", f"{e - s:.3f}", "-i", src]

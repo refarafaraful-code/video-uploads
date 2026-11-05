@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T08:48:18Z",
+  "updated_at": "2026-11-05T14:21:37Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -865,6 +865,36 @@
       "notes": "duplicate check at registration: new",
       "drive_file_id": "1xoc4m4MdCAt3AFmrO05igTOgnCC_-Ov0",
       "drive_folder_id": "1khLung2k2bcPhwePOREGXmngLIGA54vY"
+    },
+    {
+      "id": "src-cod-mw4-s1-trailer",
+      "title": "MW4 Season 01 Premium Trailer (official)",
+      "creator": "Activision / Call of Duty (official campaign footage)",
+      "campaign": "Clipping Culture - CoD MW4 Season 01 Trailer Clipping",
+      "filename": "MW4_S1_Premium_TRAILER_FULL_COD_Channel_ESRB_16x9_4K.mp4 (1080p derivative)",
+      "local_path": "projects/cod-mw4-s1/source.mp4",
+      "release": {
+        "tag": "mediasilo-b74f4e20-db7b-40d9-bc22-6119a5918b68",
+        "asset_id": null
+      },
+      "sha256": "cf2353c7d002f057dbb527ba3ed99e8484f5ab3dd4bb702c4bf5a296d2c34837",
+      "size_bytes": 121975242,
+      "duration_s": 138.368,
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.94,
+      "audio_fingerprint": {
+        "path": "production_data/fingerprints/src-cod-mw4-s1-trailer.fp",
+        "method": "chromaprint raw, mono 11025 Hz",
+        "items": 1096,
+        "item_s": 0.1242
+      },
+      "project_dir": "projects/cod-mw4-s1",
+      "first_processed": "2026-11-05",
+      "runs": [],
+      "status": "in_progress",
+      "candidates": [],
+      "notes": "duplicate check at registration: new"
     }
   ],
   "runs": [
@@ -2151,6 +2181,109 @@
         "approved_views_total": "16.4M",
         "top_clipper": "$2.3K"
       }
+    },
+    {
+      "id": "run-2026-11-05-cod-mw4-s1",
+      "date": "2026-11-05",
+      "type": "production",
+      "status": "completed",
+      "source_ids": [
+        "src-cod-mw4-s1-trailer"
+      ],
+      "clip_ids": [
+        "cod-s1-mw4s1-three-maps",
+        "cod-s1-mw4s1-shoot-house",
+        "cod-s1-mw4s1-dmz-x01",
+        "cod-s1-mw4s1-looks-crazy-v2"
+      ],
+      "output_dir": "output/cod-mw4-s1",
+      "research": "projects/cod-mw4-s1/research.md",
+      "campaign_rules": "Clipping Culture MW4 S01 Trailer: official folder footage/music only; TikTok+Reels; '[caption] @callofduty' then #Ad/#Advertisement/#Sponsored on own line as FIRST hashtag, max 3 more relevant; on-screen text optional and must match clip; no AI voice; don't call trailer 'gameplay'; no violent/controversial; no made-up facts; 30 days live, likes visible",
+      "candidates": [
+        {
+          "id": "mw4s1-three-maps",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[20.0, 26.0], [34.0, 40.5], [45.5, 52.0], [134.5, 137.5]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 17,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 85
+          },
+          "decision": "accepted",
+          "reason": "square native format of the one breakout campaign post + factual info layer"
+        },
+        {
+          "id": "mw4s1-shoot-house",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[34.0, 45.0], [134.5, 137.5]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 17,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 85
+          },
+          "decision": "accepted",
+          "reason": "square native format of the one breakout campaign post + factual info layer"
+        },
+        {
+          "id": "mw4s1-dmz-x01",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[77.0, 80.6], [84.5, 87.0], [100.5, 108.5], [134.5, 137.5]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 17,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 85
+          },
+          "decision": "accepted",
+          "reason": "square native format of the one breakout campaign post + factual info layer"
+        },
+        {
+          "id": "mw4s1-looks-crazy-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[23.0, 27.5], [49.0, 55.5]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 17,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 9,
+            "total": 85
+          },
+          "decision": "accepted",
+          "reason": "square native format of the one breakout campaign post + factual info layer"
+        },
+        {
+          "id": "mw4s1-looks-crazy",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[23,27.5],[49,57.5]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 14,
+            "payoff": 14,
+            "clarity": 14,
+            "pacing": 9,
+            "distinctiveness": 7,
+            "total": 78
+          },
+          "decision": "rejected",
+          "reason": "ended on a burning soldier (violent content ban) -> v2"
+        }
+      ],
+      "log": [
+        "2026-11-05T14:21:37Z trailer downloaded from the campaign MediaSilo folder (1080p); blog facts verified; 4 clips delivered"
+      ]
     }
   ],
   "clips": [
@@ -5653,6 +5786,278 @@
         "method": "owner_manual",
         "platforms": [
           "tiktok"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-three-maps",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-three-maps",
+      "candidate_id": "mw4s1-three-maps",
+      "score": 85,
+      "segments_src": [
+        [
+          20.0,
+          26.0
+        ],
+        [
+          34.0,
+          40.5
+        ],
+        [
+          45.5,
+          52.0
+        ],
+        [
+          134.5,
+          137.5
+        ]
+      ],
+      "duration_s": 22.0,
+      "pipeline": "make_native_clip square, small native text, original trailer audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-three-maps.mp4",
+          "sha256": "b0393a2237e8c8d75545bcd00505b292350052858a7cc4aa3299e24ca91bc7ab",
+          "size_bytes": 36776266,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-three-maps.mp4",
+          "sha256": "c726b7352f0d2f03f405c25e78dfd00cab44f667f59f74f0d7d7ebd3eb1edd6d",
+          "size_bytes": 23601101,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Backstab, Canyon or Shoot House. Which MW4 Season 1 map are you trying first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Backstab, Canyon or Shoot House. Which MW4 Season 1 map are you trying first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more (brief); turn on TikTok content disclosure; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.2,
+          "duration_s": 22.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map names/status and X01 from the official blog; map labels match on-screen title cards (CANYON/SHOOT HOUSE/BACKSTAB/X01); no burning-soldier shot",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-shoot-house",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-shoot-house",
+      "candidate_id": "mw4s1-shoot-house",
+      "score": 85,
+      "segments_src": [
+        [
+          34.0,
+          45.0
+        ],
+        [
+          134.5,
+          137.5
+        ]
+      ],
+      "duration_s": 14.0,
+      "pipeline": "make_native_clip square, small native text, original trailer audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-shoot-house.mp4",
+          "sha256": "ec1955ae58c3325c75c5e1abb5948bcee760f6e2dd62f085a2d6c6f88da5b430",
+          "size_bytes": 21459698,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-shoot-house.mp4",
+          "sha256": "64128f874c48eba4e51c65f74def49cf77794a9dd250c43f6af5cd029f98490c",
+          "size_bytes": 14527604,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Shoot House is back, reimagined for MW4 Season 1 @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Shoot House is back, reimagined for MW4 Season 1 @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more (brief); turn on TikTok content disclosure; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.3,
+          "duration_s": 14.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map names/status and X01 from the official blog; map labels match on-screen title cards (CANYON/SHOOT HOUSE/BACKSTAB/X01); no burning-soldier shot",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-dmz-x01",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-dmz-x01",
+      "candidate_id": "mw4s1-dmz-x01",
+      "score": 85,
+      "segments_src": [
+        [
+          77.0,
+          80.6
+        ],
+        [
+          84.5,
+          87.0
+        ],
+        [
+          100.5,
+          108.5
+        ],
+        [
+          134.5,
+          137.5
+        ]
+      ],
+      "duration_s": 17.1,
+      "pipeline": "make_native_clip square, small native text, original trailer audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-dmz-x01.mp4",
+          "sha256": "90c09061049f93e48dbaae81db8f0b649d32a2efb56f4485cca711f3e2a4b1f9",
+          "size_bytes": 15123676,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-dmz-x01.mp4",
+          "sha256": "ca69e5fe14217f2f0c3114f8c25d5c01e954ba85e468eb32c32bc8656ccaf07d",
+          "size_bytes": 10361520,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "DMZ is getting a new location in MW4 Season 1. X01 looks intense @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "DMZ is getting a new location in MW4 Season 1. X01 looks intense @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more (brief); turn on TikTok content disclosure; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.5,
+          "duration_s": 17.1
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map names/status and X01 from the official blog; map labels match on-screen title cards (CANYON/SHOOT HOUSE/BACKSTAB/X01); no burning-soldier shot",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-looks-crazy-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-looks-crazy-v2",
+      "candidate_id": "mw4s1-looks-crazy",
+      "score": 85,
+      "segments_src": [
+        [
+          23.0,
+          27.5
+        ],
+        [
+          49.0,
+          55.5
+        ]
+      ],
+      "duration_s": 11.0,
+      "pipeline": "make_native_clip square, small native text, original trailer audio",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-looks-crazy-v2.mp4",
+          "sha256": "6ce56781e55523bc65447ae70c2957bd5bb59918d15201d4eb5d968df2095744",
+          "size_bytes": 19827206,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-looks-crazy-v2.mp4",
+          "sha256": "a4779e371b8bdd3ad9e1ad76c22e256256a677e038d520c4e8c31b5a81a58222",
+          "size_bytes": 12969268,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "The new MW4 Season 1 maps look crazy, can't wait to run these with the squad @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "The new MW4 Season 1 maps look crazy, can't wait to run these with the squad @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more (brief); turn on TikTok content disclosure; likes visible; keep up 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.9,
+          "duration_s": 11.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: map names/status and X01 from the official blog; map labels match on-screen title cards (CANYON/SHOOT HOUSE/BACKSTAB/X01); no burning-soldier shot",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-05",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
         ],
         "status": "delivered_to_owner"
       }

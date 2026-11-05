@@ -1,0 +1,26 @@
+# Research - CoD MW4 Season 01 Trailer campaign (2026-11-05)
+
+Source: official Season 1 Premium trailer (MediaSilo campaign folder, 1080p derivative, 2:18). Facts are from the
+official blog (callofduty.com, Oct 28 2026). Season 1 goes live November 6. Launch MP maps: **Backstab (brand-new),
+Canyon (brand-new), Shoot House (reimagined)**. Mid-season: Ministry, Overflow and [CLASSIFIED]. DMZ: new location
+**X01 (Black Site)**. Kill Block combo "Crash". Shipment was added pre-season.
+
+TikTok check (scraped mw4-season-1 / trailer / new-maps discover pages; 57 recent Season 1 posts, 26 of them
+campaign posts):
+- Campaign posts: median 179 views, so the same problem as the last campaign.
+- One breakout: @ryl_editss (1,956 followers), **143K views**. 10.5 s, square 1:1 trailer footage on black, one
+  small white line at the top ("Season 1 of MW4 is already here with new updates 😮"), original trailer audio, no
+  music, cuts from Shoot House to Backstab.
+- @whatthetier (756 followers), 31.9K: a static "Season 1 roadmap" infographic for 12 s with a "what are you most
+  hyped for?" prompt. This is the information format.
+- Big creators (tridzoid, tastyhusband) win with "everything you need to know" explainers 60-150 s long, using their
+  own gameplay.
+
+Applied:
+- Square 1:1 layout (new `square` option in make_native_clip.py), small native text, original trailer audio only
+  (music only from the folder is allowed; the trailer track is from the folder).
+- Information value instead of raw footage: map names labelled with their real status (brand-new / reimagined),
+  the X01 DMZ location, and a comment prompt.
+- 11-22 s. Each clip ends on the official "Season 1 - November 6" card from the trailer itself.
+- Removed the burning-soldier shot (brief bans violent content). Footage is labelled as trailer content, not
+  gameplay.
