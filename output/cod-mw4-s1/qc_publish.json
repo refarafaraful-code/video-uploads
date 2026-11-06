@@ -68,6 +68,78 @@
   "loudness_lufs": -11.9
  },
  {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-canyon-v2.mp4",
+  "status": "fail",
+  "errors": [
+   "duration 7.4s outside Shorts range"
+  ],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 7.4,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "4f643119caa5e72d2f49c210b1abcac5c6e24c31ab217b46fb32d94a8a1b81f5",
+  "loudness_lufs": -12.3
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-drones.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 8.0,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "53dca4270fb8c4b767ab00a12cd35ff2a3e8300c2d3381388929b399e65f0c47",
+  "loudness_lufs": -11.7
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-hype.mp4",
+  "status": "fail",
+  "errors": [
+   "duration 7.1s outside Shorts range"
+  ],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 7.13,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "36dc8d931ad1be4abc84150fa1c28552ccf9f83058b42f6575f73a7feb7e8a4d",
+  "loudness_lufs": -11.8
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-shoothouse-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 9.0,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "447759cf9fb02b9c66de7da4b27967b0fa72f64eed3b880cb8bcb25a6458c441",
+  "loudness_lufs": -11.0
+ },
+ {
   "file": "shorts-cod-mw4-s1/mw4s1-maps-edit-v2.mp4",
   "status": "pass",
   "errors": [],

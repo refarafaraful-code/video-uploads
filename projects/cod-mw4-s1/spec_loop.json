@@ -1,0 +1,98 @@
+{
+ "clips": [
+  {
+   "name": "mw4s1-loop-shoothouse",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     35.0,
+     44.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     9.6,
+     "Season 1 of MW4 is here and Shoot House is back"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-drones",
+   "source": "source.mp4",
+   "layout": "full",
+   "segments": [
+    [
+     45.6,
+     53.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.0,
+     "the drones on Backstab in MW4 Season 1"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-canyon",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     20.2,
+     29.4
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     9.2,
+     "Canyon is one of the new MW4 Season 1 maps"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-shoothouse-v2",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     35.6,
+     44.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     9.0,
+     "Season 1 of MW4 is here and Shoot House is back"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-canyon-v2",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     20.2,
+     24.2
+    ],
+    [
+     26.0,
+     29.4
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     7.4,
+     "Canyon is one of the new MW4 Season 1 maps"
+    ]
+   ]
+  }
+ ]
+}

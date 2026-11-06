@@ -24,3 +24,15 @@ Applied:
 - 11-22 s. Each clip ends on the official "Season 1 - November 6" card from the trailer itself.
 - Removed the burning-soldier shot (brief bans violent content). Footage is labelled as trailer content, not
   gameplay.
+
+## Round 2 (2026-11-06): from ~450 views to 1K
+- Owner's clips now average 400-450 views. Fresh scrape of the Season 1 campaign posts: median 330 views, and only 1
+  post of 8 is over 1K. That one is still @ryl_editss: 10.5 s, square, starts in action, one line, no end card.
+  So our clips are already above the campaign median.
+- 300-500 views means the clip passed TikTok's first test batch and failed the second, which is decided by
+  completion and rewatch (watch time over 100%). https://www.lilachbullock.com/why-tiktok-views-stop-at-300/
+  https://multilogin.com/blog/tiktok-views-stuck/ https://metricool.com/how-to-get-more-views-on-tiktok/
+- Our earlier S1 clips were 11-22 s and most ended on the trailer's static "Season 1 / Nov 6" card (2-2.5 s of
+  no motion, which invites a swipe). Several opened on an aerial shot or a title card instead of action.
+Changes in the loop batch: 7-9 s, action in frame 0, no end card, last shot flows back into the first (loop), one
+line of text, original trailer audio.
