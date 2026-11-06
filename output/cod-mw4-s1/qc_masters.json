@@ -138,6 +138,23 @@
   "loudness_lufs": -12.3
  },
  {
+  "file": "projects/cod-mw4-s1/clips/mw4s1-loop-canyon-v3.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 9.0,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "545dfb7da6b25a899b41715066cb918240a4c9c3eb6f786c373384b887807fde",
+  "loudness_lufs": -12.3
+ },
+ {
   "file": "projects/cod-mw4-s1/clips/mw4s1-loop-canyon.mp4",
   "status": "pass",
   "errors": [],
@@ -170,6 +187,23 @@
   "silent_segments": 0,
   "sha256": "7f678c2f1a5dbf603650626a523611d7120127ec371cfa0f04df00be20e20dce",
   "loudness_lufs": -11.7
+ },
+ {
+  "file": "projects/cod-mw4-s1/clips/mw4s1-loop-hype-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 8.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "c96ab8850b9bc2fb7154dc805d1349ecff08d0526bfd7f26e74e217695bf6a5a",
+  "loudness_lufs": -11.8
  },
  {
   "file": "projects/cod-mw4-s1/clips/mw4s1-loop-hype.mp4",

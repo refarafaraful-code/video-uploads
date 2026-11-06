@@ -34,5 +34,5 @@ Applied:
   https://multilogin.com/blog/tiktok-views-stuck/ https://metricool.com/how-to-get-more-views-on-tiktok/
 - Our earlier S1 clips were 11-22 s and most ended on the trailer's static "Season 1 / Nov 6" card (2-2.5 s of
   no motion, which invites a swipe). Several opened on an aerial shot or a title card instead of action.
-Changes in the loop batch: 7-9 s, action in frame 0, no end card, last shot flows back into the first (loop), one
+Changes in the loop batch: 8-9 s, action in frame 0, no end card, last shot flows back into the first (loop), one
 line of text, original trailer audio.

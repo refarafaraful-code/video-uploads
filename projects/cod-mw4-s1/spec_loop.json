@@ -93,6 +93,28 @@
      "Canyon is one of the new MW4 Season 1 maps"
     ]
    ]
+  },
+  {
+   "name": "mw4s1-loop-canyon-v3",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     20.2,
+     24.2
+    ],
+    [
+     26.0,
+     31.0
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     9.0,
+     "Canyon is one of the new MW4 Season 1 maps"
+    ]
+   ]
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T15:37:50Z",
+  "updated_at": "2026-11-06T11:30:29Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2197,7 +2197,11 @@
         "cod-s1-mw4s1-looks-crazy-v2",
         "cod-s1-mw4s1-maps-edit-v2",
         "cod-s1-mw4s1-hype-edit-v2",
-        "cod-s1-mw4s1-dmz-edit-v2"
+        "cod-s1-mw4s1-dmz-edit-v2",
+        "cod-s1-mw4s1-loop-shoothouse-v2",
+        "cod-s1-mw4s1-loop-drones",
+        "cod-s1-mw4s1-loop-canyon-v3",
+        "cod-s1-mw4s1-loop-hype-v2"
       ],
       "output_dir": "output/cod-mw4-s1",
       "research": "projects/cod-mw4-s1/research.md",
@@ -2330,11 +2334,76 @@
           },
           "decision": "accepted",
           "reason": "edit style modelled on owner's 430K reference (grade, beat cuts, glowing titles) within brief: trailer footage + trailer music only; v1 had a burning-soldier shot and a cropped end card -> v2"
+        },
+        {
+          "id": "mw4s1-loop-shoothouse-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[35.6, 44.6]]",
+          "score": {
+            "hook": 22,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "loop format for completion/rewatch: 8-9 s, action at frame 0, no end card"
+        },
+        {
+          "id": "mw4s1-loop-drones",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[45.6, 53.6]]",
+          "score": {
+            "hook": 22,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "loop format for completion/rewatch: 8-9 s, action at frame 0, no end card"
+        },
+        {
+          "id": "mw4s1-loop-canyon-v3",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[20.2, 24.2], [26.0, 31.0]]",
+          "score": {
+            "hook": 22,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "loop format for completion/rewatch: 8-9 s, action at frame 0, no end card"
+        },
+        {
+          "id": "mw4s1-loop-hype-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[35.2, 2], [20.5, 2], [46.0, 2, 0.6], [38.2, 2], [15.5, 2], [49.8, 2], [29.4, 2], [52.4, 2], [40.0, 2], [42.0, 2], [35.2, 2]]",
+          "score": {
+            "hook": 22,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "loop format for completion/rewatch: 8-9 s, action at frame 0, no end card"
         }
       ],
       "log": [
         "2026-11-05T14:21:37Z trailer downloaded from the campaign MediaSilo folder (1080p); blog facts verified; 4 clips delivered",
-        "2026-11-05T15:37:50Z owner reference (430K views, own gameplay + licensed song + sweatproof.gg promo) does not fit the brief; made 3 compliant edits in its style (new clipper/make_edit_clip.py)"
+        "2026-11-05T15:37:50Z owner reference (430K views, own gameplay + licensed song + sweatproof.gg promo) does not fit the brief; made 3 compliant edits in its style (new clipper/make_edit_clip.py)",
+        "2026-11-06T11:30:29Z loop batch: 4 clips (8-9 s). canyon-v2 and hype v1 failed QC (<8 s) and had been committed by mistake before registration; removed from shorts-cod-mw4-s1/, replaced by canyon-v3 / hype-v2"
       ]
     }
   ],
@@ -6426,6 +6495,295 @@
         "review_doc": "output/cod-mw4-s1/review_frames/",
         "checked_at": "2026-11-05",
         "not_verified": "audio not listened to by a human; beat alignment estimated (152 bpm), not checked by ear"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-shoothouse-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-shoothouse-v2",
+      "candidate_id": "mw4s1-loop-shoothouse-v2",
+      "score": 84,
+      "segments_src": [
+        [
+          35.6,
+          44.6
+        ]
+      ],
+      "duration_s": 9.0,
+      "batch": "loop (2026-11-06)",
+      "pipeline": "make_native_clip / make_edit_clip, loop-friendly, no end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-shoothouse-v2.mp4",
+          "sha256": "07dedcde7b1961854810ac6fcd19a454bfc3bc7b113c61abf8f2b60142a83a77",
+          "size_bytes": 13999741,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-shoothouse-v2.mp4",
+          "sha256": "447759cf9fb02b9c66de7da4b27967b0fa72f64eed3b880cb8bcb25a6458c441",
+          "size_bytes": 9832828,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Season 1 of MW4 is here and Shoot House is back. Who's playing it first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Season 1 of MW4 is here and Shoot House is back. Who's playing it first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.0,
+          "duration_s": 9.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: action from frame 0; shoothouse v1 opened on aerial shot; canyon v2 (burning soldier removed) and hype v1 were under the 8 s QC minimum -> canyon v3 / hype v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-06",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-drones",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-drones",
+      "candidate_id": "mw4s1-loop-drones",
+      "score": 84,
+      "segments_src": [
+        [
+          45.6,
+          53.6
+        ]
+      ],
+      "duration_s": 8.0,
+      "batch": "loop (2026-11-06)",
+      "pipeline": "make_native_clip / make_edit_clip, loop-friendly, no end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-drones.mp4",
+          "sha256": "7f678c2f1a5dbf603650626a523611d7120127ec371cfa0f04df00be20e20dce",
+          "size_bytes": 15459959,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-drones.mp4",
+          "sha256": "53dca4270fb8c4b767ab00a12cd35ff2a3e8300c2d3381388929b399e65f0c47",
+          "size_bytes": 10071735,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "The drones on Backstab in MW4 Season 1 are something else @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "The drones on Backstab in MW4 Season 1 are something else @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.7,
+          "duration_s": 8.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: action from frame 0; shoothouse v1 opened on aerial shot; canyon v2 (burning soldier removed) and hype v1 were under the 8 s QC minimum -> canyon v3 / hype v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-06",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-canyon-v3",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-canyon-v3",
+      "candidate_id": "mw4s1-loop-canyon-v3",
+      "score": 84,
+      "segments_src": [
+        [
+          20.2,
+          24.2
+        ],
+        [
+          26.0,
+          31.0
+        ]
+      ],
+      "duration_s": 9.0,
+      "batch": "loop (2026-11-06)",
+      "pipeline": "make_native_clip / make_edit_clip, loop-friendly, no end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-canyon-v3.mp4",
+          "sha256": "545dfb7da6b25a899b41715066cb918240a4c9c3eb6f786c373384b887807fde",
+          "size_bytes": 16058255,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-canyon-v3.mp4",
+          "sha256": "afa14e230fe327e6df4d7c8936d4950b5f03d293a49a05501ea1f60f6e14a5bb",
+          "size_bytes": 10740274,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Canyon looks like one of the best new MW4 Season 1 maps @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Canyon looks like one of the best new MW4 Season 1 maps @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.3,
+          "duration_s": 9.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: action from frame 0; shoothouse v1 opened on aerial shot; canyon v2 (burning soldier removed) and hype v1 were under the 8 s QC minimum -> canyon v3 / hype v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-06",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-hype-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-hype-v2",
+      "candidate_id": "mw4s1-loop-hype-v2",
+      "score": 84,
+      "segments_src": [
+        [
+          35.2,
+          2
+        ],
+        [
+          20.5,
+          2
+        ],
+        [
+          46.0,
+          2,
+          0.6
+        ],
+        [
+          38.2,
+          2
+        ],
+        [
+          15.5,
+          2
+        ],
+        [
+          49.8,
+          2
+        ],
+        [
+          29.4,
+          2
+        ],
+        [
+          52.4,
+          2
+        ],
+        [
+          40.0,
+          2
+        ],
+        [
+          42.0,
+          2
+        ],
+        [
+          35.2,
+          2
+        ]
+      ],
+      "duration_s": 8.7,
+      "batch": "loop (2026-11-06)",
+      "pipeline": "make_native_clip / make_edit_clip, loop-friendly, no end card",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-hype-v2.mp4",
+          "sha256": "c96ab8850b9bc2fb7154dc805d1349ecff08d0526bfd7f26e74e217695bf6a5a",
+          "size_bytes": 24834040,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-hype-v2.mp4",
+          "sha256": "d36a5bd6ff7cae1de4ca3d251aedc56d5130249422770931e59b3275d8397a7d",
+          "size_bytes": 10882307,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Season 1 is here. Which map are you dropping into first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "MW4 Season 1 is here. Which map are you dropping into first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.8,
+          "duration_s": 8.7
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: action from frame 0; shoothouse v1 opened on aerial shot; canyon v2 (burning soldier removed) and hype v1 were under the 8 s QC minimum -> canyon v3 / hype v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-06",
+        "not_verified": "audio not listened to by a human"
       },
       "publish": {
         "method": "owner_manual",
