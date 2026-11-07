@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T11:30:29Z",
+  "updated_at": "2026-11-07T17:20:02Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2201,7 +2201,10 @@
         "cod-s1-mw4s1-loop-shoothouse-v2",
         "cod-s1-mw4s1-loop-drones",
         "cod-s1-mw4s1-loop-canyon-v3",
-        "cod-s1-mw4s1-loop-hype-v2"
+        "cod-s1-mw4s1-loop-hype-v2",
+        "cod-s1-mw4s1-vo-maps-v2",
+        "cod-s1-mw4s1-vo-dmz",
+        "cod-s1-mw4s1-vo-packed-v2"
       ],
       "output_dir": "output/cod-mw4-s1",
       "research": "projects/cod-mw4-s1/research.md",
@@ -2398,12 +2401,61 @@
           },
           "decision": "accepted",
           "reason": "loop format for completion/rewatch: 8-9 s, action at frame 0, no end card"
+        },
+        {
+          "id": "mw4s1-vo-maps-v2",
+          "source": "src-cod-mw4-s1-trailer + owner voice voice/rec2.m4a",
+          "timestamps": "[[13.0, 1.4, 'fit'], [2.4, 1.88], [45.6, 1.28], [20.2, 1.36], [35.6, 1.52], [49.0, 2.16], [53.0, 2.4]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 10,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "owner's real voice-over (allowed; only AI voice banned) + animated captions; differentiates from 200+ silent trailer re-edits"
+        },
+        {
+          "id": "mw4s1-vo-dmz",
+          "source": "src-cod-mw4-s1-trailer + owner voice voice/rec4.m4a",
+          "timestamps": "[[78.2, 1.2, 'fit'], [84.5, 1.74], [79.2, 1.76, 'fit'], [100.5, 2.16], [104.4, 1.84], [107.0, 1.5], [110.3, 1.75]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 10,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "owner's real voice-over (allowed; only AI voice banned) + animated captions; differentiates from 200+ silent trailer re-edits"
+        },
+        {
+          "id": "mw4s1-vo-packed-v2",
+          "source": "src-cod-mw4-s1-trailer + owner voice voice/rec5.m4a",
+          "timestamps": "[[13.0, 1.3, 'fit'], [15.5, 1.26], [6.2, 0.72], [20.2, 0.9], [45.6, 1.8], [35.6, 1.6], [49.0, 1.6]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 16,
+            "payoff": 15,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 10,
+            "total": 86
+          },
+          "decision": "accepted",
+          "reason": "owner's real voice-over (allowed; only AI voice banned) + animated captions; differentiates from 200+ silent trailer re-edits"
         }
       ],
       "log": [
         "2026-11-05T14:21:37Z trailer downloaded from the campaign MediaSilo folder (1080p); blog facts verified; 4 clips delivered",
         "2026-11-05T15:37:50Z owner reference (430K views, own gameplay + licensed song + sweatproof.gg promo) does not fit the brief; made 3 compliant edits in its style (new clipper/make_edit_clip.py)",
-        "2026-11-06T11:30:29Z loop batch: 4 clips (8-9 s). canyon-v2 and hype v1 failed QC (<8 s) and had been committed by mistake before registration; removed from shorts-cod-mw4-s1/, replaced by canyon-v3 / hype-v2"
+        "2026-11-06T11:30:29Z loop batch: 4 clips (8-9 s). canyon-v2 and hype v1 failed QC (<8 s) and had been committed by mistake before registration; removed from shorts-cod-mw4-s1/, replaced by canyon-v3 / hype-v2",
+        "2026-11-07T17:20:02Z voice-over batch: 3 clips with the owner's recorded voice (new clipper/make_voice_clip.py)"
       ]
     }
   ],
@@ -6784,6 +6836,296 @@
         "review_doc": "output/cod-mw4-s1/review_frames/",
         "checked_at": "2026-11-06",
         "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-vo-maps-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-vo-maps-v2",
+      "candidate_id": "mw4s1-vo-maps-v2",
+      "score": 86,
+      "segments_src": [
+        [
+          13.0,
+          1.4,
+          "fit"
+        ],
+        [
+          2.4,
+          1.88
+        ],
+        [
+          45.6,
+          1.28
+        ],
+        [
+          20.2,
+          1.36
+        ],
+        [
+          35.6,
+          1.52
+        ],
+        [
+          49.0,
+          2.16
+        ],
+        [
+          53.0,
+          2.4
+        ]
+      ],
+      "voice": {
+        "file": "voice/rec2.m4a",
+        "by": "owner (real voice, recorded 2026-11-07)",
+        "caption_fixes": {
+          "9": "launch.",
+          "16": "Shoot House",
+          "25": "mid-season.",
+          "26": ""
+        }
+      },
+      "duration_s": 12.0,
+      "batch": "voice-over (2026-11-07)",
+      "pipeline": "make_voice_clip: graded 9:16, word-timed cuts, make_clip captions, trailer music bed ducked",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-vo-maps-v2.mp4",
+          "sha256": "ee9884128ade3e99cc27a5993359d406e64e592fa6bae16ab6b3da63b59bb337",
+          "size_bytes": 29057128,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-vo-maps-v2.mp4",
+          "sha256": "94d598167dba9cdf95a6fbc70c9ef70f58a0a457c58533064803f4ec8777d7b2",
+          "size_bytes": 13207036,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Backstab, Canyon and Shoot House are live in MW4 Season 1. Which one are you playing first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Backstab, Canyon and Shoot House are live in MW4 Season 1. Which one are you playing first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.3,
+          "duration_s": 12.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: captions = recorded words, ASR mishears corrected to the script the owner read (launch, Shoot House, mid-season, X01); facts from official blog; voice intelligible over bed (re-transcription of the mix matched the script); v1 maps had fixes on wrong word indices, v1 packed had trailer text fragments -> v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-07",
+        "not_verified": "mix not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-vo-dmz",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-vo-dmz",
+      "candidate_id": "mw4s1-vo-dmz",
+      "score": 86,
+      "segments_src": [
+        [
+          78.2,
+          1.2,
+          "fit"
+        ],
+        [
+          84.5,
+          1.74
+        ],
+        [
+          79.2,
+          1.76,
+          "fit"
+        ],
+        [
+          100.5,
+          2.16
+        ],
+        [
+          104.4,
+          1.84
+        ],
+        [
+          107.0,
+          1.5
+        ],
+        [
+          110.3,
+          1.75
+        ]
+      ],
+      "voice": {
+        "file": "voice/rec4.m4a",
+        "by": "owner (real voice, recorded 2026-11-07)",
+        "caption_fixes": {
+          "12": "X01.",
+          "13": "",
+          "14": "A",
+          "15": "secret",
+          "16": "black",
+          "17": "site",
+          "19": "new",
+          "20": "enemies."
+        }
+      },
+      "duration_s": 11.97,
+      "batch": "voice-over (2026-11-07)",
+      "pipeline": "make_voice_clip: graded 9:16, word-timed cuts, make_clip captions, trailer music bed ducked",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-vo-dmz.mp4",
+          "sha256": "f8ce4760c6ced3fa4930df017aa8e3034c38643aa0a18cdd2868c4e21be815a5",
+          "size_bytes": 18418117,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-vo-dmz.mp4",
+          "sha256": "a737ffd643652d7f4b3ce652bba844154a1adaeed6f5d254987d4c1986ffc92d",
+          "size_bytes": 11140711,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "DMZ got a brand new location in MW4 Season 1. Solo or with your squad? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "DMZ got a brand new location in MW4 Season 1. Solo or with your squad? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.0,
+          "duration_s": 11.97
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: captions = recorded words, ASR mishears corrected to the script the owner read (launch, Shoot House, mid-season, X01); facts from official blog; voice intelligible over bed (re-transcription of the mix matched the script); v1 maps had fixes on wrong word indices, v1 packed had trailer text fragments -> v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-07",
+        "not_verified": "mix not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-vo-packed-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-vo-packed-v2",
+      "candidate_id": "mw4s1-vo-packed-v2",
+      "score": 86,
+      "segments_src": [
+        [
+          13.0,
+          1.3,
+          "fit"
+        ],
+        [
+          15.5,
+          1.26
+        ],
+        [
+          6.2,
+          0.72
+        ],
+        [
+          20.2,
+          0.9
+        ],
+        [
+          45.6,
+          1.8
+        ],
+        [
+          35.6,
+          1.6
+        ],
+        [
+          49.0,
+          1.6
+        ]
+      ],
+      "voice": {
+        "file": "voice/rec5.m4a",
+        "by": "owner (real voice, recorded 2026-11-07)",
+        "caption_fixes": {
+          "1": "1"
+        }
+      },
+      "duration_s": 9.2,
+      "batch": "voice-over (2026-11-07)",
+      "pipeline": "make_voice_clip: graded 9:16, word-timed cuts, make_clip captions, trailer music bed ducked",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-vo-packed-v2.mp4",
+          "sha256": "43d6390dbf07ff0255e378eba0e9d8b4f90e20317b53ee75b0a142d031dc5c8c",
+          "size_bytes": 22198445,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-vo-packed-v2.mp4",
+          "sha256": "4a2f82016a2898c25568b223cd5a355bf837af42b3ff3ed3f1b13e8ff8d6be6f",
+          "size_bytes": 10454371,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Season 1 is packed with new stuff. Best season in a while? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "MW4 Season 1 is packed with new stuff. Best season in a while? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.3,
+          "duration_s": 9.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: captions = recorded words, ASR mishears corrected to the script the owner read (launch, Shoot House, mid-season, X01); facts from official blog; voice intelligible over bed (re-transcription of the mix matched the script); v1 maps had fixes on wrong word indices, v1 packed had trailer text fragments -> v2",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-07",
+        "not_verified": "mix not listened to by a human"
       },
       "publish": {
         "method": "owner_manual",

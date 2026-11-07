@@ -1,0 +1,267 @@
+{
+ "clips": [
+  {
+   "name": "mw4s1-vo-maps",
+   "source": "source.mp4",
+   "voice": "voice/rec2.m4a",
+   "words": "voice/rec2.json",
+   "fix": {
+    "9": "launch.",
+    "15": "Shoot House",
+    "23": "mid-season.",
+    "24": ""
+   },
+   "emphasis": [
+    "BACKSTAB",
+    "CANYON",
+    "SHOOT HOUSE",
+    "FIRST"
+   ],
+   "shots": [
+    [
+     13.0,
+     1.4,
+     "fit"
+    ],
+    [
+     2.4,
+     1.88
+    ],
+    [
+     45.6,
+     1.28
+    ],
+    [
+     20.2,
+     1.36
+    ],
+    [
+     35.6,
+     1.52
+    ],
+    [
+     49.0,
+     2.16
+    ],
+    [
+     53.0,
+     2.4
+    ]
+   ],
+   "bed": [
+    20.15,
+    -16
+   ]
+  },
+  {
+   "name": "mw4s1-vo-dmz",
+   "source": "source.mp4",
+   "voice": "voice/rec4.m4a",
+   "words": "voice/rec4.json",
+   "fix": {
+    "12": "X01.",
+    "13": "",
+    "14": "A",
+    "15": "secret",
+    "16": "black",
+    "17": "site",
+    "19": "new",
+    "20": "enemies."
+   },
+   "emphasis": [
+    "DMZ",
+    "X01",
+    "INTENSE",
+    "SQUAD"
+   ],
+   "shots": [
+    [
+     78.2,
+     1.2,
+     "fit"
+    ],
+    [
+     84.5,
+     1.74
+    ],
+    [
+     79.2,
+     1.76,
+     "fit"
+    ],
+    [
+     100.5,
+     2.16
+    ],
+    [
+     104.4,
+     1.84
+    ],
+    [
+     107.0,
+     1.5
+    ],
+    [
+     110.3,
+     1.75
+    ]
+   ],
+   "bed": [
+    100.22,
+    -16
+   ],
+   "grade": "dark"
+  },
+  {
+   "name": "mw4s1-vo-packed",
+   "source": "source.mp4",
+   "voice": "voice/rec5.m4a",
+   "words": "voice/rec5.json",
+   "fix": {
+    "1": "1"
+   },
+   "emphasis": [
+    "GUNS",
+    "MAPS",
+    "BEST"
+   ],
+   "shots": [
+    [
+     13.0,
+     1.3,
+     "fit"
+    ],
+    [
+     5.0,
+     1.26
+    ],
+    [
+     7.0,
+     0.72
+    ],
+    [
+     20.2,
+     0.9
+    ],
+    [
+     45.6,
+     1.8
+    ],
+    [
+     35.6,
+     1.6
+    ],
+    [
+     49.0,
+     1.6
+    ]
+   ],
+   "bed": [
+    48.41,
+    -16
+   ]
+  },
+  {
+   "name": "mw4s1-vo-maps-v2",
+   "source": "source.mp4",
+   "voice": "voice/rec2.m4a",
+   "words": "voice/rec2.json",
+   "fix": {
+    "9": "launch.",
+    "16": "Shoot House",
+    "25": "mid-season.",
+    "26": ""
+   },
+   "emphasis": [
+    "BACKSTAB",
+    "CANYON",
+    "SHOOT HOUSE",
+    "FIRST"
+   ],
+   "shots": [
+    [
+     13.0,
+     1.4,
+     "fit"
+    ],
+    [
+     2.4,
+     1.88
+    ],
+    [
+     45.6,
+     1.28
+    ],
+    [
+     20.2,
+     1.36
+    ],
+    [
+     35.6,
+     1.52
+    ],
+    [
+     49.0,
+     2.16
+    ],
+    [
+     53.0,
+     2.4
+    ]
+   ],
+   "bed": [
+    20.15,
+    -16
+   ]
+  },
+  {
+   "name": "mw4s1-vo-packed-v2",
+   "source": "source.mp4",
+   "voice": "voice/rec5.m4a",
+   "words": "voice/rec5.json",
+   "fix": {
+    "1": "1"
+   },
+   "emphasis": [
+    "GUNS",
+    "MAPS",
+    "BEST"
+   ],
+   "shots": [
+    [
+     13.0,
+     1.3,
+     "fit"
+    ],
+    [
+     15.5,
+     1.26
+    ],
+    [
+     6.2,
+     0.72
+    ],
+    [
+     20.2,
+     0.9
+    ],
+    [
+     45.6,
+     1.8
+    ],
+    [
+     35.6,
+     1.6
+    ],
+    [
+     49.0,
+     1.6
+    ]
+   ],
+   "bed": [
+    48.41,
+    -16
+   ]
+  }
+ ]
+}

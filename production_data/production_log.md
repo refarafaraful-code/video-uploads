@@ -80,3 +80,4 @@ Newest first. One entry per production run or system change. The machine-readabl
 - Owner's 430K-view reference edit was checked against the brief. It does not comply: own gameplay, an outside song, and a promo for another service. Made 3 compliant edits in its style instead (grade, beat cuts on the trailer's own music, glowing map titles). New renderer clipper/make_edit_clip.py.
 - 2026-11-06 loop batch: 4 clips of 8-9 s with action from frame 0 and no end card, aimed at completion and rewatch. The owner's clips average ~450 views; the campaign median is 330.
   Two clips (7.1 s and 7.4 s) failed QC's 8 s minimum and were committed by mistake. They were removed and replaced by longer versions.
+- 2026-11-07 voice-over batch: 3 clips using the owner's own recorded English voice, with animated captions and the trailer music ducked underneath. New renderer clipper/make_voice_clip.py. Recordings are kept git-ignored in projects/cod-mw4-s1/voice/.
