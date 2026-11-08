@@ -83,3 +83,4 @@ Newest first. One entry per production run or system change. The machine-readabl
 - 2026-11-07 voice-over batch: 3 clips using the owner's own recorded English voice, with animated captions and the trailer music ducked underneath. New renderer clipper/make_voice_clip.py. Recordings are kept git-ignored in projects/cod-mw4-s1/voice/.
 - 2026-11-08 recap batch: 2 horizontal 16:9 condensed-trailer clips (one without text, one with), modelled on a 5.5K-view clip from a small account the owner found. The voice-over clips had stalled at ~100 views.
 - 2026-11-08 owner analytics: best clip 412 views, 95.5% Israel, For You 97.7%, average watch 3.8 s. Diagnosis: a geographic audience ceiling. Made 4 more 8 s loops.
+- 2026-11-08 Instagram data: 30% US / 10% UK, versus TikTok's 95.5% Israel. Instagram becomes the main platform. Made 3 Instagram loops with a send/tag prompt.

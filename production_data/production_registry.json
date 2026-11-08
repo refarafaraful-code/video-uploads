@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T13:59:26Z",
+  "updated_at": "2026-11-08T14:25:23Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2210,7 +2210,10 @@
         "cod-s1-mw4s1-loop-crash-v2",
         "cod-s1-mw4s1-loop-snow-v2",
         "cod-s1-mw4s1-loop-city-v2",
-        "cod-s1-mw4s1-loop-x01"
+        "cod-s1-mw4s1-loop-x01",
+        "cod-s1-mw4s1-ig-canyon",
+        "cod-s1-mw4s1-ig-drones",
+        "cod-s1-mw4s1-ig-shoothouse"
       ],
       "output_dir": "output/cod-mw4-s1",
       "research": "projects/cod-mw4-s1/research.md",
@@ -2551,6 +2554,54 @@
           },
           "decision": "accepted",
           "reason": "8 s square loop: the best-retaining format in the owner's own analytics"
+        },
+        {
+          "id": "mw4s1-ig-canyon",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[20.2, 24.2], [26.0, 31.0]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 82
+          },
+          "decision": "accepted",
+          "reason": "Instagram-first variant of the best loops with a send/tag prompt (sends per reach weigh most for non-followers)"
+        },
+        {
+          "id": "mw4s1-ig-drones",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[45.6, 54.6]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 82
+          },
+          "decision": "accepted",
+          "reason": "Instagram-first variant of the best loops with a send/tag prompt (sends per reach weigh most for non-followers)"
+        },
+        {
+          "id": "mw4s1-ig-shoothouse",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[35.6, 44.6]]",
+          "score": {
+            "hook": 20,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 82
+          },
+          "decision": "accepted",
+          "reason": "Instagram-first variant of the best loops with a send/tag prompt (sends per reach weigh most for non-followers)"
         }
       ],
       "log": [
@@ -2559,7 +2610,8 @@
         "2026-11-06T11:30:29Z loop batch: 4 clips (8-9 s). canyon-v2 and hype v1 failed QC (<8 s) and had been committed by mistake before registration; removed from shorts-cod-mw4-s1/, replaced by canyon-v3 / hype-v2",
         "2026-11-07T17:20:02Z voice-over batch: 3 clips with the owner's recorded voice (new clipper/make_voice_clip.py)",
         "2026-11-08T06:02:44Z owner reported voice-over clips ~100 views; analysed owner's 5.5K reference -> 2 horizontal recap clips",
-        "2026-11-08T13:59:26Z owner analytics: 95.5% Israel, For You 97.7%; 4 more 8 s loops"
+        "2026-11-08T13:59:26Z owner analytics: 95.5% Israel, For You 97.7%; 4 more 8 s loops",
+        "2026-11-08T14:25:23Z Instagram reaches US/UK (owner data) -> Instagram becomes the main platform; 3 send-prompt variants"
       ],
       "performance_reported": [
         {
@@ -2586,6 +2638,22 @@
           "likes": 5,
           "comments": 1,
           "saves": 1
+        },
+        {
+          "date": "2026-11-08",
+          "platform": "instagram",
+          "best_views": 150,
+          "non_followers_pct": 98,
+          "countries": "US 30%, UK 10%, DE 8%, CA 4.7%, TR 4.7%",
+          "other_reels_views": [
+            124,
+            139,
+            6,
+            117,
+            0,
+            109,
+            94
+          ]
         }
       ]
     }
@@ -7798,6 +7866,190 @@
         "method": "owner_manual",
         "platforms": [
           "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-ig-canyon",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-ig-canyon",
+      "candidate_id": "mw4s1-ig-canyon",
+      "score": 82,
+      "segments_src": [
+        [
+          20.2,
+          24.2
+        ],
+        [
+          26.0,
+          31.0
+        ]
+      ],
+      "duration_s": 9.0,
+      "batch": "instagram (2026-11-08)",
+      "pipeline": "make_native_clip square loop, send/tag prompt",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-ig-canyon.mp4",
+          "sha256": "241add6f778ff7bdc934ca83349d86c5169d6a5c019b66d92abea5cd1c59b9ed",
+          "size_bytes": 16049833,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-ig-canyon.mp4",
+          "sha256": "550d748716b7dde0a13ba5ecedc767b37a1beb52547a7a02331c00e56ac59c5c",
+          "size_bytes": 10742406,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "instagram_caption": "Canyon is one of the new MW4 Season 1 maps. Send this to the friend you're running it with @callofduty\n#Sponsored\n#mw4 #callofduty #modernwarfare4",
+        "tiktok_caption": "Canyon is one of the new MW4 Season 1 maps. Send this to the friend you're running it with @callofduty\n#Sponsored\n#mw4 #callofduty #modernwarfare4",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; likes visible; 30+ days; Instagram-first"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.3,
+          "duration_s": 9.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: same footage as the checked loops (canyon v3 cut, no burning soldier); prompt text only",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-ig-drones",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-ig-drones",
+      "candidate_id": "mw4s1-ig-drones",
+      "score": 82,
+      "segments_src": [
+        [
+          45.6,
+          54.6
+        ]
+      ],
+      "duration_s": 9.0,
+      "batch": "instagram (2026-11-08)",
+      "pipeline": "make_native_clip square loop, send/tag prompt",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-ig-drones.mp4",
+          "sha256": "95c9f84996564b56df1606b19d17d090bd3da028bc530df7f0dea89f9e5e7577",
+          "size_bytes": 14332390,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-ig-drones.mp4",
+          "sha256": "ad14049a537e6d1e5bd835618eb965ef134463c84ad27ebd5bd07a5f08751ffd",
+          "size_bytes": 10011033,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "instagram_caption": "The drones on Backstab in MW4 Season 1 are something else. Send this to your squad @callofduty\n#Sponsored\n#mw4 #callofduty #modernwarfare4",
+        "tiktok_caption": "The drones on Backstab in MW4 Season 1 are something else. Send this to your squad @callofduty\n#Sponsored\n#mw4 #callofduty #modernwarfare4",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; likes visible; 30+ days; Instagram-first"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.8,
+          "duration_s": 9.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: same footage as the checked loops (canyon v3 cut, no burning soldier); prompt text only",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-ig-shoothouse",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-ig-shoothouse",
+      "candidate_id": "mw4s1-ig-shoothouse",
+      "score": 82,
+      "segments_src": [
+        [
+          35.6,
+          44.6
+        ]
+      ],
+      "duration_s": 9.0,
+      "batch": "instagram (2026-11-08)",
+      "pipeline": "make_native_clip square loop, send/tag prompt",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-ig-shoothouse.mp4",
+          "sha256": "d3bf8fb1ecef7f0a4b4ba0a30cbcf290ca6c7003d0edadc95c93b658a1cf6269",
+          "size_bytes": 14038240,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-ig-shoothouse.mp4",
+          "sha256": "2f904a8ab4cd1aa96ebbd4a245b395b27f695f17126f02fd8ffbca62ec5949ab",
+          "size_bytes": 9877537,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "instagram_caption": "Shoot House is back in MW4 Season 1. Tag who you're playing it with @callofduty\n#Sponsored\n#mw4 #callofduty #modernwarfare4",
+        "tiktok_caption": "Shoot House is back in MW4 Season 1. Tag who you're playing it with @callofduty\n#Sponsored\n#mw4 #callofduty #modernwarfare4",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; likes visible; 30+ days; Instagram-first"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.0,
+          "duration_s": 9.0
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: same footage as the checked loops (canyon v3 cut, no burning soldier); prompt text only",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
           "instagram_reels"
         ],
         "status": "delivered_to_owner"

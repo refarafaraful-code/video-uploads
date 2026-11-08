@@ -59,3 +59,15 @@ which explains the ~100-500 ceiling across every format. Within that, shorter lo
 voice-over 12 s > 31 s recap). Hebrew is not allowed (brief: English only). Whether Israel counts as Tier 1-2 for
 payout is unknown; the owner should ask Clipping Culture.
 Applied: 4 more 8 s square loops; stop long formats and voice-overs for this account.
+
+## Round 5 (2026-11-08): move to Instagram
+- Owner's Instagram (new account): best Reel 150 views, 98% non-followers, viewers **30% US, 10% UK, 8% DE, 4.7% CA,
+  4.7% TR**, so about half Tier 1. The other Reels got 0-139. Instagram reaches the campaign's target countries;
+  TikTok (95.5% Israel) does not.
+- Instagram pages need a login from this session (redirect to the login wall), so niche Reels cannot be scraped.
+- Reels ranking (Mosseri, Jan 2025, via secondary sources): watch time, likes per reach and **sends per reach**,
+  with sends weighted more for non-followers. https://www.dataslayer.ai/blog/instagram-algorithm-2025-complete-guide-for-marketers
+  https://keywordseverywhere.com/news/instagram-algorithm-updates/how-the-instagram-algorithm-works/
+Applied: Instagram versions of the 3 best loops with a send/tag prompt on screen ("send this to your MW4 squad");
+captions ask for a send. Plan: Instagram is the main platform; post every S1 clip there once (the brief allows up
+to 5 posts per video), 1-2 a day, and track sends per reach in Insights.

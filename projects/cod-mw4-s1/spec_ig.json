@@ -1,0 +1,8 @@
+{"clips": [
+ {"name": "mw4s1-ig-canyon", "source": "source.mp4", "layout": "square",
+  "segments": [[20.2, 24.2], [26.0, 31.0]], "text": [[0.0, 9.0, "send this to the friend you play MW4 with"]]},
+ {"name": "mw4s1-ig-drones", "source": "source.mp4", "layout": "square",
+  "segments": [[45.6, 54.6]], "text": [[0.0, 9.0, "send this to your MW4 squad"]]},
+ {"name": "mw4s1-ig-shoothouse", "source": "source.mp4", "layout": "square",
+  "segments": [[35.6, 44.6]], "text": [[0.0, 9.0, "tag who you're playing Shoot House with"]]}
+]}
