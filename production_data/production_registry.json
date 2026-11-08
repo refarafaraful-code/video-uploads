@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T06:02:44Z",
+  "updated_at": "2026-11-08T13:59:26Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2206,7 +2206,11 @@
         "cod-s1-mw4s1-vo-dmz",
         "cod-s1-mw4s1-vo-packed-v2",
         "cod-s1-mw4s1-recap",
-        "cod-s1-mw4s1-recap-text-v2"
+        "cod-s1-mw4s1-recap-text-v2",
+        "cod-s1-mw4s1-loop-crash-v2",
+        "cod-s1-mw4s1-loop-snow-v2",
+        "cod-s1-mw4s1-loop-city-v2",
+        "cod-s1-mw4s1-loop-x01"
       ],
       "output_dir": "output/cod-mw4-s1",
       "research": "projects/cod-mw4-s1/research.md",
@@ -2483,6 +2487,70 @@
           },
           "decision": "accepted",
           "reason": "modelled on owner's 5.5K reference: horizontal condensed trailer, trailer's own cards and audio"
+        },
+        {
+          "id": "mw4s1-loop-crash-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[68.1, 76.3]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "8 s square loop: the best-retaining format in the owner's own analytics"
+        },
+        {
+          "id": "mw4s1-loop-snow-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[45.6, 48.2], [49.0, 54.6]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "8 s square loop: the best-retaining format in the owner's own analytics"
+        },
+        {
+          "id": "mw4s1-loop-city-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[2.2, 3.8], [5.0, 9.6], [15.5, 17.6]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "8 s square loop: the best-retaining format in the owner's own analytics"
+        },
+        {
+          "id": "mw4s1-loop-x01",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "[[100.4, 108.6]]",
+          "score": {
+            "hook": 21,
+            "curiosity": 15,
+            "payoff": 14,
+            "clarity": 15,
+            "pacing": 10,
+            "distinctiveness": 8,
+            "total": 83
+          },
+          "decision": "accepted",
+          "reason": "8 s square loop: the best-retaining format in the owner's own analytics"
         }
       ],
       "log": [
@@ -2490,7 +2558,35 @@
         "2026-11-05T15:37:50Z owner reference (430K views, own gameplay + licensed song + sweatproof.gg promo) does not fit the brief; made 3 compliant edits in its style (new clipper/make_edit_clip.py)",
         "2026-11-06T11:30:29Z loop batch: 4 clips (8-9 s). canyon-v2 and hype v1 failed QC (<8 s) and had been committed by mistake before registration; removed from shorts-cod-mw4-s1/, replaced by canyon-v3 / hype-v2",
         "2026-11-07T17:20:02Z voice-over batch: 3 clips with the owner's recorded voice (new clipper/make_voice_clip.py)",
-        "2026-11-08T06:02:44Z owner reported voice-over clips ~100 views; analysed owner's 5.5K reference -> 2 horizontal recap clips"
+        "2026-11-08T06:02:44Z owner reported voice-over clips ~100 views; analysed owner's 5.5K reference -> 2 horizontal recap clips",
+        "2026-11-08T13:59:26Z owner analytics: 95.5% Israel, For You 97.7%; 4 more 8 s loops"
+      ],
+      "performance_reported": [
+        {
+          "date": "2026-11-08",
+          "clip": "cod-s1-mw4s1-loop-canyon-v3",
+          "views": 412,
+          "avg_watch_s": 3.8,
+          "full_watch_pct": 10,
+          "for_you_pct": 97.7,
+          "top_country": "Israel 95.5%",
+          "us_pct": 0.7
+        },
+        {
+          "date": "2026-11-08",
+          "clip": "cod-s1-mw4s1-recap",
+          "views": 91,
+          "avg_watch_s": 2.3,
+          "full_watch_pct": 0
+        },
+        {
+          "date": "2026-11-08",
+          "clip": "cod-s1-mw4s1-vo-dmz",
+          "views": 215,
+          "likes": 5,
+          "comments": 1,
+          "saves": 1
+        }
       ]
     }
   ],
@@ -7436,6 +7532,264 @@
         },
         "technical_publish_copy": "needs_review",
         "editorial": "pass_with_notes: black-frame flags are the trailer's own title cards (THIS IS / KILL BLOCK), intended; burning-soldier shot excluded; text-v1 said 'coming' after launch -> v2 'new'",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-crash-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-crash-v2",
+      "candidate_id": "mw4s1-loop-crash-v2",
+      "score": 83,
+      "segments_src": [
+        [
+          68.1,
+          76.3
+        ]
+      ],
+      "duration_s": 8.2,
+      "batch": "loop 2 (2026-11-08)",
+      "pipeline": "make_native_clip square loop",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-crash-v2.mp4",
+          "sha256": "0d69864217eb5ac126c0427544b086f3d49a5b4e82d090819c18d5728f3a6535",
+          "size_bytes": 10207571,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-crash-v2.mp4",
+          "sha256": "58a4e98ca9acd8f063cbfb8114947d8f4b9ecb5a9e58dca483d68b50d3041978",
+          "size_bytes": 7085952,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Kill Block: Crash is in MW4 Season 1. Who's dropping in? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Kill Block: Crash is in MW4 Season 1. Who's dropping in? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.9,
+          "duration_s": 8.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 snow ended on a burning soldier, v1 city had a melee/blood close-up -> v2; crash-v2 starts on the trailer's Kill Block card",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-snow-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-snow-v2",
+      "candidate_id": "mw4s1-loop-snow-v2",
+      "score": 83,
+      "segments_src": [
+        [
+          45.6,
+          48.2
+        ],
+        [
+          49.0,
+          54.6
+        ]
+      ],
+      "duration_s": 8.2,
+      "batch": "loop 2 (2026-11-08)",
+      "pipeline": "make_native_clip square loop",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-snow-v2.mp4",
+          "sha256": "789c2f6cd890819cbeef9b654a26d20c61fe2b76e02ade139fe74a39953784ca",
+          "size_bytes": 13520784,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-snow-v2.mp4",
+          "sha256": "9fdf9c8e89cca6842dd0ee479877abf92089c8ab49843b89b738bc5c1d7dc478",
+          "size_bytes": 9418711,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Backstab is a brand new MW4 map and the snow looks unreal @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Backstab is a brand new MW4 map and the snow looks unreal @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -11.7,
+          "duration_s": 8.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 snow ended on a burning soldier, v1 city had a melee/blood close-up -> v2; crash-v2 starts on the trailer's Kill Block card",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-city-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-city-v2",
+      "candidate_id": "mw4s1-loop-city-v2",
+      "score": 83,
+      "segments_src": [
+        [
+          2.2,
+          3.8
+        ],
+        [
+          5.0,
+          9.6
+        ],
+        [
+          15.5,
+          17.6
+        ]
+      ],
+      "duration_s": 8.3,
+      "batch": "loop 2 (2026-11-08)",
+      "pipeline": "make_native_clip square loop",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-city-v2.mp4",
+          "sha256": "2548f020bdd7134ae8b726b7c7fcf40a533a77cd5c8029de38b2ddcf02211ceb",
+          "size_bytes": 8531931,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-city-v2.mp4",
+          "sha256": "1d6959861158700562da04e4ac5c45ba725d3d744786533e93c5f27cde51f447",
+          "size_bytes": 5867350,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Season 1 is live now. Who's playing tonight? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "MW4 Season 1 is live now. Who's playing tonight? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "black frames at 4.3-4.7s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -11.7,
+          "duration_s": 8.3
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass: v1 snow ended on a burning soldier, v1 city had a melee/blood close-up -> v2; crash-v2 starts on the trailer's Kill Block card",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-loop-x01",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-loop-x01",
+      "candidate_id": "mw4s1-loop-x01",
+      "score": 83,
+      "segments_src": [
+        [
+          100.4,
+          108.6
+        ]
+      ],
+      "duration_s": 8.2,
+      "batch": "loop 2 (2026-11-08)",
+      "pipeline": "make_native_clip square loop",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-loop-x01.mp4",
+          "sha256": "e82c730db49c21611b07fc7fa8a22a5ccd0f7d6c56295bd5b6494f56cc280f85",
+          "size_bytes": 7036637,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-loop-x01.mp4",
+          "sha256": "ce9d67d7114e982eac6e210d11195985fbd46550318fc54dc6ad1c4dd5ce6b03",
+          "size_bytes": 5023091,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "The new DMZ location in MW4 Season 1 looks intense. Solo or squad? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "The new DMZ location in MW4 Season 1 looks intense. Solo or squad? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass",
+        "technical": {
+          "status": "pass",
+          "errors": [],
+          "needs_review": [],
+          "warnings": [],
+          "loudness_lufs": -12.1,
+          "duration_s": 8.2
+        },
+        "technical_publish_copy": "pass",
+        "editorial": "pass: v1 snow ended on a burning soldier, v1 city had a melee/blood close-up -> v2; crash-v2 starts on the trailer's Kill Block card",
         "review_doc": "output/cod-mw4-s1/review_frames/",
         "checked_at": "2026-11-08",
         "not_verified": "audio not listened to by a human"

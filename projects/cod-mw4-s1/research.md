@@ -48,3 +48,14 @@ line of text, original trailer audio.
 - Applied: mw4s1-recap (horizontal, no text, 31 s, full tour MP -> Kill Block -> DMZ -> end card) and
   mw4s1-recap-text-v2 (the same with one small native line). Posting both is an A/B test of text vs no text.
 - QC flags the black title cards as "black frames"; they are the trailer's own cards, intended.
+
+## Round 4 (2026-11-08): first real analytics from the owner
+- Canyon loop (9 s, best clip, 412 views): average watch 3.8 s, full watch 10%, **For You 97.7%**, viewers
+  **95.5% Israel**, 0.7% US.
+- Recap (31 s horizontal, 91 views): average watch 2.3 s, full watch 0%.
+Reading: TikTok does distribute the clips (almost all views come from For You), but to an Israeli audience,
+because the account and device are in Israel. The pool of Israeli viewers for English CoD trailer clips is small,
+which explains the ~100-500 ceiling across every format. Within that, shorter loops hold attention best (9 s loop >
+voice-over 12 s > 31 s recap). Hebrew is not allowed (brief: English only). Whether Israel counts as Tier 1-2 for
+payout is unknown; the owner should ask Clipping Culture.
+Applied: 4 more 8 s square loops; stop long formats and voice-overs for this account.

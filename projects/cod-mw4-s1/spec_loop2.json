@@ -1,0 +1,146 @@
+{
+ "clips": [
+  {
+   "name": "mw4s1-loop-crash",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     68.5,
+     76.7
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.2,
+     "Kill Block: Crash is in MW4 Season 1"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-snow",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     49.0,
+     57.2
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.2,
+     "Backstab is a brand new MW4 map"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-city",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     2.2,
+     3.8
+    ],
+    [
+     5.0,
+     11.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.2,
+     "MW4 Season 1 is live now"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-x01",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     100.4,
+     108.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.2,
+     "the new DMZ location in MW4 Season 1"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-crash-v2",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     68.1,
+     76.3
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.2,
+     "Kill Block: Crash is in MW4 Season 1"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-snow-v2",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     45.6,
+     48.2
+    ],
+    [
+     49.0,
+     54.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.2,
+     "Backstab is a brand new MW4 map"
+    ]
+   ]
+  },
+  {
+   "name": "mw4s1-loop-city-v2",
+   "source": "source.mp4",
+   "layout": "square",
+   "segments": [
+    [
+     2.2,
+     3.8
+    ],
+    [
+     5.0,
+     9.6
+    ],
+    [
+     15.5,
+     17.6
+    ]
+   ],
+   "text": [
+    [
+     0.0,
+     8.3,
+     "MW4 Season 1 is live now"
+    ]
+   ]
+  }
+ ]
+}

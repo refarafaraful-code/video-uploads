@@ -85,6 +85,42 @@
   "loudness_lufs": -12.3
  },
  {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-city-v2.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 4.3-4.7s"
+  ],
+  "warnings": [],
+  "duration_s": 8.3,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 1,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "1d6959861158700562da04e4ac5c45ba725d3d744786533e93c5f27cde51f447",
+  "loudness_lufs": -11.7
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-crash-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 8.2,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "58a4e98ca9acd8f063cbfb8114947d8f4b9ecb5a9e58dca483d68b50d3041978",
+  "loudness_lufs": -12.9
+ },
+ {
   "file": "shorts-cod-mw4-s1/mw4s1-loop-drones.mp4",
   "status": "pass",
   "errors": [],
@@ -134,6 +170,40 @@
   "silent_segments": 0,
   "sha256": "447759cf9fb02b9c66de7da4b27967b0fa72f64eed3b880cb8bcb25a6458c441",
   "loudness_lufs": -11.0
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-snow-v2.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 8.2,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "9fdf9c8e89cca6842dd0ee479877abf92089c8ab49843b89b738bc5c1d7dc478",
+  "loudness_lufs": -11.7
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-loop-x01.mp4",
+  "status": "pass",
+  "errors": [],
+  "needs_review": [],
+  "warnings": [],
+  "duration_s": 8.2,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 0,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "ce9d67d7114e982eac6e210d11195985fbd46550318fc54dc6ad1c4dd5ce6b03",
+  "loudness_lufs": -12.1
  },
  {
   "file": "shorts-cod-mw4-s1/mw4s1-maps-edit-v2.mp4",
