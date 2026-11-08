@@ -81,3 +81,4 @@ Newest first. One entry per production run or system change. The machine-readabl
 - 2026-11-06 loop batch: 4 clips of 8-9 s with action from frame 0 and no end card, aimed at completion and rewatch. The owner's clips average ~450 views; the campaign median is 330.
   Two clips (7.1 s and 7.4 s) failed QC's 8 s minimum and were committed by mistake. They were removed and replaced by longer versions.
 - 2026-11-07 voice-over batch: 3 clips using the owner's own recorded English voice, with animated captions and the trailer music ducked underneath. New renderer clipper/make_voice_clip.py. Recordings are kept git-ignored in projects/cod-mw4-s1/voice/.
+- 2026-11-08 recap batch: 2 horizontal 16:9 condensed-trailer clips (one without text, one with), modelled on a 5.5K-view clip from a small account the owner found. The voice-over clips had stalled at ~100 views.

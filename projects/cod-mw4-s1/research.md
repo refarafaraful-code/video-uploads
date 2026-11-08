@@ -36,3 +36,15 @@ Applied:
   no motion, which invites a swipe). Several opened on an aerial shot or a title card instead of action.
 Changes in the loop batch: 8-9 s, action in frame 0, no end card, last shot flows back into the first (loop), one
 line of text, original trailer audio.
+
+## Round 3 (2026-11-08): the owner's 5.5K-view reference (small account, crossed 1K)
+- 34.7 s, **horizontal 16:9 (1024x576), shown letterboxed**, no added text at all. A condensed "whole trailer in
+  35 s" recut that keeps the trailer's own title cards (THIS IS MULTIPLAYER / CANYON / SHOOT HOUSE / BACKSTAB /
+  THIS IS KILL BLOCK / DMZ X01 / end card) and the **trailer's own audio cut with each shot** (cross-correlation
+  0.3-0.6 against the trailer at the matching positions; not an outside song). Cuts every ~0.6 s, with the
+  trailer's black flashes kept.
+- What we did differently: cropped to 9:16 or square, added text and captions, a single map or theme per clip,
+  8-17 s. Our voice-over clips also stalled (~100 views overnight).
+- Applied: mw4s1-recap (horizontal, no text, 31 s, full tour MP -> Kill Block -> DMZ -> end card) and
+  mw4s1-recap-text-v2 (the same with one small native line). Posting both is an A/B test of text vs no text.
+- QC flags the black title cards as "black frames"; they are the trailer's own cards, intended.

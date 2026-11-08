@@ -293,6 +293,63 @@
   "loudness_lufs": -11.5
  },
  {
+  "file": "projects/cod-mw4-s1/clips/mw4s1-recap-text-v2.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 2.7-3.2s, 5.0-6.5s, 17.5-18.9s"
+  ],
+  "warnings": [],
+  "duration_s": 31.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 3,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "9f462a1e902746fd1487d6b62b153ccbdad9414a3b3ebc07f125994e9cea7d79",
+  "loudness_lufs": -12.7
+ },
+ {
+  "file": "projects/cod-mw4-s1/clips/mw4s1-recap-text.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 2.7-3.2s, 5.0-5.7s, 5.8-6.5s, 17.5-18.9s"
+  ],
+  "warnings": [],
+  "duration_s": 31.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 4,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "4a4f657d2b8f8466deef8a4ba78f7df87eca880e0bb4b6d6c44ef266c09da5d9",
+  "loudness_lufs": -12.7
+ },
+ {
+  "file": "projects/cod-mw4-s1/clips/mw4s1-recap.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 2.7-3.2s, 5.0-6.5s, 17.5-18.9s"
+  ],
+  "warnings": [],
+  "duration_s": 31.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 3,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "cd077512746d17b9f32a192e65a3a05b79fa8ef8692b1abb1997d60a36b88217",
+  "loudness_lufs": -12.7
+ },
+ {
   "file": "projects/cod-mw4-s1/clips/mw4s1-shoot-house.mp4",
   "status": "pass",
   "errors": [],

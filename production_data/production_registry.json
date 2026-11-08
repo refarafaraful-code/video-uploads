@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T17:20:02Z",
+  "updated_at": "2026-11-08T06:02:44Z",
   "channel": {
     "name": "ClippingMaster",
     "youtube_channel_id": "UCXcrdx8FHOQ-98ufAJ9sk_g",
@@ -2204,7 +2204,9 @@
         "cod-s1-mw4s1-loop-hype-v2",
         "cod-s1-mw4s1-vo-maps-v2",
         "cod-s1-mw4s1-vo-dmz",
-        "cod-s1-mw4s1-vo-packed-v2"
+        "cod-s1-mw4s1-vo-packed-v2",
+        "cod-s1-mw4s1-recap",
+        "cod-s1-mw4s1-recap-text-v2"
       ],
       "output_dir": "output/cod-mw4-s1",
       "research": "projects/cod-mw4-s1/research.md",
@@ -2449,13 +2451,46 @@
           },
           "decision": "accepted",
           "reason": "owner's real voice-over (allowed; only AI voice banned) + animated captions; differentiates from 200+ silent trailer re-edits"
+        },
+        {
+          "id": "mw4s1-recap",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "20 segments, see spec_recap.json",
+          "score": {
+            "hook": 19,
+            "curiosity": 17,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "modelled on owner's 5.5K reference: horizontal condensed trailer, trailer's own cards and audio"
+        },
+        {
+          "id": "mw4s1-recap-text-v2",
+          "source": "src-cod-mw4-s1-trailer",
+          "timestamps": "20 segments, see spec_recap.json",
+          "score": {
+            "hook": 19,
+            "curiosity": 17,
+            "payoff": 16,
+            "clarity": 15,
+            "pacing": 9,
+            "distinctiveness": 8,
+            "total": 84
+          },
+          "decision": "accepted",
+          "reason": "modelled on owner's 5.5K reference: horizontal condensed trailer, trailer's own cards and audio"
         }
       ],
       "log": [
         "2026-11-05T14:21:37Z trailer downloaded from the campaign MediaSilo folder (1080p); blog facts verified; 4 clips delivered",
         "2026-11-05T15:37:50Z owner reference (430K views, own gameplay + licensed song + sweatproof.gg promo) does not fit the brief; made 3 compliant edits in its style (new clipper/make_edit_clip.py)",
         "2026-11-06T11:30:29Z loop batch: 4 clips (8-9 s). canyon-v2 and hype v1 failed QC (<8 s) and had been committed by mistake before registration; removed from shorts-cod-mw4-s1/, replaced by canyon-v3 / hype-v2",
-        "2026-11-07T17:20:02Z voice-over batch: 3 clips with the owner's recorded voice (new clipper/make_voice_clip.py)"
+        "2026-11-07T17:20:02Z voice-over batch: 3 clips with the owner's recorded voice (new clipper/make_voice_clip.py)",
+        "2026-11-08T06:02:44Z owner reported voice-over clips ~100 views; analysed owner's 5.5K reference -> 2 horizontal recap clips"
       ]
     }
   ],
@@ -7126,6 +7161,284 @@
         "review_doc": "output/cod-mw4-s1/review_frames/",
         "checked_at": "2026-11-07",
         "not_verified": "mix not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-recap",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-recap",
+      "candidate_id": "mw4s1-recap",
+      "score": 84,
+      "segments_src": [
+        [
+          3.8,
+          4.7
+        ],
+        [
+          5.0,
+          6.3
+        ],
+        [
+          7.0,
+          8.0
+        ],
+        [
+          13.0,
+          14.6
+        ],
+        [
+          18.0,
+          19.7
+        ],
+        [
+          20.2,
+          21.8
+        ],
+        [
+          27.8,
+          28.8
+        ],
+        [
+          34.0,
+          35.6
+        ],
+        [
+          36.2,
+          37.6
+        ],
+        [
+          40.0,
+          41.4
+        ],
+        [
+          45.6,
+          47.2
+        ],
+        [
+          49.0,
+          50.4
+        ],
+        [
+          52.8,
+          53.8
+        ],
+        [
+          67.0,
+          68.4
+        ],
+        [
+          68.5,
+          70.3
+        ],
+        [
+          77.6,
+          80.6
+        ],
+        [
+          84.5,
+          86.0
+        ],
+        [
+          100.5,
+          102.0
+        ],
+        [
+          104.4,
+          105.8
+        ],
+        [
+          134.5,
+          137.5
+        ]
+      ],
+      "duration_s": 31.1,
+      "batch": "recap (2026-11-08)",
+      "pipeline": "make_native_clip letterbox (16:9 horizontal), trailer audio per segment",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-recap.mp4",
+          "sha256": "cd077512746d17b9f32a192e65a3a05b79fa8ef8692b1abb1997d60a36b88217",
+          "size_bytes": 28927229,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-recap.mp4",
+          "sha256": "5a5c55be7f90f06e863387b4d521acdb3cc461be12f56c472a04abd778ff73d5",
+          "size_bytes": 19976455,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "Everything new in MW4 Season 1 in 30 seconds @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "Everything new in MW4 Season 1 in 30 seconds @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "black frames at 2.7-3.2s, 5.0-6.5s, 17.5-18.9s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -12.7,
+          "duration_s": 31.1
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass_with_notes: black-frame flags are the trailer's own title cards (THIS IS / KILL BLOCK), intended; burning-soldier shot excluded; text-v1 said 'coming' after launch -> v2 'new'",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
+      },
+      "publish": {
+        "method": "owner_manual",
+        "platforms": [
+          "tiktok",
+          "instagram_reels"
+        ],
+        "status": "delivered_to_owner"
+      }
+    },
+    {
+      "id": "cod-s1-mw4s1-recap-text-v2",
+      "source_id": "src-cod-mw4-s1-trailer",
+      "run_id": "run-2026-11-05-cod-mw4-s1",
+      "name": "mw4s1-recap-text-v2",
+      "candidate_id": "mw4s1-recap-text-v2",
+      "score": 84,
+      "segments_src": [
+        [
+          3.8,
+          4.7
+        ],
+        [
+          5.0,
+          6.3
+        ],
+        [
+          7.0,
+          8.0
+        ],
+        [
+          13.0,
+          14.6
+        ],
+        [
+          18.0,
+          19.7
+        ],
+        [
+          20.2,
+          21.8
+        ],
+        [
+          27.8,
+          28.8
+        ],
+        [
+          34.0,
+          35.6
+        ],
+        [
+          36.2,
+          37.6
+        ],
+        [
+          40.0,
+          41.4
+        ],
+        [
+          45.6,
+          47.2
+        ],
+        [
+          49.0,
+          50.4
+        ],
+        [
+          52.8,
+          53.8
+        ],
+        [
+          67.0,
+          68.4
+        ],
+        [
+          68.5,
+          70.3
+        ],
+        [
+          77.6,
+          80.6
+        ],
+        [
+          84.5,
+          86.0
+        ],
+        [
+          100.5,
+          102.0
+        ],
+        [
+          104.4,
+          105.8
+        ],
+        [
+          134.5,
+          137.5
+        ]
+      ],
+      "duration_s": 31.1,
+      "batch": "recap (2026-11-08)",
+      "pipeline": "make_native_clip letterbox (16:9 horizontal), trailer audio per segment",
+      "files": {
+        "master": {
+          "path": "projects/cod-mw4-s1/clips/mw4s1-recap-text-v2.mp4",
+          "sha256": "9f462a1e902746fd1487d6b62b153ccbdad9414a3b3ebc07f125994e9cea7d79",
+          "size_bytes": 28516716,
+          "in_repo": false
+        },
+        "publish": {
+          "path": "shorts-cod-mw4-s1/mw4s1-recap-text-v2.mp4",
+          "sha256": "92094cc5ece892432b39c083f660c762e046e290a66c642ef3f3fbe5d475f29b",
+          "size_bytes": 19680853,
+          "in_repo": true
+        }
+      },
+      "captions": {
+        "tiktok_caption": "MW4 Season 1 in 30 seconds. Multiplayer, Kill Block or DMZ, what are you playing first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "instagram_caption": "MW4 Season 1 in 30 seconds. Multiplayer, Kill Block or DMZ, what are you playing first? @callofduty\n#Sponsored\n#mw4 #callofduty #fyp",
+        "rules": "#Sponsored first hashtag on its own line, max 3 more; content disclosure toggle; likes visible; 30+ days"
+      },
+      "status": "completed",
+      "qc": {
+        "status": "pass_with_notes",
+        "technical": {
+          "status": "needs_review",
+          "errors": [],
+          "needs_review": [
+            "black frames at 2.7-3.2s, 5.0-6.5s, 17.5-18.9s"
+          ],
+          "warnings": [],
+          "loudness_lufs": -12.7,
+          "duration_s": 31.1
+        },
+        "technical_publish_copy": "needs_review",
+        "editorial": "pass_with_notes: black-frame flags are the trailer's own title cards (THIS IS / KILL BLOCK), intended; burning-soldier shot excluded; text-v1 said 'coming' after launch -> v2 'new'",
+        "review_doc": "output/cod-mw4-s1/review_frames/",
+        "checked_at": "2026-11-08",
+        "not_verified": "audio not listened to by a human"
       },
       "publish": {
         "method": "owner_manual",

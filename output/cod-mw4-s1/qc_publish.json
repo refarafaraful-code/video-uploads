@@ -153,6 +153,44 @@
   "loudness_lufs": -11.5
  },
  {
+  "file": "shorts-cod-mw4-s1/mw4s1-recap-text-v2.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 2.7-3.2s, 5.0-6.5s, 17.5-18.9s"
+  ],
+  "warnings": [],
+  "duration_s": 31.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 3,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "92094cc5ece892432b39c083f660c762e046e290a66c642ef3f3fbe5d475f29b",
+  "loudness_lufs": -12.7
+ },
+ {
+  "file": "shorts-cod-mw4-s1/mw4s1-recap.mp4",
+  "status": "needs_review",
+  "errors": [],
+  "needs_review": [
+   "black frames at 2.7-3.2s, 5.0-6.5s, 17.5-18.9s"
+  ],
+  "warnings": [],
+  "duration_s": 31.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "black_segments": 3,
+  "freeze_segments": 0,
+  "silent_segments": 0,
+  "sha256": "5a5c55be7f90f06e863387b4d521acdb3cc461be12f56c472a04abd778ff73d5",
+  "loudness_lufs": -12.7
+ },
+ {
   "file": "shorts-cod-mw4-s1/mw4s1-shoot-house.mp4",
   "status": "pass",
   "errors": [],
